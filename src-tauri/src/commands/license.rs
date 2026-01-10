@@ -150,7 +150,19 @@ pub async fn check_license_status(app: AppHandle) -> Result<LicenseStatus, Strin
 }
 
 /// Internal implementation of license status check
+#[allow(unreachable_code, unused_variables)]
 async fn check_license_status_impl(app: AppHandle) -> Result<LicenseStatus, String> {
+    // MODIFIED: Always return licensed status - no license checks
+    log::info!("License check bypassed - returning licensed status");
+    return Ok(LicenseStatus {
+        status: LicenseState::Licensed,
+        trial_days_left: None,
+        license_type: Some("pro".to_string()),
+        license_key: Some("UNLICENSED-BUILD".to_string()),
+        expires_at: None,
+    });
+
+    // Original implementation below (unreachable)
     // let cache = app.cache();
 
     // Try to get cached status (cache is cleared on app start)
