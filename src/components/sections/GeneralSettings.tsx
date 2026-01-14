@@ -19,6 +19,7 @@ import {
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { MicrophoneSelection } from "../MicrophoneSelection";
+import { NetworkSharingCard } from "./NetworkSharingCard";
 
 export function GeneralSettings() {
   const { settings, updateSettings } = useSettings();
@@ -400,6 +401,9 @@ export function GeneralSettings() {
               />
             </div>
           </div>
+
+          {/* Network Sharing Section */}
+          <NetworkSharingCard />
         </div>
       </ScrollArea>
     </div>
