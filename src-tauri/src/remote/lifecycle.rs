@@ -24,7 +24,7 @@ impl ServerHandle {
     pub fn stop(&mut self) {
         if let Some(tx) = self.shutdown_tx.take() {
             let _ = tx.send(());
-            log::info!("Server shutdown signal sent");
+            log::info!("[Remote Server] Shutdown signal sent for port {}", self.port);
         }
     }
 }
@@ -110,18 +110,21 @@ impl RemoteServerManager {
         // Bind to address
         let addr: SocketAddr = ([0, 0, 0, 0], port).into();
 
-        log::info!("Starting remote transcription server on {}", addr);
+        log::info!(
+            "[Remote Server] Starting server on {} as '{}'",
+            addr, server_name
+        );
 
         // Create the server with graceful shutdown
         let (_, server) = warp::serve(routes).bind_with_graceful_shutdown(addr, async {
             shutdown_rx.await.ok();
-            log::info!("Server received shutdown signal");
+            log::info!("[Remote Server] Received shutdown signal");
         });
 
         // Spawn the server task
         tokio::spawn(async move {
             server.await;
-            log::info!("Server task completed");
+            log::info!("[Remote Server] Server task completed");
         });
 
         // Store the handle
@@ -131,9 +134,10 @@ impl RemoteServerManager {
         });
 
         log::info!(
-            "Remote transcription server started on port {} as '{}'",
+            "[Remote Server] Server STARTED on port {} as '{}' with model '{}'",
             port,
-            server_name
+            server_name,
+            self.config.as_ref().map(|c| c.model_name.as_str()).unwrap_or("unknown")
         );
 
         Ok(())
@@ -142,8 +146,9 @@ impl RemoteServerManager {
     /// Stop the remote transcription server
     pub fn stop(&mut self) {
         if let Some(mut handle) = self.handle.take() {
+            let port = handle.port;
             handle.stop();
-            log::info!("Remote transcription server stopped");
+            log::info!("[Remote Server] Server STOPPED (was on port {})", port);
         }
         self.config = None;
     }
@@ -153,7 +158,7 @@ impl RemoteServerManager {
         if let Some(config) = &mut self.config {
             config.model_path = model_path;
             config.model_name = model_name;
-            log::info!("Server model updated to: {}", config.model_name);
+            log::info!("[Remote Server] Model updated to '{}'", config.model_name);
         }
     }
 

@@ -1,0 +1,7 @@
+{
+  "last_failure": "2026-01-14T13:30:08.8085653-08:00",
+  "failure_count": 6,
+  "backoff_until": "2026-01-14T14:00:08.8085653-08:00",
+  "needs_manual_sync": true,
+  "failure_reason": "git pull failed: exit status 1\nfatal: couldn't find remote ref feature/remote-transcription\n"
+}

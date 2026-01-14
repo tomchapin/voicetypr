@@ -219,9 +219,24 @@ pub async fn transcribe_remote(
             .ok_or_else(|| format!("Server '{}' not found", server_id))?
     };
 
+    let display_name = connection.display_name();
+    log::info!(
+        "[Remote Client] Starting remote transcription to '{}' ({}:{})",
+        display_name,
+        connection.host,
+        connection.port
+    );
+
     // Read the audio file
     let audio_data = std::fs::read(&audio_path)
         .map_err(|e| format!("Failed to read audio file: {}", e))?;
+
+    let audio_size_kb = audio_data.len() as f64 / 1024.0;
+    log::info!(
+        "[Remote Client] Sending {:.1} KB audio to '{}'",
+        audio_size_kb,
+        display_name
+    );
 
     // Create HTTP client connection
     let server_conn = RemoteServerConnection::new(
@@ -245,13 +260,29 @@ pub async fn transcribe_remote(
     let response = request
         .send()
         .await
-        .map_err(|e| format!("Failed to send request: {}", e))?;
+        .map_err(|e| {
+            log::warn!(
+                "[Remote Client] Connection FAILED to '{}': {}",
+                display_name,
+                e
+            );
+            format!("Failed to send request: {}", e)
+        })?;
 
     if response.status() == reqwest::StatusCode::UNAUTHORIZED {
+        log::warn!(
+            "[Remote Client] Authentication FAILED to '{}'",
+            display_name
+        );
         return Err("Authentication failed".to_string());
     }
 
     if !response.status().is_success() {
+        log::warn!(
+            "[Remote Client] Server error from '{}': {}",
+            display_name,
+            response.status()
+        );
         return Err(format!("Server error: {}", response.status()));
     }
 
@@ -260,11 +291,19 @@ pub async fn transcribe_remote(
         .await
         .map_err(|e| format!("Failed to parse response: {}", e))?;
 
-    result
+    let text = result
         .get("text")
         .and_then(|v| v.as_str())
         .map(|s| s.to_string())
-        .ok_or_else(|| "Invalid response: missing 'text' field".to_string())
+        .ok_or_else(|| "Invalid response: missing 'text' field".to_string())?;
+
+    log::info!(
+        "[Remote Client] Transcription COMPLETED from '{}': {} chars received",
+        display_name,
+        text.len()
+    );
+
+    Ok(text)
 }
 
 // ============================================================================
@@ -278,6 +317,12 @@ async fn test_connection(
     password: Option<&str>,
 ) -> Result<StatusResponse, String> {
     let conn = RemoteServerConnection::new(host.to_string(), port, password.map(String::from));
+
+    log::info!(
+        "[Remote Client] Testing connection to {}:{}",
+        host,
+        port
+    );
 
     let client = reqwest::Client::builder()
         .timeout(std::time::Duration::from_secs(10))
@@ -293,20 +338,50 @@ async fn test_connection(
     let response = request
         .send()
         .await
-        .map_err(|e| format!("Failed to connect: {}", e))?;
+        .map_err(|e| {
+            log::warn!(
+                "[Remote Client] Connection test FAILED to {}:{} - {}",
+                host,
+                port,
+                e
+            );
+            format!("Failed to connect: {}", e)
+        })?;
 
     if response.status() == reqwest::StatusCode::UNAUTHORIZED {
+        log::warn!(
+            "[Remote Client] Connection test REJECTED - authentication failed for {}:{}",
+            host,
+            port
+        );
         return Err("Authentication failed".to_string());
     }
 
     if !response.status().is_success() {
+        log::warn!(
+            "[Remote Client] Connection test FAILED - server error {} for {}:{}",
+            response.status(),
+            host,
+            port
+        );
         return Err(format!("Server error: {}", response.status()));
     }
 
-    response
+    let status = response
         .json::<StatusResponse>()
         .await
-        .map_err(|e| format!("Failed to parse response: {}", e))
+        .map_err(|e| format!("Failed to parse response: {}", e))?;
+
+    log::info!(
+        "[Remote Client] Connection test SUCCEEDED to '{}' ({}:{}) - model: '{}', version: {}",
+        status.name,
+        host,
+        port,
+        status.model,
+        status.version
+    );
+
+    Ok(status)
 }
 
 /// Save remote settings to the store
