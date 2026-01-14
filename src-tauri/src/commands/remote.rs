@@ -4,9 +4,8 @@
 //! server mode and client mode.
 
 use std::path::PathBuf;
-use std::sync::RwLock;
 
-use tauri::{async_runtime::Mutex as AsyncMutex, AppHandle, State};
+use tauri::{async_runtime::{Mutex as AsyncMutex, RwLock as AsyncRwLock}, AppHandle, State};
 use tauri_plugin_store::StoreExt;
 
 use crate::remote::client::RemoteServerConnection;
@@ -30,7 +29,7 @@ pub async fn start_sharing(
     password: Option<String>,
     server_name: Option<String>,
     server_manager: State<'_, AsyncMutex<RemoteServerManager>>,
-    whisper_manager: State<'_, RwLock<WhisperManager>>,
+    whisper_manager: State<'_, AsyncRwLock<WhisperManager>>,
 ) -> Result<(), String> {
     let port = port.unwrap_or(DEFAULT_PORT);
 
@@ -54,9 +53,7 @@ pub async fn start_sharing(
 
     // Get model path from whisper manager
     let model_path = {
-        let manager = whisper_manager
-            .read()
-            .map_err(|e| format!("Failed to read whisper manager: {}", e))?;
+        let manager = whisper_manager.read().await;
 
         manager
             .get_model_path(&current_model)

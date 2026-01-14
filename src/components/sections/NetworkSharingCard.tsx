@@ -104,10 +104,10 @@ export function NetworkSharingCard() {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="p-4 space-y-4">
-        {/* Status Display */}
-        {status.enabled && (
+      {/* Content - only show when enabled */}
+      {status.enabled && (
+        <div className="p-4 space-y-4">
+          {/* Status Display */}
           <div className="flex items-center gap-2 p-3 rounded-lg bg-green-500/10 border border-green-500/20">
             <Server className="h-4 w-4 text-green-500" />
             <div className="flex-1">
@@ -121,65 +121,65 @@ export function NetworkSharingCard() {
               </p>
             </div>
           </div>
-        )}
 
-        {/* Server Address */}
-        <div className="space-y-2">
-          <Label className="text-sm font-medium">Server Address</Label>
-          <div className="flex items-center gap-2">
-            <div className="flex-1 px-3 py-2 rounded-md bg-muted/50 border border-border/50 font-mono text-sm">
-              {localIp || "..."}:{port}
+          {/* Server Address */}
+          <div className="space-y-2">
+            <Label className="text-sm font-medium">Server Address</Label>
+            <div className="flex items-center gap-2">
+              <div className="flex-1 px-3 py-2 rounded-md bg-muted/50 border border-border/50 font-mono text-sm">
+                {localIp || "..."}:{port}
+              </div>
+              <button
+                onClick={copyAddress}
+                className="p-2 rounded-md hover:bg-muted transition-colors"
+                title="Copy address"
+              >
+                <Copy className="h-4 w-4" />
+              </button>
             </div>
-            <button
-              onClick={copyAddress}
-              className="p-2 rounded-md hover:bg-muted transition-colors"
-              title="Copy address"
-            >
-              <Copy className="h-4 w-4" />
-            </button>
+            <p className="text-xs text-muted-foreground">
+              Other VoiceTypr instances can connect to this address
+            </p>
           </div>
-          <p className="text-xs text-muted-foreground">
-            Other VoiceTypr instances can connect to this address
-          </p>
-        </div>
 
-        {/* Port Setting */}
-        <div className="space-y-2">
-          <Label htmlFor="sharing-port" className="text-sm font-medium">
-            Port
-          </Label>
-          <Input
-            id="sharing-port"
-            type="number"
-            value={port}
-            onChange={(e) => setPort(e.target.value)}
-            placeholder="47842"
-            disabled={status.enabled}
-            className="font-mono"
-          />
-          <p className="text-xs text-muted-foreground">
-            Default: 47842. Change requires restart of sharing.
-          </p>
-        </div>
+          {/* Port Setting */}
+          <div className="space-y-2">
+            <Label htmlFor="sharing-port" className="text-sm font-medium">
+              Port
+            </Label>
+            <Input
+              id="sharing-port"
+              type="number"
+              value={port}
+              onChange={(e) => setPort(e.target.value)}
+              placeholder="47842"
+              disabled={status.enabled}
+              className="font-mono"
+            />
+            <p className="text-xs text-muted-foreground">
+              Default: 47842. Change requires restart of sharing.
+            </p>
+          </div>
 
-        {/* Password Setting */}
-        <div className="space-y-2">
-          <Label htmlFor="sharing-password" className="text-sm font-medium">
-            Password (Optional)
-          </Label>
-          <Input
-            id="sharing-password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Leave empty for no authentication"
-            disabled={status.enabled}
-          />
-          <p className="text-xs text-muted-foreground">
-            Require password for connections. Recommended for public networks.
-          </p>
+          {/* Password Setting */}
+          <div className="space-y-2">
+            <Label htmlFor="sharing-password" className="text-sm font-medium">
+              Password (Optional)
+            </Label>
+            <Input
+              id="sharing-password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Leave empty for no authentication"
+              disabled={status.enabled}
+            />
+            <p className="text-xs text-muted-foreground">
+              Require password for connections. Recommended for public networks.
+            </p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
