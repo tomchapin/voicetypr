@@ -41,23 +41,34 @@ pub async fn start_sharing(
             .unwrap_or_else(|| "VoiceTypr Server".to_string())
     });
 
-    // Get current model from store
+    // Get current model from store, or auto-select first downloaded model
     let store = app
         .store("voicetypr-store.json")
         .map_err(|e| format!("Failed to access store: {}", e))?;
 
-    let current_model = store
+    let stored_model = store
         .get("current_model")
         .and_then(|v| v.as_str().map(|s| s.to_string()))
-        .ok_or("No model selected")?;
+        .unwrap_or_default();
 
     // Get model path from whisper manager
-    let model_path = {
+    let (current_model, model_path) = {
         let manager = whisper_manager.read().await;
 
-        manager
-            .get_model_path(&current_model)
-            .ok_or_else(|| format!("Model '{}' not found or not downloaded", current_model))?
+        // If no model explicitly selected, find first downloaded model
+        let model_name = if stored_model.is_empty() {
+            manager
+                .get_first_downloaded_model()
+                .ok_or("No model downloaded. Please download a model first.")?
+        } else {
+            stored_model
+        };
+
+        let path = manager
+            .get_model_path(&model_name)
+            .ok_or_else(|| format!("Model '{}' not found or not downloaded", model_name))?;
+
+        (model_name, path)
     };
 
     // Start the server
