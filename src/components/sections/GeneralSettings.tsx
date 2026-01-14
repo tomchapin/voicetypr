@@ -450,6 +450,9 @@ export function GeneralSettings() {
             </div>
           </div>
 
+          {/* Network Sharing Section */}
+          <NetworkSharingCard />
+
           {/* Startup Section */}
           <div className="rounded-lg border border-border/50 bg-card p-4">
             <div className="flex items-center justify-between">
@@ -474,9 +477,6 @@ export function GeneralSettings() {
               />
             </div>
           </div>
-
-          {/* Network Sharing Section */}
-          <NetworkSharingCard />
         </div>
       </ScrollArea>
     </div>

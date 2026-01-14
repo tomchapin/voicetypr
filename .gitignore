@@ -54,8 +54,13 @@ opencodetmp
 # bv (beads viewer) local config and caches
 .bv/
 
-# beads issue tracker (local project management)
-.beads/
+# beads issue tracker - issues.jsonl is tracked, local db files are not
+.beads/*.db
+.beads/*.db-shm
+.beads/*.db-wal
+.beads/.local_version
+.beads/.sync.lock
+.beads/bd.sock
 
 # Git worktrees for parallel development
 .worktrees/
