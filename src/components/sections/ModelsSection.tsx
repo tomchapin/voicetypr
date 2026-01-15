@@ -66,6 +66,11 @@ export function ModelsSection({
     null
   );
   const [addServerModalOpen, setAddServerModalOpen] = useState(false);
+<<<<<<< HEAD
+=======
+  const [editingServer, setEditingServer] = useState<SavedConnection | null>(null);
+  const [remoteRefreshTrigger, setRemoteRefreshTrigger] = useState(0);
+>>>>>>> 0db2610 (fix(remote): live refresh of remote server status on model change)
 
   const { availableToUse, availableToSetup } = useMemo(() => {
     const useList: [string, ModelInfo][] = [];
@@ -168,7 +173,7 @@ export function ModelsSection({
     };
   }, [fetchActiveRemoteServer, fetchRemoteServers]);
 
-  // Listen for model-changed events (from tray menu selection)
+  // Listen for model-changed events (from tray menu selection or UI)
   useEffect(() => {
     const unlistenModelChanged = listen<{ model: string; engine: string }>(
       "model-changed",
@@ -178,6 +183,8 @@ export function ModelsSection({
         fetchActiveRemoteServer();
         fetchRemoteServers();
         refreshSettings();
+        // Trigger immediate status refresh on all remote server cards
+        setRemoteRefreshTrigger((prev) => prev + 1);
       }
     );
 
@@ -228,7 +235,25 @@ export function ModelsSection({
 
   const handleServerAdded = useCallback(
     (server: SavedConnection) => {
+<<<<<<< HEAD
       setRemoteServers((prev) => [...prev, server]);
+=======
+      setRemoteServers((prev) => {
+        // Check if this is an update (server already exists)
+        const existingIndex = prev.findIndex((s) => s.id === server.id);
+        if (existingIndex >= 0) {
+          // Update existing server
+          const updated = [...prev];
+          updated[existingIndex] = server;
+          return updated;
+        }
+        // Add new server
+        return [...prev, server];
+      });
+      setEditingServer(null);
+      // Trigger immediate status refresh on all remote server cards
+      setRemoteRefreshTrigger((prev) => prev + 1);
+>>>>>>> 0db2610 (fix(remote): live refresh of remote server status on model change)
     },
     []
   );
@@ -566,6 +591,11 @@ export function ModelsSection({
                       isActive={activeRemoteServer === server.id}
                       onSelect={handleSelectRemoteServer}
                       onRemove={handleRemoveRemoteServer}
+<<<<<<< HEAD
+=======
+                      onEdit={handleEditServer}
+                      refreshTrigger={remoteRefreshTrigger}
+>>>>>>> 0db2610 (fix(remote): live refresh of remote server status on model change)
                     />
                   ))}
                 </div>

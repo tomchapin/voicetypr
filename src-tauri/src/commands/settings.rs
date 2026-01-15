@@ -374,6 +374,35 @@ pub async fn save_settings(app: AppHandle, settings: Settings) -> Result<(), Str
             log::warn!("Failed to update tray menu after model change: {}", e);
             // Don't fail the whole operation if tray update fails
         }
+
+        // Update the sharing server's model if it's running
+        {
+            use tauri::async_runtime::RwLock as AsyncRwLock;
+            let server_manager = app.state::<AsyncMutex<RemoteServerManager>>();
+            let mut server = server_manager.lock().await;
+            if server.is_running() {
+                let model_path: std::path::PathBuf = if !is_parakeet_engine && !is_cloud_engine {
+                    let whisper_state = app.state::<AsyncRwLock<WhisperManager>>();
+                    let manager = whisper_state.read().await;
+                    manager.get_model_path(&settings.current_model).unwrap_or_default()
+                } else {
+                    std::path::PathBuf::new()
+                };
+                server.update_model(model_path, settings.current_model.clone(), settings.current_model_engine.clone());
+                log::info!("Remote server model updated to: {} (engine: {})", settings.current_model, settings.current_model_engine);
+            }
+        }
+
+        // Emit model-changed event so frontend can refresh remote server status
+        if let Err(e) = app.emit(
+            "model-changed",
+            json!({
+                "model": settings.current_model,
+                "engine": settings.current_model_engine
+            }),
+        ) {
+            log::warn!("Failed to emit model-changed event: {}", e);
+        }
     }
 
     // If recording mode changed, refresh tray to update checked state

@@ -33,6 +33,12 @@ interface RemoteServerCardProps {
   isActive: boolean;
   onSelect: (serverId: string) => void;
   onRemove: (serverId: string) => void;
+<<<<<<< HEAD
+=======
+  onEdit: (server: SavedConnection) => void;
+  /** Increment to force immediate status refresh */
+  refreshTrigger?: number;
+>>>>>>> 0db2610 (fix(remote): live refresh of remote server status on model change)
 }
 
 export function RemoteServerCard({
@@ -40,6 +46,11 @@ export function RemoteServerCard({
   isActive,
   onSelect,
   onRemove,
+<<<<<<< HEAD
+=======
+  onEdit,
+  refreshTrigger = 0,
+>>>>>>> 0db2610 (fix(remote): live refresh of remote server status on model change)
 }: RemoteServerCardProps) {
   const [status, setStatus] = useState<"checking" | "online" | "offline">(
     "checking"
@@ -67,6 +78,13 @@ export function RemoteServerCard({
     const interval = setInterval(checkStatus, 30000);
     return () => clearInterval(interval);
   }, [checkStatus]);
+
+  // Re-check when refreshTrigger changes (used by parent to force refresh)
+  useEffect(() => {
+    if (refreshTrigger > 0) {
+      checkStatus();
+    }
+  }, [refreshTrigger, checkStatus]);
 
   const handleRemove = async (e: React.MouseEvent) => {
     e.stopPropagation();
