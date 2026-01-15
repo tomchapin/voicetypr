@@ -91,7 +91,9 @@ This project uses **Beads** for issue tracking across multiple Claude Code agent
 - **beads** (`bd`): https://github.com/steveyegge/beads - Git-backed issue tracker
 - **beads_viewer** (`bv`): https://github.com/Dicklesworthstone/beads_viewer - Dashboard UI
 
-### Session Startup (REQUIRED)
+### Session Startup (REQUIRED - DO THIS FIRST)
+
+**You MUST start the beads watch daemon at the beginning of every session:**
 
 ```bash
 # macOS/Linux:
@@ -103,7 +105,24 @@ powershell -ExecutionPolicy Bypass -File beads-watch.ps1 &
 bv --preview-pages bv-site &
 ```
 
-Dashboard at: http://127.0.0.1:9001
+**Dashboard URL:** http://127.0.0.1:9001
+
+### Beads Watch Daemon Explained
+
+**Watch script files (in project root):**
+- `beads-watch.ps1` - Windows PowerShell version
+- `beads-watch.sh` - macOS/Linux bash version
+
+**What it does:**
+- Runs every 30 seconds
+- Compares MD5 hash of `bd export` output vs `.beads/issues.jsonl`
+- If different, syncs JSONL and regenerates `bv-site/` dashboard
+- Detects ALL changes including status updates (e.g., `open → in_progress`)
+
+**Why it's necessary:**
+- `bd` stores in SQLite, `bv` reads from JSONL
+- Without daemon, dashboard shows stale/wrong data
+- Multiple agents need accurate real-time view of issue states
 
 ### Essential Commands
 
@@ -112,10 +131,19 @@ bd ready                          # Find available work (no blockers)
 bd list --status=in_progress      # See what others are working on
 bd update <id> --status=in_progress  # Claim work before starting
 bd close <id> --reason="..."      # ONLY after user confirms completion
+```
 
-# Force sync if stale:
-# macOS/Linux: bd export > .beads/issues.jsonl
-# Windows:     bd export | Out-File .beads/issues.jsonl -Encoding utf8
+### Manual Sync (If Daemon Not Running)
+
+```bash
+# macOS/Linux:
+bd export > .beads/issues.jsonl
+bv --export-pages bv-site
+
+# Windows (PowerShell - BOM-less UTF-8):
+$content = bd export | Out-String
+[System.IO.File]::WriteAllText(".beads/issues.jsonl", $content.Trim(), [System.Text.UTF8Encoding]::new($false))
+bv --export-pages bv-site
 ```
 
 ### Issue Closure Policy (CRITICAL)
@@ -126,13 +154,6 @@ bd close <id> --reason="..."      # ONLY after user confirms completion
 - The user must confirm the feature works correctly in the actual app
 - Keep issues `in_progress` until user gives explicit approval
 - Only then run `bd close <id> --reason="User verified: <what they confirmed>"`
-
-### Why the Watch Daemon?
-
-- `bd` stores data in SQLite (fast queries)
-- `bv` reads from JSONL (git-friendly format)
-- Without the daemon, dashboard shows stale data
-- The watch script syncs them every 30 seconds
 
 See `CLAUDE.md` → Multi-Agent Collaboration for full details.
 

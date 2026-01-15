@@ -155,9 +155,27 @@ bd comments add <id> "..."    # Add progress notes
 
 **IMPORTANT:** Never close issues until a human has verified the feature works correctly. Tests passing is not sufficient - the user must confirm the actual functionality.
 
-### Beads Dashboard (IMPORTANT)
+### Beads Watch Daemon (CRITICAL)
 
-**At session start**, launch the beads monitoring daemon and dashboard:
+This project includes custom watch scripts that keep the beads dashboard in sync with the database. **You MUST run this daemon at the start of every session.**
+
+**Watch script files (in project root):**
+- `beads-watch.ps1` - Windows PowerShell version
+- `beads-watch.sh` - macOS/Linux bash version
+
+**What the daemon does:**
+1. Every 30 seconds, exports the SQLite database content via `bd export`
+2. Compares MD5 hash of DB content vs `.beads/issues.jsonl` file
+3. If different, writes the new content to JSONL and regenerates `bv-site/`
+4. This ensures the web dashboard always reflects the current database state
+
+**Why this is necessary:**
+- `bd` (beads CLI) stores data in SQLite for fast queries
+- `bv` (beads viewer) reads from `.beads/issues.jsonl` for git-friendly storage
+- Without the daemon, changes to issues (status updates, new issues, etc.) won't appear in the dashboard
+- The daemon detects ANY change (not just new issues) including status changes like `open → in_progress`
+
+### Starting the Daemon (REQUIRED AT SESSION START)
 
 ```bash
 # macOS/Linux:
@@ -169,23 +187,36 @@ powershell -ExecutionPolicy Bypass -File beads-watch.ps1 &
 bv --preview-pages bv-site &
 ```
 
-Dashboard available at: http://127.0.0.1:9001
+**Dashboard URL:** http://127.0.0.1:9001
 
-**Why this matters:**
-- `bd` stores data in SQLite, but `bv` reads from JSONL
-- The watch script ensures they stay in sync
-- Without it, the dashboard shows stale data
+**Verify daemon is working:**
+- Check for periodic output like `[HH:MM:SS] DB changed, syncing N issues...`
+- Make a change with `bd` and confirm it appears in the dashboard within 30 seconds
 
-**If data looks wrong:**
+### Manual Sync (If Daemon Not Running)
+
+If the dashboard shows stale data and the daemon isn't running:
+
 ```bash
 # macOS/Linux:
 bd export > .beads/issues.jsonl
 bv --export-pages bv-site
 
-# Windows (PowerShell - must use Out-File for UTF-8):
-bd export | Out-File -FilePath .beads/issues.jsonl -Encoding utf8
+# Windows (PowerShell - use .NET for BOM-less UTF-8):
+$content = bd export | Out-String
+[System.IO.File]::WriteAllText(".beads/issues.jsonl", $content.Trim(), [System.Text.UTF8Encoding]::new($false))
 bv --export-pages bv-site
 ```
+
+### Troubleshooting
+
+**Dashboard empty or showing wrong data:**
+1. Run `bd doctor` to check for sync issues
+2. Run the manual sync commands above
+3. Restart the watch daemon
+
+**"Count mismatch" or "Status mismatch" warnings:**
+- Run `bd export > .beads/issues.jsonl` to force sync from DB (source of truth)
 
 ### Git Worktrees for Parallel Development
 
