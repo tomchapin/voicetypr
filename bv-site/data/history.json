@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:25Z",
   "commits": null
 =======
@@ -12,6 +13,9 @@
 =======
   "generated_at": "2026-01-15T04:57:13Z",
 >>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+=======
+  "generated_at": "2026-01-15T05:15:41Z",
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
   "commits": [
     {
       "sha": "e406997154b2fceac5cd3b2e5ea73989e2fd33a9",
@@ -26,8 +30,8 @@
       "date": "2026-01-14T15:19:47-08:00",
       "message": "fix(ui): Network Sharing model display and ordering fixes",
       "beads_added": [
-        "voicetypr-cre",
-        "voicetypr-313"
+        "voicetypr-313",
+        "voicetypr-cre"
       ]
     },
     {
@@ -46,10 +50,16 @@
       "beads_added": [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "voicetypr-26t",
+        "voicetypr-5cx",
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
         "voicetypr-rsc",
         "voicetypr-x0y",
         "voicetypr-63v",
         "voicetypr-7d9",
+<<<<<<< HEAD
         "voicetypr-5cx",
         "voicetypr-26t",
         "voicetypr-fet"
@@ -69,6 +79,9 @@
         "voicetypr-7d9",
         "voicetypr-rsc"
 >>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+=======
+        "voicetypr-fet"
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
       ]
     },
     {
@@ -93,8 +106,13 @@
       "message": "debug: add extensive logging for remote server selection",
       "beads_added": [
         "voicetypr-5l4",
+<<<<<<< HEAD
         "voicetypr-88a",
         "voicetypr-ra2"
+=======
+        "voicetypr-ra2",
+        "voicetypr-88a"
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
       ]
     },
     {
@@ -102,8 +120,8 @@
       "date": "2026-01-14T20:22:17-08:00",
       "message": "feat: add transcription result logging on server side",
       "beads_added": [
-        "voicetypr-718",
-        "voicetypr-61b"
+        "voicetypr-61b",
+        "voicetypr-718"
       ]
     }
   ]

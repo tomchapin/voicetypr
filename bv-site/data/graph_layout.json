@@ -9,17 +9,22 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       -2280
 =======
       440
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
+=======
+      -1400
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-0k3": [
       200,
-      -80
+      80
     ],
     "voicetypr-0sn": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       -760
     ],
@@ -30,6 +35,9 @@
     "voicetypr-164": [
       0,
       1640
+=======
+      -840
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-1db": [
       0,
@@ -47,6 +55,7 @@
     ],
     "voicetypr-22k": [
       200,
+<<<<<<< HEAD
       0
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
     ],
@@ -159,6 +168,37 @@
     "voicetypr-4mj": [
       200,
       0
+=======
+      -160
+    ],
+    "voicetypr-230": [
+      0,
+      1160
+    ],
+    "voicetypr-26k": [
+      0,
+      -1240
+    ],
+    "voicetypr-26t": [
+      0,
+      -440
+    ],
+    "voicetypr-28w": [
+      0,
+      920
+    ],
+    "voicetypr-313": [
+      0,
+      1240
+    ],
+    "voicetypr-43e": [
+      0,
+      -1080
+    ],
+    "voicetypr-4mj": [
+      200,
+      -80
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-52u": [
       600,
@@ -166,6 +206,7 @@
     ],
     "voicetypr-55t": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -270,13 +311,49 @@
     "voicetypr-718": [
       0,
       -1160
+=======
+      -1160
+    ],
+    "voicetypr-5bp": [
+      0,
+      1320
+    ],
+    "voicetypr-5cx": [
+      0,
+      -360
+    ],
+    "voicetypr-5l4": [
+      200,
+      0
+    ],
+    "voicetypr-5qq": [
+      0,
+      840
+    ],
+    "voicetypr-61b": [
+      0,
+      200
+    ],
+    "voicetypr-63v": [
+      0,
+      -520
+    ],
+    "voicetypr-6zw": [
+      0,
+      760
+    ],
+    "voicetypr-718": [
+      0,
+      -680
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-74y": [
       400,
-      -40
+      -200
     ],
     "voicetypr-7d9": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       -1560
@@ -375,10 +452,37 @@
     "voicetypr-9dx": [
       0,
       -840
+=======
+      600
+    ],
+    "voicetypr-7mc": [
+      0,
+      1080
+    ],
+    "voicetypr-7o1": [
+      400,
+      120
+    ],
+    "voicetypr-7t6": [
+      0,
+      -280
+    ],
+    "voicetypr-88a": [
+      0,
+      40
+    ],
+    "voicetypr-8b6": [
+      400,
+      200
+    ],
+    "voicetypr-9dx": [
+      0,
+      -760
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-9fj": [
       200,
-      80
+      160
     ],
     "voicetypr-9rt": [
       0,
@@ -473,12 +577,16 @@
     ],
     "voicetypr-ckm": [
       400,
-      40
+      -120
     ],
     "voicetypr-cre": [
       0,
+<<<<<<< HEAD
       -40
 >>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+=======
+      120
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-d0m": [
       0,
@@ -486,11 +594,19 @@
     ],
     "voicetypr-fet": [
       0,
+<<<<<<< HEAD
       1000
     ],
     "voicetypr-g4i": [
       0,
       1080
+=======
+      -40
+    ],
+    "voicetypr-g4i": [
+      0,
+      -1320
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-hb3": [
       0,
@@ -498,20 +614,46 @@
     ],
     "voicetypr-hca": [
       400,
-      200
+      40
     ],
     "voicetypr-lcq": [
       0,
+<<<<<<< HEAD
       -920
+=======
+      440
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ],
     "voicetypr-mt4": [
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
       0,
+<<<<<<< HEAD
       -200
     ],
     "voicetypr-fet": [
+=======
+      280
+    ],
+    "voicetypr-ra2": [
       0,
-      -1400
+      1000
+    ],
+    "voicetypr-rsc": [
+      0,
+      680
+    ],
+    "voicetypr-s2q": [
+      0,
+      1400
+    ],
+    "voicetypr-u6d": [
+      0,
+      360
+    ],
+    "voicetypr-vop": [
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
+      0,
+      520
     ],
     "voicetypr-g4i": [
       0,
@@ -608,6 +750,7 @@
     ],
     "voicetypr-x0y": [
       0,
+<<<<<<< HEAD
       -1800
     ],
     "voicetypr-xf6": [
@@ -671,6 +814,17 @@
       400,
       120
 >>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+=======
+      -1000
+    ],
+    "voicetypr-xis": [
+      0,
+      -120
+    ],
+    "voicetypr-yw1": [
+      400,
+      -40
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ]
   },
   "metrics": {
@@ -1718,11 +1872,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:25Z",
   "node_count": 76,
   "edge_count": 29
 =======
   "generated_at": "2026-01-15T04:24:08Z",
+=======
+  "generated_at": "2026-01-15T05:15:40Z",
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
   "node_count": 48,
 =======
   "generated_at": "2026-01-15T04:50:51Z",

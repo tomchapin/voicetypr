@@ -126,9 +126,13 @@ Low-effort items that clear the path forward:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Generated Jan 14, 2026 at 8:50 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
 =======
 *Generated Jan 14, 2026 at 8:57 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
 >>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+=======
+*Generated Jan 14, 2026 at 9:15 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+>>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
 
