@@ -1,5 +1,6 @@
 {
   "counts": {
+<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -25,6 +26,34 @@
     "node_count": 76,
     "edge_count": 29,
     "density": 0.005087719298245614,
+=======
+    "total": 49,
+    "open": 16,
+    "closed": 33,
+    "blocked": 5,
+    "actionable": 11,
+    "by_status": {
+      "closed": 33,
+      "in_progress": 6,
+      "open": 10
+    },
+    "by_type": {
+      "bug": 13,
+      "feature": 2,
+      "task": 34
+    },
+    "by_priority": {
+      "0": 7,
+      "1": 18,
+      "2": 22,
+      "3": 2
+    }
+  },
+  "graph": {
+    "node_count": 49,
+    "edge_count": 27,
+    "density": 0.011479591836734694,
+>>>>>>> 6d809d7 (chore(beads): update beads with fix status)
     "has_cycles": false,
     "phase2_ready": true
   },
