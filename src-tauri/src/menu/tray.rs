@@ -59,6 +59,7 @@ pub async fn build_tray_menu<R: tauri::Runtime>(
         if let Some(remote_state) = app.try_state::<AsyncMutex<RemoteSettings>>() {
             let settings = remote_state.lock().await;
             let active_id = settings.active_connection_id.clone();
+<<<<<<< HEAD
             let active_display = settings.get_active_connection().map(|c| c.display_name());
             let connections: Vec<(String, String)> = settings
                 .saved_connections
@@ -66,6 +67,35 @@ pub async fn build_tray_menu<R: tauri::Runtime>(
                 .map(|c| (c.id.clone(), c.display_name()))
                 .collect();
             (active_id, active_display, connections)
+=======
+
+            // Build connections list, always fetching fresh model info from servers
+            let mut connections: Vec<(String, String, Option<String>)> = Vec::new();
+            for conn in settings.saved_connections.iter() {
+                // Always try to fetch fresh status (server may have changed model)
+                let model = match fetch_server_status(&conn.host, conn.port, conn.password.as_deref()).await {
+                    Ok(status) => {
+                        log::debug!("Fetched model for '{}': {}", conn.display_name(), status.model);
+                        Some(status.model)
+                    }
+                    Err(e) => {
+                        // Fall back to cached model if fetch fails
+                        log::debug!("Could not fetch model for '{}': {}, using cached", conn.display_name(), e);
+                        conn.model.clone()
+                    }
+                };
+                connections.push((conn.id.clone(), conn.display_name(), model));
+            }
+
+            // Get active connection info
+            let active_conn_info = active_id.as_ref().and_then(|id| {
+                connections.iter().find(|(cid, _, _)| cid == id)
+            });
+            let active_display = active_conn_info.map(|(_, name, _)| name.clone());
+            let active_model = active_conn_info.and_then(|(_, _, model)| model.clone());
+
+            (active_id, active_display, active_model, connections)
+>>>>>>> b2e88ff (fix: always fetch fresh model name for remote servers in tray menu)
         } else {
             (None, None, Vec::new())
         }

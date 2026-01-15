@@ -1,8 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
-<<<<<<< HEAD
-    "generated_at": "2026-01-15T17:59:47.686541-08:00",
+    "generated_at": "2026-01-15T17:59:57.9906672-08:00",
     "phase2_ready": true,
     "issue_count": 76,
     "compute_time_ms": 0
@@ -16,49 +15,7 @@
       {
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
-        "score": 0.17862134322857667,
-=======
-    "generated_at": "2026-01-15T12:14:29.1119433-08:00",
-    "phase2_ready": true,
-    "issue_count": 60,
-    "compute_time_ms": 0
-  },
-  "quick_ref": {
-    "open_count": 22,
-    "actionable_count": 17,
-    "blocked_count": 5,
-    "in_progress_count": 12,
-    "top_picks": [
-      {
-        "id": "voicetypr-5qq",
-        "title": "Setup: Install and configure VoiceTypr on MacBook",
-        "score": 0.35511005894637326,
-        "reasons": [
-          "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
-          "📊 High centrality in dependency graph (PageRank: 62%)",
-          "⚡ Low effort, high impact - good starting point",
-          "✅ Currently unclaimed - available for work",
-          "🚨 High priority (P1) - prioritize this work"
-        ],
-        "unblocks": 2
-      },
-      {
-        "id": "voicetypr-4mj",
-        "title": "Bug: Remote server connection test fails with 'Load failed'",
-        "score": 0.2667742974008436,
-        "reasons": [
-          "🔓 Unblocks 1 item(s): voicetypr-hca",
-          "📊 High centrality in dependency graph (PageRank: 39%)",
-          "✅ Currently unclaimed - available for work",
-          "🚨 High priority (P0) - prioritize this work"
-        ],
-        "unblocks": 1
-      },
-      {
-        "id": "voicetypr-43e",
-        "title": "Frontend: Re-transcribe button and popout in History",
-        "score": 0.17697295121058967,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+        "score": 0.17862212036668096,
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -68,7 +25,7 @@
       {
         "id": "voicetypr-0k3",
         "title": "Test: Host local + remote client concurrent transcription",
-        "score": 0.1731333996116264,
+        "score": 0.17313418140897713,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
@@ -78,7 +35,7 @@
       {
         "id": "voicetypr-9fj",
         "title": "Test: Rapid sequential requests from single client",
-        "score": 0.1731332943371336,
+        "score": 0.17313407613589032,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
@@ -89,158 +46,38 @@
   },
   "recommendations": [
     {
-<<<<<<< HEAD
-=======
-      "id": "voicetypr-5qq",
-      "title": "Setup: Install and configure VoiceTypr on MacBook",
-      "type": "task",
-      "status": "open",
-      "priority": 1,
-      "labels": null,
-      "score": 0.35511005894637326,
-      "breakdown": {
-        "pagerank": 0.1371858648024927,
-        "betweenness": 0,
-        "blocker_ratio": 0.078,
-        "staleness": 0.0015462021348070989,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04725000000000001,
-        "urgency": 0.006206237705492213,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.6235721127386032,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.6,
-        "staleness_norm": 0.030924042696141976,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.47250000000000003,
-        "urgency_norm": 0.062062377054922124,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Quick win - start here for fast progress",
-      "reasons": [
-        "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
-        "📊 High centrality in dependency graph (PageRank: 62%)",
-        "⚡ Low effort, high impact - good starting point",
-        "✅ Currently unclaimed - available for work",
-        "🚨 High priority (P1) - prioritize this work"
-      ],
-      "unblocks_ids": [
-        "voicetypr-0k3",
-        "voicetypr-9fj"
-      ]
-    },
-    {
-      "id": "voicetypr-4mj",
-      "title": "Bug: Remote server connection test fails with 'Load failed'",
-      "type": "bug",
-      "status": "open",
-      "priority": 0,
-      "labels": null,
-      "score": 0.2667742974008436,
-      "breakdown": {
-        "pagerank": 0.08509299263875293,
-        "betweenness": 0.011428571428571429,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0013443791618113427,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.04725000000000001,
-        "urgency": 0.005442053713033213,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.3867863301761497,
-        "betweenness_norm": 0.05714285714285714,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.026887583236226854,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.47250000000000003,
-        "urgency_norm": 0.054420537130332125,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Start work on this issue",
-      "reasons": [
-        "🔓 Unblocks 1 item(s): voicetypr-hca",
-        "📊 High centrality in dependency graph (PageRank: 39%)",
-        "✅ Currently unclaimed - available for work",
-        "🚨 High priority (P0) - prioritize this work"
-      ],
-      "unblocks_ids": [
-        "voicetypr-hca"
-      ]
-    },
-    {
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.17862134322857667,
+      "score": 0.17862212036668096,
       "breakdown": {
         "pagerank": 0.04699322980908016,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0019197210713946759,
+        "staleness": 0.0019199198392611883,
         "priority_boost": 0.05,
         "time_to_impact": 0.04025,
-        "urgency": 0.007622850231739454,
-        "risk": 0.002062837980228876,
+        "urgency": 0.00762357221550184,
+        "risk": 0.0020628315087226254,
         "pagerank_norm": 0.21360559004127347,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.03839442142789352,
+        "staleness_norm": 0.03839839678522376,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07622850231739453,
-        "risk_norm": 0.02062837980228876,
-=======
-      "score": 0.17697295121058967,
-      "breakdown": {
-        "pagerank": 0.046993308738787695,
-        "betweenness": 0,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0015200572095563272,
-        "priority_boost": 0.05,
-        "time_to_impact": 0.04025,
-        "urgency": 0.006145988417055598,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.21360594881267134,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.030401144191126543,
-        "priority_boost_norm": 0.5,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.06145988417055598,
-        "risk_norm": 0.020000000000000004,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+        "urgency_norm": 0.07623572215501839,
+        "risk_norm": 0.020628315087226252,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
-          "activity_churn": 0.0020945993409625142,
+          "activity_churn": 0.0020943836240874905,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.02062837980228876,
+          "composite_risk": 0.020628315087226252,
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -254,98 +91,29 @@
       ]
     },
     {
-<<<<<<< HEAD
-=======
-      "id": "voicetypr-hca",
-      "title": "Test: Remote transcription end-to-end verification",
-      "type": "task",
-      "status": "in_progress",
-      "priority": 0,
-      "labels": null,
-      "score": 0.16665644255917544,
-      "breakdown": {
-        "pagerank": 0.05080963281072621,
-        "betweenness": 0.011428571428571429,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.001512420364506173,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.04025,
-        "urgency": 0.0060800076235896896,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.23095287641239184,
-        "betweenness_norm": 0.05714285714285714,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.030248407290123458,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.060800076235896894,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Work on voicetypr-4mj first to unblock this",
-      "reasons": [
-        "🚧 In progress - already being worked",
-        "⏳ Blocked by voicetypr-4mj - complete that first",
-        "🚨 High priority (P0) - prioritize this work"
-      ],
-      "blocked_by": [
-        "voicetypr-4mj"
-      ]
-    },
-    {
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       "id": "voicetypr-0k3",
       "title": "Test: Host local + remote client concurrent transcription",
       "type": "task",
       "status": "open",
       "priority": 1,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.1731333996116264,
+      "score": 0.17313418140897713,
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0019458358167341824,
+        "staleness": 0.0019460345846006944,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.007680961045416979,
+        "urgency": 0.007681682039139587,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.038916716334683646,
+        "staleness_norm": 0.038920691692013884,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07680961045416979,
-=======
-      "score": 0.1614495433464752,
-      "breakdown": {
-        "pagerank": 0.05080963281072621,
-        "betweenness": 0,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0015461719548958335,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04025,
-        "urgency": 0.0062061244174719645,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.23095287641239184,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.03092343909791667,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.06206124417471964,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+        "urgency_norm": 0.07681682039139587,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -371,43 +139,23 @@
       "status": "open",
       "priority": 1,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.1731332943371336,
+      "score": 0.17313407613589032,
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0019458090514506176,
+        "staleness": 0.0019460078193171298,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.0076808639583560885,
+        "urgency": 0.0076815849537327785,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.03891618102901235,
+        "staleness_norm": 0.038920156386342594,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07680863958356088,
-=======
-      "score": 0.16144944155777916,
-      "breakdown": {
-        "pagerank": 0.05080963281072621,
-        "betweenness": 0,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0015461451896122687,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04025,
-        "urgency": 0.006206023946885426,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.23095287641239184,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.03092290379224537,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.06206023946885425,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+        "urgency_norm": 0.07681584953732778,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -433,23 +181,23 @@
       "status": "open",
       "priority": 1,
       "labels": null,
-      "score": 0.13635436972726858,
+      "score": 0.13635510552461774,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.001946076964982639,
+        "staleness": 0.0019462757328491513,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.03325,
-        "urgency": 0.007681835764558532,
+        "urgency": 0.0076825567433784605,
         "risk": 0.010660254037844387,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.03892153929965278,
+        "staleness_norm": 0.038925514656983025,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.07681835764558531,
+        "urgency_norm": 0.0768255674337846,
         "risk_norm": 0.10660254037844386,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -469,188 +217,6 @@
         "🚨 High priority (P1) - prioritize this work"
       ],
       "blocked_by": [
-<<<<<<< HEAD
-=======
-        "voicetypr-5qq"
-      ]
-    },
-    {
-      "id": "voicetypr-ra2",
-      "title": "Copy address button needs interactive hover/click states",
-      "type": "task",
-      "status": "open",
-      "priority": 1,
-      "labels": null,
-      "score": 0.1351347918166783,
-      "breakdown": {
-        "pagerank": 0.04190487664286968,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.0011401779508912037,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.03325,
-        "urgency": 0.00568705342586065,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.190476712013044,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.022803559017824073,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.0568705342586065,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Start work on this issue",
-      "reasons": [
-        "✅ Currently unclaimed - available for work",
-        "🚨 High priority (P1) - prioritize this work"
-      ]
-    },
-    {
-      "id": "voicetypr-718",
-      "title": "Bug: Remote server selection not working - transcription uses local model, tray menu missing remotes",
-      "type": "bug",
-      "status": "in_progress",
-      "priority": 0,
-      "labels": null,
-      "score": 0.12847761983770672,
-      "breakdown": {
-        "pagerank": 0.04190487664286968,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.0011401780008603397,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.03325,
-        "urgency": 0.005244402267279586,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.190476712013044,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.022803560017206792,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.052444022672795854,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Continue work on this issue",
-      "reasons": [
-        "🚧 In progress - already being worked",
-        "🚨 High priority (P0) - prioritize this work"
-      ]
-    },
-    {
-      "id": "voicetypr-26k",
-      "title": "Bug: Remote servers not loading on app startup - tray menu shows empty",
-      "type": "bug",
-      "status": "in_progress",
-      "priority": 0,
-      "labels": null,
-      "score": 0.12827385262667776,
-      "breakdown": {
-        "pagerank": 0.04190487664286968,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.001197670041691744,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.03325,
-        "urgency": 0.004895814210692529,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.190476712013044,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.02395340083383488,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.048958142106925284,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Continue work on this issue",
-      "reasons": [
-        "🚧 In progress - already being worked",
-        "🚨 High priority (P0) - prioritize this work"
-      ]
-    },
-    {
-      "id": "voicetypr-0sn",
-      "title": "Bug: Dashboard Models page doesn't show active remote server selection",
-      "type": "bug",
-      "status": "in_progress",
-      "priority": 0,
-      "labels": null,
-      "score": 0.12824819252026887,
-      "breakdown": {
-        "pagerank": 0.04190487664286968,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.00119367265828125,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.03325,
-        "urgency": 0.0048631542992331744,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.190476712013044,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.023873453165625,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.048631542992331744,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Continue work on this issue",
-      "reasons": [
-        "🚧 In progress - already being worked",
-        "🚨 High priority (P0) - prioritize this work"
-      ]
-    }
-  ],
-  "quick_wins": [
-    {
-      "id": "voicetypr-5qq",
-      "title": "Setup: Install and configure VoiceTypr on MacBook",
-      "score": 0.7339850002884626,
-      "reason": "Unblocks 2 items, high priority",
-      "unblocks_ids": [
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
         "voicetypr-0k3",
         "voicetypr-9fj"
       ]
@@ -662,23 +228,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-      "score": 0.11426125701868102,
+      "score": 0.11426206567648937,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.0014440591116705247,
+        "staleness": 0.001444257879537037,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.005826153753901071,
+        "urgency": 0.005826906348162042,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.028881182233410494,
+        "staleness_norm": 0.02888515759074074,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.0582615375390107,
+        "urgency_norm": 0.05826906348162042,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -703,23 +269,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-      "score": 0.1100241238838511,
+      "score": 0.11002499017498377,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.000438976532966821,
+        "staleness": 0.0004391753008333333,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0018463738210401925,
+        "urgency": 0.0018471942192121171,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.00877953065933642,
+        "staleness_norm": 0.008783506016666666,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.018463738210401925,
+        "urgency_norm": 0.01847194219212117,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -744,23 +310,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-      "score": 0.10928854407181711,
+      "score": 0.10928942046510473,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.00027117718167438273,
+        "staleness": 0.00027137594954089505,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0011487851581749753,
+        "urgency": 0.0011496174412351013,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.005423543633487654,
+        "staleness_norm": 0.005427518990817901,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.011487851581749753,
+        "urgency_norm": 0.011496174412351012,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -785,23 +351,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-      "score": 0.10889651473338204,
+      "score": 0.10889739652207002,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.0001825372082561728,
+        "staleness": 0.0001827359761226852,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0007762141451989947,
+        "urgency": 0.000777052775788939,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.003650744165123456,
+        "staleness_norm": 0.003654719522453704,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.007762141451989946,
+        "urgency_norm": 0.007770527757889389,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -826,32 +392,32 @@
       "status": "open",
       "priority": 3,
       "labels": null,
-      "score": 0.09121917703174376,
+      "score": 0.09121970249364611,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.0015398419355439814,
+        "staleness": 0.001540040703410494,
         "priority_boost": 0.025,
         "time_to_impact": 0.03325,
-        "urgency": 0.007742897729499449,
-        "risk": 0.00458643623293611,
+        "urgency": 0.007743617668000547,
+        "risk": 0.004586174353946408,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.030796838710879626,
+        "staleness_norm": 0.030800814068209878,
         "priority_boost_norm": 0.25,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.07742897729499448,
-        "risk_norm": 0.04586436232936109,
+        "urgency_norm": 0.07743617668000546,
+        "risk_norm": 0.045861743539464074,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
-          "activity_churn": 0.0862145410978703,
+          "activity_churn": 0.08620581179821357,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.04586436232936109,
+          "composite_risk": 0.045861743539464074,
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -871,23 +437,23 @@
       "status": "open",
       "priority": 3,
       "labels": null,
-      "score": 0.08800804477767105,
+      "score": 0.08800892159042971,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.00026426157914737655,
+        "staleness": 0.0002644603470138889,
         "priority_boost": 0.025,
         "time_to_impact": 0.03325,
-        "urgency": 0.001119819238177222,
+        "urgency": 0.0011206520147326426,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.005285231582947531,
+        "staleness_norm": 0.005289206940277778,
         "priority_boost_norm": 0.25,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.01119819238177222,
+        "urgency_norm": 0.011206520147326426,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -954,7 +520,6 @@
   ],
   "project_health": {
     "counts": {
-<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -980,39 +545,10 @@
       "node_count": 76,
       "edge_count": 29,
       "density": 0.005087719298245614,
-=======
-      "total": 60,
-      "open": 22,
-      "closed": 38,
-      "blocked": 5,
-      "actionable": 17,
-      "by_status": {
-        "closed": 38,
-        "in_progress": 12,
-        "open": 10
-      },
-      "by_type": {
-        "bug": 19,
-        "feature": 5,
-        "task": 36
-      },
-      "by_priority": {
-        "0": 8,
-        "1": 22,
-        "2": 28,
-        "3": 2
-      }
-    },
-    "graph": {
-      "node_count": 60,
-      "edge_count": 27,
-      "density": 0.007627118644067797,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       "has_cycles": false,
       "phase2_ready": true
     },
     "velocity": {
-<<<<<<< HEAD
       "closed_last_7_days": 66,
       "closed_last_30_days": 66,
       "avg_days_to_close": 0.2242851113066253,
@@ -1020,15 +556,6 @@
         {
           "week_start": "2026-01-12T00:00:00Z",
           "closed": 66
-=======
-      "closed_last_7_days": 38,
-      "closed_last_30_days": 38,
-      "avg_days_to_close": 0.06021483461680677,
-      "weekly": [
-        {
-          "week_start": "2026-01-12T00:00:00Z",
-          "closed": 38
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
         },
         {
           "week_start": "2026-01-05T00:00:00Z",

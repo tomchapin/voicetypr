@@ -1,6 +1,5 @@
 {
   "counts": {
-<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -26,39 +25,10 @@
     "node_count": 76,
     "edge_count": 29,
     "density": 0.005087719298245614,
-=======
-    "total": 60,
-    "open": 22,
-    "closed": 38,
-    "blocked": 5,
-    "actionable": 17,
-    "by_status": {
-      "closed": 38,
-      "in_progress": 12,
-      "open": 10
-    },
-    "by_type": {
-      "bug": 19,
-      "feature": 5,
-      "task": 36
-    },
-    "by_priority": {
-      "0": 8,
-      "1": 22,
-      "2": 28,
-      "3": 2
-    }
-  },
-  "graph": {
-    "node_count": 60,
-    "edge_count": 27,
-    "density": 0.007627118644067797,
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     "has_cycles": false,
     "phase2_ready": true
   },
   "velocity": {
-<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -66,15 +36,6 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
-=======
-    "closed_last_7_days": 38,
-    "closed_last_30_days": 38,
-    "avg_days_to_close": 0.06021483461680677,
-    "weekly": [
-      {
-        "week_start": "2026-01-12T00:00:00Z",
-        "closed": 38
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",

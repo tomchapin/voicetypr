@@ -1,7 +1,7 @@
 {
-  "last_failure": "2026-01-15T17:59:25.6189315-08:00",
-  "failure_count": 1,
-  "backoff_until": "2026-01-15T17:59:55.6189315-08:00",
+  "last_failure": "2026-01-15T17:59:57.5823635-08:00",
+  "failure_count": 2,
+  "backoff_until": "2026-01-15T18:00:57.5823635-08:00",
   "needs_manual_sync": false,
-  "failure_reason": "git pull failed: exit status 128\nerror: Pulling is not possible because you have unmerged files.\nhint: Fix them up in the work tree, and then use 'git add/rm \u003cfile\u003e'\nhint: as appropriate to mark resolution and make a commit.\nfatal: Exiting because of an unresolved conflict.\n"
+  "failure_reason": "git pull failed: exit status 1\nfatal: couldn't find remote ref feature/remote-transcription-clean\n"
 }

@@ -2,9 +2,5 @@
   "chunked": false,
   "chunk_count": 0,
   "chunk_size": 0,
-<<<<<<< HEAD
   "total_size": 279552
-=======
-  "total_size": 218112
->>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
 }
