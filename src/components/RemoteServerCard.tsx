@@ -83,9 +83,16 @@ export function RemoteServerCard({
   return (
     <Card
       className={cn(
+<<<<<<< HEAD
         "px-4 py-3 border-border/50 transition cursor-pointer",
         "hover:border-border",
         isActive && "bg-primary/5 border-primary/30"
+=======
+        "px-4 py-3 border transition cursor-pointer",
+        isActive
+          ? "bg-primary/8 border-primary/50 ring-2 ring-primary/20"
+          : "border-border/50 hover:border-border"
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       )}
       onClick={() => status === "online" && onSelect(server.id)}
     >

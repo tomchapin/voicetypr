@@ -3,6 +3,7 @@
     "version": "1.0.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "generated_at": "2026-01-15T17:59:25.5746815-08:00",
 =======
     "generated_at": "2026-01-14T20:24:08.782895-08:00",
@@ -18,13 +19,16 @@
     "in_progress_count": 0,
 =======
     "generated_at": "2026-01-14T20:50:51.46563-08:00",
+=======
+    "generated_at": "2026-01-14T20:57:13.092354-08:00",
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
     "phase2_ready": true,
-    "issue_count": 49,
+    "issue_count": 48,
     "compute_time_ms": 0
   },
   "quick_ref": {
-    "open_count": 16,
-    "actionable_count": 11,
+    "open_count": 15,
+    "actionable_count": 10,
     "blocked_count": 5,
     "in_progress_count": 6,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
@@ -38,10 +42,14 @@
         "id": "voicetypr-5qq",
         "title": "Setup: Install and configure VoiceTypr on MacBook",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "score": 0.3504945326922516,
 =======
         "score": 0.35062908138060855,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "score": 0.35066105532742475,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "reasons": [
           "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
           "📊 High centrality in dependency graph (PageRank: 62%)",
@@ -55,10 +63,14 @@
         "id": "voicetypr-4mj",
         "title": "Bug: Remote server connection test fails with 'Load failed'",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "score": 0.2620946216140634,
 =======
         "score": 0.26223105518794676,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "score": 0.28776348226459775,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-hca",
           "📊 High centrality in dependency graph (PageRank: 39%)",
@@ -71,11 +83,15 @@
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "score": 0.1723525134842885,
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 =======
         "score": 0.1724872022230402,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "score": 0.172519220451721,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -115,14 +131,19 @@
       "priority": 1,
       "labels": null,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "score": 0.3504945326922516,
 =======
       "score": 0.35062908138060855,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "score": 0.35066105532742475,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.1371855418678608,
+        "pagerank": 0.1371855207872378,
         "betweenness": 0,
         "blocker_ratio": 0.078,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness": 0.0004462729479185957,
         "priority_boost": 0.07500000000000001,
@@ -134,10 +155,17 @@
         "time_to_impact": 0.04725000000000001,
         "urgency": 0.002003835566528034,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness": 0.00048455052235918215,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.002034111428549762,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.6235706448539128,
+        "pagerank_norm": 0.6235705490328991,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.6,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness_norm": 0.008925458958371914,
         "priority_boost_norm": 0.75,
@@ -149,6 +177,12 @@
         "time_to_impact_norm": 0.47250000000000003,
         "urgency_norm": 0.02003835566528034,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness_norm": 0.009691010447183642,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.02034111428549762,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -182,14 +216,19 @@
       "priority": 0,
       "labels": null,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "score": 0.2620946216140634,
 =======
       "score": 0.26223105518794676,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "score": 0.28776348226459775,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.08509274744879342,
+        "pagerank": 0.08509273116016432,
         "betweenness": 0.011428571428571429,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness": 0.00024444997492283955,
         "priority_boost": 0.1,
@@ -205,28 +244,36 @@
         "urgency_norm": 0.010367434528865516,
 =======
         "staleness": 0.00027536592274305554,
+=======
+        "staleness": 0.000282727549363426,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "priority_boost": 0.1,
         "time_to_impact": 0.04725000000000001,
-        "urgency": 0.0011663213033588915,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.3867852156763337,
+        "urgency": 0.0011971254673100009,
+        "risk": 0.032,
+        "pagerank_norm": 0.38678514163711053,
         "betweenness_norm": 0.05714285714285714,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.00550731845486111,
+        "staleness_norm": 0.005654550987268519,
         "priority_boost_norm": 1,
         "time_to_impact_norm": 0.47250000000000003,
+<<<<<<< HEAD
         "urgency_norm": 0.011663213033588915,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
         "risk_norm": 0.020000000000000004,
+=======
+        "urgency_norm": 0.011971254673100007,
+        "risk_norm": 0.32,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_explanation": "Risk factors: high activity churn",
         "risk_signals": {
           "fan_variance": 0,
-          "activity_churn": 0,
+          "activity_churn": 1,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
+          "composite_risk": 0.32,
+          "explanation": "Risk factors: high activity churn"
         }
       },
       "action": "Start work on this issue",
@@ -242,13 +289,63 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
+=======
+      "id": "voicetypr-hca",
+      "title": "Test: Remote transcription end-to-end verification",
+      "type": "task",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.18398426676156246,
+      "breakdown": {
+        "pagerank": 0.050809470910891726,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0004507687520582562,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0018958557107106812,
+        "risk": 0.032,
+        "pagerank_norm": 0.2309521405040533,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.009015375041165124,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.01895855710710681,
+        "risk_norm": 0.32,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Risk factors: high activity churn",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 1,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.32,
+          "explanation": "Risk factors: high activity churn"
+        }
+      },
+      "action": "Work on voicetypr-4mj first to unblock this",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "⏳ Blocked by voicetypr-4mj - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
 <<<<<<< HEAD
       "score": 0.1786196755187215,
 =======
@@ -402,23 +499,30 @@
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 =======
       "score": 0.1724872022230402,
+=======
+      "score": 0.172519220451721,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.04699315382342,
+        "pagerank": 0.04699314318707725,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.00045104397048804007,
+        "staleness": 0.0004584055971084105,
         "priority_boost": 0.05,
         "time_to_impact": 0.04025,
-        "urgency": 0.0019378048214334033,
+        "urgency": 0.001968122335486111,
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.21360524465190908,
+        "pagerank_norm": 0.21360519630489658,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.0090208794097608,
+        "staleness_norm": 0.00916811194216821,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.40249999999999997,
+<<<<<<< HEAD
         "urgency_norm": 0.01937804821433403,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "urgency_norm": 0.01968122335486111,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -443,75 +547,29 @@
       ]
     },
     {
-      "id": "voicetypr-hca",
-      "title": "Test: Remote transcription end-to-end verification",
-      "type": "task",
-      "status": "in_progress",
-      "priority": 0,
-      "labels": null,
-      "score": 0.16295786671422627,
-      "breakdown": {
-        "pagerank": 0.05080948131260927,
-        "betweenness": 0.011428571428571429,
-        "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0004434071254378859,
-        "priority_boost": 0.1,
-        "time_to_impact": 0.04025,
-        "urgency": 0.001865492582276057,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.2309521877845876,
-        "betweenness_norm": 0.05714285714285714,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.008868142508757717,
-        "priority_boost_norm": 1,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.01865492582276057,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Work on voicetypr-4mj first to unblock this",
-      "reasons": [
-        "🚧 In progress - already being worked",
-        "⏳ Blocked by voicetypr-4mj - complete that first",
-        "🚨 High priority (P0) - prioritize this work"
-      ],
-      "blocked_by": [
-        "voicetypr-4mj"
-      ]
-    },
-    {
       "id": "voicetypr-0k3",
       "title": "Test: Host local + remote client concurrent transcription",
       "type": "task",
       "status": "open",
       "priority": 1,
       "labels": null,
-      "score": 0.1572322811487588,
+      "score": 0.15726238288095382,
       "breakdown": {
-        "pagerank": 0.05080948131260927,
+        "pagerank": 0.050809470910891726,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.0004771587158275464,
+        "staleness": 0.00048452034244791665,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.0020037114075116993,
+        "urgency": 0.0020339873478526283,
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.2309521877845876,
+        "pagerank_norm": 0.2309521405040533,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.009543174316550928,
+        "staleness_norm": 0.009690406848958333,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.02003711407511699,
+        "urgency_norm": 0.020339873478526282,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -538,6 +596,7 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "score": 0.17313161662210055,
@@ -576,23 +635,30 @@
 >>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 =======
       "score": 0.15723217164722356,
+=======
+      "score": 0.15726227343498508,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.05080948131260927,
+        "pagerank": 0.050809470910891726,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-        "staleness": 0.00047713195054398147,
+        "staleness": 0.0004844935771643519,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.0020036012958761676,
+        "urgency": 0.0020338773056752467,
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.2309521877845876,
+        "pagerank_norm": 0.2309521405040533,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.009542639010879629,
+        "staleness_norm": 0.009689871543287038,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
+<<<<<<< HEAD
         "urgency_norm": 0.020036012958761673,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "urgency_norm": 0.02033877305675247,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -661,8 +727,53 @@
       ]
     },
     {
+<<<<<<< HEAD
 =======
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "id": "voicetypr-718",
+      "title": "Bug: Remote server selection not working - transcription uses local model, tray menu missing remotes",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.14574971379827215,
+      "breakdown": {
+        "pagerank": 0.041904706221991286,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00007852638841242284,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0009806442442707676,
+        "risk": 0.032,
+        "pagerank_norm": 0.19047593737268767,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0015705277682484568,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.009806442442707675,
+        "risk_norm": 0.32,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Risk factors: high activity churn",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 1,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.32,
+          "explanation": "Risk factors: high activity churn"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    },
+    {
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "id": "voicetypr-88a",
       "title": "Network Sharing uses old model despite auto-restart",
       "type": "bug",
@@ -670,14 +781,19 @@
       "priority": 1,
       "labels": null,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "score": 0.13058309896527803,
 =======
       "score": 0.13071878513119436,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "score": 0.13069559108369783,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.04190471717116765,
+        "pagerank": 0.041904706221991286,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness": 0.00010548298487654321,
         "priority_boost": 0.07500000000000001,
@@ -689,10 +805,17 @@
         "time_to_impact": 0.03325,
         "urgency": 0.0014956899328348262,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness": 0.0000785263681385031,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0015262863318676713,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.19047598714167113,
+        "pagerank_norm": 0.19047593737268767,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness_norm": 0.002109659697530864,
         "priority_boost_norm": 0.75,
@@ -704,6 +827,12 @@
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.014956899328348261,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness_norm": 0.0015705273627700618,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.015262863318676712,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -730,14 +859,19 @@
       "priority": 1,
       "labels": null,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "score": 0.1305312542484376,
 =======
       "score": 0.13066707767787347,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "score": 0.1306438935322587,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.04190471717116765,
+        "pagerank": 0.041904706221991286,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness": 0.000105509695621142,
         "priority_boost": 0.07500000000000001,
@@ -749,10 +883,17 @@
         "time_to_impact": 0.03325,
         "urgency": 0.0014348309240656222,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness": 0.00007852633844328704,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0014654657128109429,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.19047598714167113,
+        "pagerank_norm": 0.19047593737268767,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness_norm": 0.0021101939124228398,
         "priority_boost_norm": 0.75,
@@ -764,6 +905,12 @@
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.01434830924065622,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness_norm": 0.0015705267688657406,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.014654657128109427,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -783,6 +930,7 @@
       ]
     },
     {
+<<<<<<< HEAD
       "id": "voicetypr-718",
       "title": "Bug: Remote server selection not working - transcription uses local model, tray menu missing remotes",
       "type": "bug",
@@ -845,6 +993,8 @@
       ]
     },
     {
+=======
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "id": "voicetypr-26k",
       "title": "Bug: Remote servers not loading on app startup - tray menu shows empty",
       "type": "bug",
@@ -852,14 +1002,19 @@
       "priority": 0,
       "labels": null,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "score": 0.12438226217837223,
 =======
       "score": 0.12449572745541607,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "score": 0.12452270018592569,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "breakdown": {
-        "pagerank": 0.04190471717116765,
+        "pagerank": 0.041904706221991286,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness": 0.00009774085480324075,
         "priority_boost": 0.1,
@@ -871,10 +1026,17 @@
         "time_to_impact": 0.03325,
         "urgency": 0.0005676652482318522,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness": 0.00013601842924382715,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0005988470429444504,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.19047598714167113,
+        "pagerank_norm": 0.19047593737268767,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
         "staleness_norm": 0.0019548170960648147,
         "priority_boost_norm": 1,
@@ -886,6 +1048,12 @@
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.005676652482318523,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "staleness_norm": 0.002720368584876543,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.0059884704294445035,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -1217,6 +1385,7 @@
   "project_health": {
     "counts": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -1245,31 +1414,39 @@
 =======
       "total": 49,
       "open": 16,
+=======
+      "total": 48,
+      "open": 15,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "closed": 33,
       "blocked": 5,
-      "actionable": 11,
+      "actionable": 10,
       "by_status": {
         "closed": 33,
         "in_progress": 6,
-        "open": 10
+        "open": 9
       },
       "by_type": {
-        "bug": 13,
+        "bug": 12,
         "feature": 2,
         "task": 34
       },
       "by_priority": {
         "0": 7,
         "1": 18,
-        "2": 22,
+        "2": 21,
         "3": 2
       }
     },
     "graph": {
-      "node_count": 49,
+      "node_count": 48,
       "edge_count": 27,
+<<<<<<< HEAD
       "density": 0.011479591836734694,
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+      "density": 0.011968085106382979,
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       "has_cycles": false,
       "phase2_ready": true
     },

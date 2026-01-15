@@ -4,6 +4,7 @@
   "chunk_size": 0,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "total_size": 279552
 =======
   "total_size": 171008
@@ -11,4 +12,7 @@
 =======
   "total_size": 172032
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+  "total_size": 184320
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
 }

@@ -1,6 +1,7 @@
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:25Z",
   "commits": null
 =======
@@ -8,6 +9,9 @@
 =======
   "generated_at": "2026-01-15T04:50:51Z",
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+  "generated_at": "2026-01-15T04:57:13Z",
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
   "commits": [
     {
       "sha": "e406997154b2fceac5cd3b2e5ea73989e2fd33a9",
@@ -41,6 +45,7 @@
       "message": "fix(remote): Network Sharing model sync and UI improvements",
       "beads_added": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "voicetypr-rsc",
         "voicetypr-x0y",
         "voicetypr-63v",
@@ -50,13 +55,20 @@
         "voicetypr-fet"
 =======
         "voicetypr-63v",
+=======
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
         "voicetypr-5cx",
-        "voicetypr-7d9",
         "voicetypr-fet",
-        "voicetypr-rsc",
+        "voicetypr-26t",
         "voicetypr-x0y",
+<<<<<<< HEAD
         "voicetypr-26t"
 >>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+=======
+        "voicetypr-63v",
+        "voicetypr-7d9",
+        "voicetypr-rsc"
+>>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       ]
     },
     {
@@ -80,9 +92,9 @@
       "date": "2026-01-14T20:00:56-08:00",
       "message": "debug: add extensive logging for remote server selection",
       "beads_added": [
-        "voicetypr-ra2",
+        "voicetypr-5l4",
         "voicetypr-88a",
-        "voicetypr-5l4"
+        "voicetypr-ra2"
       ]
     },
     {
