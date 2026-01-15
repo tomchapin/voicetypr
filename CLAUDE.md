@@ -124,6 +124,67 @@ IMPORTANT: Read `CLAUDE.local.md` for any local changes.
 
 This project uses **Beads** (git-backed issue tracker) and **Git Worktrees** for parallel async development by multiple Claude Code agents.
 
+### First-Time Setup (Bootstrap)
+
+**Prerequisites:** Go 1.21+ (for building from source) or use package managers.
+
+#### Install Beads CLI (`bd`)
+
+**macOS/Linux (Homebrew - recommended):**
+```bash
+brew install steveyegge/beads/bd
+```
+
+**macOS/Linux (curl script):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+```
+
+**npm (any platform):**
+```bash
+npm install -g @beads/bd
+```
+
+**Go (any platform):**
+```bash
+go install github.com/steveyegge/beads/cmd/bd@latest
+```
+
+#### Install Beads Viewer (`bv`)
+
+**macOS/Linux (curl script - recommended):**
+```bash
+curl -fsSL "https://raw.githubusercontent.com/Dicklesworthstone/beads_viewer/main/install.sh" | bash
+```
+
+**Windows (PowerShell):**
+```powershell
+irm "https://raw.githubusercontent.com/Dicklesworthstone/beads_viewer/main/install.ps1" | iex
+```
+
+**Go (any platform):**
+```bash
+git clone https://github.com/Dicklesworthstone/beads_viewer.git
+cd beads_viewer
+go install ./cmd/bv
+```
+
+#### Initialize Beads (if not already done)
+
+```bash
+bd init
+```
+
+This creates the `.beads/` directory. The project should already have this initialized.
+
+#### Verify Installation
+
+```bash
+bd --version    # Should show version
+bv --version    # Should show version
+bd list         # Should show project issues
+```
+
 ### Beads Issue Tracking
 
 **Source repositories:**

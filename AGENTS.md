@@ -91,6 +91,36 @@ This project uses **Beads** for issue tracking across multiple Claude Code agent
 - **beads** (`bd`): https://github.com/steveyegge/beads - Git-backed issue tracker
 - **beads_viewer** (`bv`): https://github.com/Dicklesworthstone/beads_viewer - Dashboard UI
 
+### First-Time Setup (Bootstrap)
+
+If `bd` or `bv` commands are not found, install them:
+
+**Install `bd` (Beads CLI):**
+```bash
+# macOS/Linux (Homebrew)
+brew install steveyegge/beads/bd
+
+# Or via curl
+curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+
+# Or via npm
+npm install -g @beads/bd
+```
+
+**Install `bv` (Beads Viewer):**
+```bash
+# macOS/Linux
+curl -fsSL "https://raw.githubusercontent.com/Dicklesworthstone/beads_viewer/main/install.sh" | bash
+
+# Windows (PowerShell)
+irm "https://raw.githubusercontent.com/Dicklesworthstone/beads_viewer/main/install.ps1" | iex
+```
+
+**Verify installation:**
+```bash
+bd --version && bv --version && bd list
+```
+
 ### Session Startup (REQUIRED - DO THIS FIRST)
 
 **You MUST start the beads watch daemon at the beginning of every session.**
