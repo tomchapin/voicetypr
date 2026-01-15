@@ -196,18 +196,72 @@ pub async fn list_remote_servers(
     Ok(settings.list_connections())
 }
 
+<<<<<<< HEAD
 /// Test connection to a remote server
+=======
+/// Test connection to a remote server by host/port/password (before saving)
+/// Returns specific error types: "connection_failed", "auth_failed", or success
+#[tauri::command]
+pub async fn test_remote_connection(
+    host: String,
+    port: u16,
+    password: Option<String>,
+) -> Result<StatusResponse, String> {
+    test_connection(&host, port, password.as_deref()).await
+}
+
+/// Test connection to a saved remote server
+/// Also updates the cached model if it changed and refreshes the tray menu
+>>>>>>> e63bb79 (fix: sync tray menu when remote server model changes)
 #[tauri::command]
 pub async fn test_remote_server(
+    app: AppHandle,
     server_id: String,
     remote_settings: State<'_, AsyncMutex<RemoteSettings>>,
 ) -> Result<StatusResponse, String> {
-    let settings = remote_settings.lock().await;
-    let connection = settings
-        .get_connection(&server_id)
-        .ok_or_else(|| format!("Server '{}' not found", server_id))?;
+    // Get connection info and cached model
+    let (connection, cached_model) = {
+        let settings = remote_settings.lock().await;
+        let conn = settings
+            .get_connection(&server_id)
+            .ok_or_else(|| format!("Server '{}' not found", server_id))?
+            .clone();
+        let cached = conn.model.clone();
+        (conn, cached)
+    };
 
-    test_connection(&connection.host, connection.port, connection.password.as_deref()).await
+    // Test the connection
+    let status = test_connection(&connection.host, connection.port, connection.password.as_deref()).await?;
+
+    // Check if model changed and update if needed
+    let new_model = Some(status.model.clone());
+    if cached_model != new_model {
+        log::info!(
+            "🔄 [REMOTE] Model changed for '{}': {:?} -> {:?}",
+            connection.display_name(),
+            cached_model,
+            new_model
+        );
+
+        // Update the cached model
+        {
+            let mut settings = remote_settings.lock().await;
+            if let Some(conn) = settings.saved_connections.iter_mut().find(|c| c.id == server_id) {
+                conn.model = new_model;
+            }
+            // Save updated settings
+            save_remote_settings(&app, &settings)?;
+        }
+
+        // Refresh tray menu to show new model
+        if let Err(e) = crate::commands::settings::update_tray_menu(app.clone()).await {
+            log::warn!("🔄 [REMOTE] Failed to update tray menu after model change: {}", e);
+        } else {
+            log::info!("🔄 [REMOTE] Tray menu updated with new model");
+        }
+    }
+
+    Ok(status)
 }
 
 /// Set the active remote server for transcription
