@@ -144,8 +144,12 @@ bd comments add <id> "..."    # Add progress notes
 3. Update status to `in_progress` before starting
 
 **After completing work:**
-1. Close the issue with `bd close <id> --reason="..."`
+1. **DO NOT close the issue yourself** - wait for user verification
 2. Commit your changes
+3. Inform the user the work is ready for testing
+4. Only close the issue with `bd close <id> --reason="..."` **after the user confirms** it's functionally complete
+
+**IMPORTANT:** Never close issues until a human has verified the feature works correctly. Tests passing is not sufficient - the user must confirm the actual functionality.
 
 ### Beads Dashboard (IMPORTANT)
 

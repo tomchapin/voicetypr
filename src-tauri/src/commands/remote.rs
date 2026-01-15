@@ -42,8 +42,9 @@ pub async fn start_sharing(
     });
 
     // Get current model from store, or auto-select first downloaded model
+    // NOTE: Must use "settings" store to match save_settings command
     let store = app
-        .store("voicetypr-store.json")
+        .store("settings")
         .map_err(|e| format!("Failed to access store: {}", e))?;
 
     let stored_model = store

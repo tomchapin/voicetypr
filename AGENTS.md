@@ -107,12 +107,21 @@ Dashboard at: http://127.0.0.1:9001
 bd ready                          # Find available work (no blockers)
 bd list --status=in_progress      # See what others are working on
 bd update <id> --status=in_progress  # Claim work before starting
-bd close <id> --reason="..."      # Mark complete when done
+bd close <id> --reason="..."      # ONLY after user confirms completion
 
 # Force sync if stale:
 # macOS/Linux: bd export > .beads/issues.jsonl
 # Windows:     bd export | Out-File .beads/issues.jsonl -Encoding utf8
 ```
+
+### Issue Closure Policy (CRITICAL)
+
+**NEVER close issues (`bd close`) until a human has verified the work is functionally complete.**
+
+- Tests passing is NOT sufficient for closure
+- The user must confirm the feature works correctly in the actual app
+- Keep issues `in_progress` until user gives explicit approval
+- Only then run `bd close <id> --reason="User verified: <what they confirmed>"`
 
 ### Why the Watch Daemon?
 
