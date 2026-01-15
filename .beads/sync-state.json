@@ -1,15 +1,7 @@
 {
-<<<<<<< HEAD
-  "last_failure": "2026-01-15T17:55:16.7029451-08:00",
-  "failure_count": 4,
-  "backoff_until": "2026-01-15T18:00:16.7029451-08:00",
-  "needs_manual_sync": true,
-  "failure_reason": "git pull failed: exit status 1\nfatal: couldn't find remote ref feature/remote-transcription-clean\n"
-=======
-  "last_failure": "2026-01-14T18:17:53.122094-08:00",
+  "last_failure": "2026-01-15T17:59:25.6189315-08:00",
   "failure_count": 1,
-  "backoff_until": "2026-01-14T18:18:23.122095-08:00",
+  "backoff_until": "2026-01-15T17:59:55.6189315-08:00",
   "needs_manual_sync": false,
-  "failure_reason": "git pull failed in worktree: exit status 128\nFrom github.com:tomchapin/voicetypr\n * branch            main       -\u003e FETCH_HEAD\nfatal: Cannot rebase onto multiple branches.\n"
->>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
+  "failure_reason": "git pull failed: exit status 128\nerror: Pulling is not possible because you have unmerged files.\nhint: Fix them up in the work tree, and then use 'git add/rm \u003cfile\u003e'\nhint: as appropriate to mark resolution and make a commit.\nfatal: Exiting because of an unresolved conflict.\n"
 }

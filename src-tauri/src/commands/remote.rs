@@ -183,18 +183,24 @@ pub async fn set_active_remote_server(
     server_id: Option<String>,
     remote_settings: State<'_, AsyncMutex<RemoteSettings>>,
 ) -> Result<(), String> {
+    log::info!("🔧 [REMOTE] set_active_remote_server called with server_id={:?}", server_id);
+
     let mut settings = remote_settings.lock().await;
+    log::info!("🔧 [REMOTE] Before change: active_connection_id={:?}", settings.active_connection_id);
 
     if let Some(id) = &server_id {
         settings.set_active_connection(Some(id.clone()))?;
-        log::info!("Active remote server set to: {}", id);
+        log::info!("🔧 [REMOTE] Active remote server set to: {}", id);
     } else {
         settings.set_active_connection(None)?;
-        log::info!("Active remote server cleared");
+        log::info!("🔧 [REMOTE] Active remote server cleared");
     }
+
+    log::info!("🔧 [REMOTE] After change: active_connection_id={:?}", settings.active_connection_id);
 
     // Save settings
     save_remote_settings(&app, &settings)?;
+    log::info!("🔧 [REMOTE] Settings saved to store");
 
     Ok(())
 }
@@ -337,15 +343,33 @@ pub fn save_remote_settings(app: &AppHandle, settings: &RemoteSettings) -> Resul
 
 /// Load remote settings from the store
 pub fn load_remote_settings(app: &AppHandle) -> RemoteSettings {
+    log::info!("🔧 [REMOTE] load_remote_settings called");
+
     let store = match app.store("voicetypr-store.json") {
         Ok(s) => s,
-        Err(_) => return RemoteSettings::default(),
+        Err(e) => {
+            log::warn!("🔧 [REMOTE] Failed to open store: {:?}, returning default", e);
+            return RemoteSettings::default();
+        }
     };
 
-    store
-        .get("remote_settings")
-        .and_then(|v| serde_json::from_value(v.clone()).ok())
-        .unwrap_or_default()
+    let raw_value = store.get("remote_settings");
+    log::info!("🔧 [REMOTE] Raw store value exists: {}", raw_value.is_some());
+
+    let settings: RemoteSettings = raw_value
+        .and_then(|v| {
+            log::debug!("🔧 [REMOTE] Raw JSON: {:?}", v);
+            serde_json::from_value(v.clone()).ok()
+        })
+        .unwrap_or_default();
+
+    log::info!(
+        "🔧 [REMOTE] Loaded settings: {} connections, active_id={:?}",
+        settings.saved_connections.len(),
+        settings.active_connection_id
+    );
+
+    settings
 }
 
 #[cfg(test)]

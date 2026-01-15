@@ -373,8 +373,22 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
 
             // Initialize remote transcription state
             app.manage(AsyncMutex::new(RemoteServerManager::new()));
+<<<<<<< HEAD
             app.manage(AsyncMutex::new(RemoteSettings::default()));
             log::info!("🌐 Remote transcription state initialized");
+=======
+            // Load saved remote settings from store (persists connections across restarts)
+            let remote_settings = load_remote_settings(&app.handle());
+            let connection_count = remote_settings.saved_connections.len();
+            let active_id = remote_settings.active_connection_id.clone();
+            log::info!(
+                "🌐 [STARTUP] Remote settings loaded: {} connections, active_connection_id={:?}",
+                connection_count,
+                active_id
+            );
+            app.manage(AsyncMutex::new(remote_settings));
+            log::info!("🌐 Remote transcription state initialized ({} saved connections)", connection_count);
+>>>>>>> 7d68317 (debug: add extensive logging for remote server selection)
 
             // Initialize unified application state
             app.manage(AppState::new());

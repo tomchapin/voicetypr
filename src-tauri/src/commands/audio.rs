@@ -1259,8 +1259,17 @@ pub async fn stop_recording(
     let remote_settings = app.state::<AsyncMutex<RemoteSettings>>();
     let active_remote = {
         let settings = remote_settings.lock().await;
-        settings.get_active_connection().cloned()
+        log::info!(
+            "🔍 [REMOTE DEBUG] Checking remote settings: active_connection_id={:?}, saved_connections={}",
+            settings.active_connection_id,
+            settings.saved_connections.len()
+        );
+        let conn = settings.get_active_connection().cloned();
+        log::info!("🔍 [REMOTE DEBUG] get_active_connection returned: {:?}", conn.as_ref().map(|c| &c.id));
+        conn
     };
+
+    log::info!("🔍 [REMOTE DEBUG] active_remote is_some={}", active_remote.is_some());
 
     let engine_selection = if let Some(remote_conn) = active_remote {
         log::info!(
