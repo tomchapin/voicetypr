@@ -1,7 +1,11 @@
 {
   "meta": {
     "version": "1.0.0",
+<<<<<<< HEAD
     "generated_at": "2026-01-15T17:59:25.5746815-08:00",
+=======
+    "generated_at": "2026-01-14T20:24:08.782895-08:00",
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
     "phase2_ready": true,
     "issue_count": 76,
     "compute_time_ms": 0
@@ -13,9 +17,40 @@
     "in_progress_count": 0,
     "top_picks": [
       {
+<<<<<<< HEAD
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
         "score": 0.1786196755187215,
+=======
+        "id": "voicetypr-5qq",
+        "title": "Setup: Install and configure VoiceTypr on MacBook",
+        "score": 0.3504945326922516,
+        "reasons": [
+          "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+          "📊 High centrality in dependency graph (PageRank: 62%)",
+          "⚡ Low effort, high impact - good starting point",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 2
+      },
+      {
+        "id": "voicetypr-4mj",
+        "title": "Bug: Remote server connection test fails with 'Load failed'",
+        "score": 0.2620946216140634,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): voicetypr-hca",
+          "📊 High centrality in dependency graph (PageRank: 39%)",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P0) - prioritize this work"
+        ],
+        "unblocks": 1
+      },
+      {
+        "id": "voicetypr-43e",
+        "title": "Frontend: Re-transcribe button and popout in History",
+        "score": 0.1723525134842885,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -46,17 +81,121 @@
   },
   "recommendations": [
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-5qq",
+      "title": "Setup: Install and configure VoiceTypr on MacBook",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.3504945326922516,
+      "breakdown": {
+        "pagerank": 0.1371855207872378,
+        "betweenness": 0,
+        "blocker_ratio": 0.078,
+        "staleness": 0.0004462729479185957,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.0018764800204336908,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.6235705490328991,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.008925458958371914,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.018764800204336907,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Quick win - start here for fast progress",
+      "reasons": [
+        "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+        "📊 High centrality in dependency graph (PageRank: 62%)",
+        "⚡ Low effort, high impact - good starting point",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-0k3",
+        "voicetypr-9fj"
+      ]
+    },
+    {
+      "id": "voicetypr-4mj",
+      "title": "Bug: Remote server connection test fails with 'Load failed'",
+      "type": "bug",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.2620946216140634,
+      "breakdown": {
+        "pagerank": 0.08509273116016432,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.00024444997492283955,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.0010367434528865515,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.38678514163711053,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.00488899949845679,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.010367434528865516,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-hca",
+        "📊 High centrality in dependency graph (PageRank: 39%)",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-hca"
+      ]
+    },
+    {
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.1786196755187215,
+=======
+      "score": 0.1723525134842885,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
       "breakdown": {
         "pagerank": 0.04699322980908016,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
         "staleness": 0.0019192945308950618,
         "priority_boost": 0.05,
         "time_to_impact": 0.04025,
@@ -70,6 +209,21 @@
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07621300868790987,
         "risk_norm": 0.020628518720826036,
+=======
+        "staleness": 0.00042012802266782413,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0018102740658884787,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.21360519630489658,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.008402560453356482,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.018102740658884786,
+        "risk_norm": 0.020000000000000004,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
@@ -91,29 +245,93 @@
       ]
     },
     {
+      "id": "voicetypr-hca",
+      "title": "Test: Remote transcription end-to-end verification",
+      "type": "task",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.16284681242670035,
+      "breakdown": {
+        "pagerank": 0.050809470910891726,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0004124911776176697,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04025,
+        "urgency": 0.001737769949633955,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.2309521405040533,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.008249823552353394,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.01737769949633955,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-4mj first to unblock this",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "⏳ Blocked by voicetypr-4mj - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
       "id": "voicetypr-0k3",
       "title": "Test: Host local + remote client concurrent transcription",
       "type": "task",
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.1731317218996105,
+=======
+      "score": 0.1571056553686931,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
         "staleness": 0.001945409276234568,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
         "urgency": 0.007679413807074398,
+=======
+        "staleness": 0.0004462427680073303,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0018763555319672943,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
+<<<<<<< HEAD
         "staleness_norm": 0.03890818552469136,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07679413807074398,
+=======
+        "staleness_norm": 0.008924855360146606,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.018763555319672942,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -139,23 +357,41 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17313161662210055,
+=======
+      "score": 0.157105545633417,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
         "staleness": 0.0019453825109510036,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
         "urgency": 0.00767931671646388,
+=======
+        "staleness": 0.00044621600272376537,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.001876245128155768,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
+<<<<<<< HEAD
         "staleness_norm": 0.03890765021902007,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.0767931671646388,
+=======
+        "staleness_norm": 0.008924320054475307,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.01876245128155768,
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -217,6 +453,188 @@
         "🚨 High priority (P1) - prioritize this work"
       ],
       "blocked_by": [
+<<<<<<< HEAD
+=======
+        "voicetypr-5qq"
+      ]
+    },
+    {
+      "id": "voicetypr-88a",
+      "title": "Network Sharing uses old model despite auto-restart",
+      "type": "bug",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.13058309896527803,
+      "breakdown": {
+        "pagerank": 0.041904706221991286,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00010548298487654321,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0013669860464004147,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047593737268767,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.002109659697530864,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.013669860464004147,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-ra2",
+      "title": "Copy address button needs interactive hover/click states",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.1305312542484376,
+      "breakdown": {
+        "pagerank": 0.041904706221991286,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.000105509695621142,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0013059655511376946,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047593737268767,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0021101939124228398,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.013059655511376944,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-718",
+      "title": "Bug: Remote server selection not working - transcription uses local model, tray menu missing remotes",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.12470756219725132,
+      "breakdown": {
+        "pagerank": 0.041904706221991286,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00017940325719521607,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0008195508026011101,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047593737268767,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0035880651439043213,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.0081955080260111,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-26k",
+      "title": "Bug: Remote servers not loading on app startup - tray menu shows empty",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.12438226217837223,
+      "breakdown": {
+        "pagerank": 0.041904706221991286,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00009774085480324075,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0004364988923086455,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047593737268767,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0019548170960648147,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.004364988923086455,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    }
+  ],
+  "quick_wins": [
+    {
+      "id": "voicetypr-5qq",
+      "title": "Setup: Install and configure VoiceTypr on MacBook",
+      "score": 0.7339850002884626,
+      "reason": "Unblocks 2 items, high priority",
+      "unblocks_ids": [
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
         "voicetypr-0k3",
         "voicetypr-9fj"
       ]

@@ -8,8 +8,32 @@
 
 The graph analysis identified these as the highest-impact items to work on:
 
+<<<<<<< HEAD
 ### 1. Frontend: Re-transcribe button and popout in History
 **ID:** `voicetypr-43e` | **Impact Score:** 0.18 | **Unblocks:** 1 issues
+=======
+### 1. Setup: Install and configure VoiceTypr on MacBook
+**ID:** `voicetypr-5qq` | **Impact Score:** 0.35 | **Unblocks:** 2 issues
+
+**Why this matters:**
+- 🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj
+- 📊 High centrality in dependency graph (PageRank: 62%)
+- ⚡ Low effort, high impact - good starting point
+- ✅ Currently unclaimed - available for work
+- 🚨 High priority (P1) - prioritize this work
+
+### 2. Bug: Remote server connection test fails with 'Load failed'
+**ID:** `voicetypr-4mj` | **Impact Score:** 0.26 | **Unblocks:** 1 issues
+
+**Why this matters:**
+- 🔓 Unblocks 1 item(s): voicetypr-hca
+- 📊 High centrality in dependency graph (PageRank: 39%)
+- ✅ Currently unclaimed - available for work
+- 🚨 High priority (P0) - prioritize this work
+
+### 3. Frontend: Re-transcribe button and popout in History
+**ID:** `voicetypr-43e` | **Impact Score:** 0.17 | **Unblocks:** 1 issues
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 
 **Why this matters:**
 - 🔓 Unblocks 1 item(s): voicetypr-5l4
@@ -66,5 +90,9 @@ Low-effort items that clear the path forward:
 
 ---
 
+<<<<<<< HEAD
 *Generated Jan 15, 2026 at 5:59 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+=======
+*Generated Jan 14, 2026 at 8:24 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+>>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 
