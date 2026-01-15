@@ -9,7 +9,7 @@ use tokio::sync::{oneshot, Mutex};
 use warp::Filter;
 
 use super::http::{create_routes, ServerContext};
-use super::transcription::{RealTranscriptionContext, TranscriptionServerConfig};
+use super::transcription::{RealTranscriptionContext, SharedServerState, TranscriptionServerConfig};
 
 /// Handle to a running server, used to stop it
 pub struct ServerHandle {
@@ -41,6 +41,8 @@ pub struct RemoteServerManager {
     handle: Option<ServerHandle>,
     /// Server configuration
     config: Option<TranscriptionServerConfig>,
+    /// Shared state for dynamic model updates (only valid while server is running)
+    shared_state: Option<SharedServerState>,
 }
 
 impl Default for RemoteServerManager {
@@ -55,6 +57,7 @@ impl RemoteServerManager {
         Self {
             handle: None,
             config: None,
+            shared_state: None,
         }
     }
 
@@ -83,6 +86,7 @@ impl RemoteServerManager {
         server_name: String,
         model_path: PathBuf,
         model_name: String,
+        engine: String,
     ) -> Result<(), String> {
         // Stop existing server if running
         if self.handle.is_some() {
@@ -91,15 +95,23 @@ impl RemoteServerManager {
 
         let config = TranscriptionServerConfig {
             server_name: server_name.clone(),
-            password,
-            model_path,
-            model_name,
+            password: password.clone(),
+            model_path: model_path.clone(),
+            model_name: model_name.clone(),
         };
 
         self.config = Some(config.clone());
 
-        // Create the transcription context
-        let ctx = Arc::new(Mutex::new(RealTranscriptionContext::new(config)));
+        // Create shared state for dynamic model updates
+        let shared_state = SharedServerState::new(model_name, model_path, engine);
+        self.shared_state = Some(shared_state.clone());
+
+        // Create the transcription context with shared state
+        let ctx = Arc::new(Mutex::new(RealTranscriptionContext::new_with_shared_state(
+            server_name.clone(),
+            password,
+            shared_state,
+        )));
 
         // Create routes
         let routes = create_routes(ctx);
@@ -146,14 +158,30 @@ impl RemoteServerManager {
             log::info!("Remote transcription server stopped");
         }
         self.config = None;
+        self.shared_state = None;
     }
 
     /// Update the model being served (without restarting server)
-    pub fn update_model(&mut self, model_path: PathBuf, model_name: String) {
+    ///
+    /// This updates the shared state that the running server reads from,
+    /// so the change takes effect immediately for new requests.
+    pub fn update_model(&mut self, model_path: PathBuf, model_name: String, engine: String) {
+        // Update config for tracking
         if let Some(config) = &mut self.config {
+<<<<<<< HEAD
             config.model_path = model_path;
             config.model_name = model_name;
             log::info!("Server model updated to: {}", config.model_name);
+=======
+            config.model_path = model_path.clone();
+            config.model_name = model_name.clone();
+        }
+
+        // Update shared state - this is what the running server actually reads
+        if let Some(shared_state) = &self.shared_state {
+            shared_state.update_model(model_name.clone(), model_path, engine.clone());
+            log::info!("[Remote Server] Model dynamically updated to '{}' (engine: {})", model_name, engine);
+>>>>>>> 077f4b5 (feat(remote): dynamic model sync for network sharing)
         }
     }
 

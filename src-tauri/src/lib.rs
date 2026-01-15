@@ -388,7 +388,87 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
             );
             app.manage(AsyncMutex::new(remote_settings));
             log::info!("🌐 Remote transcription state initialized ({} saved connections)", connection_count);
+<<<<<<< HEAD
 >>>>>>> 7d68317 (debug: add extensive logging for remote server selection)
+=======
+
+            // Auto-start network sharing if it was enabled before app closed
+            if sharing_was_enabled {
+                let app_handle_for_sharing = app.handle().clone();
+                tauri::async_runtime::spawn(async move {
+                    // Wait for app to fully initialize
+                    tokio::time::sleep(std::time::Duration::from_millis(2000)).await;
+
+                    log::info!("🌐 [STARTUP] Auto-starting network sharing (was enabled before shutdown)");
+
+                    // Get the required state handles
+                    let server_manager = app_handle_for_sharing.state::<AsyncMutex<crate::remote::lifecycle::RemoteServerManager>>();
+                    let whisper_manager = app_handle_for_sharing.state::<AsyncRwLock<crate::whisper::manager::WhisperManager>>();
+
+                    // Call start_sharing logic directly (can't use command due to State extraction)
+                    let result = async {
+                        // Get server name from hostname
+                        let server_name = hostname::get()
+                            .ok()
+                            .and_then(|h| h.into_string().ok())
+                            .unwrap_or_else(|| "VoiceTypr Server".to_string());
+
+                        // Get current model from store
+                        let store = app_handle_for_sharing
+                            .store("settings")
+                            .map_err(|e| format!("Failed to access store: {}", e))?;
+
+                        let stored_model = store
+                            .get("current_model")
+                            .and_then(|v| v.as_str().map(|s| s.to_string()))
+                            .unwrap_or_default();
+
+                        // Get current engine from settings
+                        let stored_engine = store
+                            .get("current_model_engine")
+                            .and_then(|v| v.as_str().map(|s| s.to_string()))
+                            .unwrap_or_else(|| "whisper".to_string());
+
+                        // Get model path from whisper manager
+                        let (current_model, model_path) = {
+                            let manager = whisper_manager.read().await;
+
+                            let model_name = if stored_model.is_empty() {
+                                manager
+                                    .get_first_downloaded_model()
+                                    .ok_or("No model downloaded")?
+                            } else {
+                                stored_model
+                            };
+
+                            // Get model path for whisper, use empty path for other engines
+                            let path = if stored_engine == "whisper" {
+                                manager
+                                    .get_model_path(&model_name)
+                                    .ok_or_else(|| format!("Model '{}' not found", model_name))?
+                            } else {
+                                std::path::PathBuf::new()
+                            };
+
+                            (model_name, path)
+                        };
+
+                        // Start the server
+                        let mut manager = server_manager.lock().await;
+                        manager
+                            .start(saved_port, saved_password, server_name, model_path, current_model, stored_engine)
+                            .await?;
+
+                        Ok::<(), String>(())
+                    }.await;
+
+                    match result {
+                        Ok(()) => log::info!("🌐 [STARTUP] Network sharing auto-started successfully on port {}", saved_port),
+                        Err(e) => log::warn!("🌐 [STARTUP] Failed to auto-start network sharing: {}", e),
+                    }
+                });
+            }
+>>>>>>> 077f4b5 (feat(remote): dynamic model sync for network sharing)
 
             // Initialize unified application state
             app.manage(AppState::new());

@@ -2,6 +2,7 @@ use crate::audio::device_watcher::try_start_device_watcher_if_ready;
 use crate::commands::key_normalizer::{normalize_shortcut_keys, validate_key_combination};
 use crate::commands::remote::save_remote_settings;
 use crate::parakeet::ParakeetManager;
+use crate::remote::lifecycle::RemoteServerManager;
 use crate::remote::settings::RemoteSettings;
 use crate::whisper::languages::{validate_language, SUPPORTED_LANGUAGES};
 use crate::whisper::manager::WhisperManager;
@@ -687,6 +688,27 @@ pub async fn set_model_from_tray(app: AppHandle, model_name: String) -> Result<(
 
     // Save settings (this will also preload the model)
     save_settings(app.clone(), settings).await?;
+
+    // Update the sharing server's model if it's running
+    {
+        let server_manager = app.state::<AsyncMutex<RemoteServerManager>>();
+        let mut server = server_manager.lock().await;
+        if server.is_running() {
+            // Get the model path based on engine type
+            let model_path: std::path::PathBuf = if engine == "whisper" {
+                let whisper_state = app.state::<tauri::async_runtime::RwLock<WhisperManager>>();
+                let manager = whisper_state.read().await;
+                manager.get_model_path(&model_name).unwrap_or_default()
+            } else {
+                // For non-whisper engines (parakeet, soniox), model path is handled differently
+                // Parakeet uses a sidecar, soniox uses cloud API
+                std::path::PathBuf::new()
+            };
+
+            // Update the shared state - this takes effect immediately for new requests
+            server.update_model(model_path, model_name.clone(), engine.clone());
+        }
+    }
 
     // Update the tray menu to reflect the new selection
     update_tray_menu(app.clone()).await?;

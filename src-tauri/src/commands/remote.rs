@@ -30,6 +30,7 @@ pub async fn start_sharing(
     server_name: Option<String>,
     server_manager: State<'_, AsyncMutex<RemoteServerManager>>,
     whisper_manager: State<'_, AsyncRwLock<WhisperManager>>,
+    remote_settings: State<'_, AsyncMutex<RemoteSettings>>,
 ) -> Result<(), String> {
     let port = port.unwrap_or(DEFAULT_PORT);
 
@@ -41,7 +42,7 @@ pub async fn start_sharing(
             .unwrap_or_else(|| "VoiceTypr Server".to_string())
     });
 
-    // Get current model from store, or auto-select first downloaded model
+    // Get current model and engine from store
     // NOTE: Must use "settings" store to match save_settings command
     let store = app
         .store("settings")
@@ -52,11 +53,16 @@ pub async fn start_sharing(
         .and_then(|v| v.as_str().map(|s| s.to_string()))
         .unwrap_or_default();
 
-    // Get model path from whisper manager
-    let (current_model, model_path) = {
+    let stored_engine = store
+        .get("current_model_engine")
+        .and_then(|v| v.as_str().map(|s| s.to_string()))
+        .unwrap_or_else(|| "whisper".to_string());
+
+    // Get model path based on engine
+    let (current_model, model_path, engine) = {
         let manager = whisper_manager.read().await;
 
-        // If no model explicitly selected, find first downloaded model
+        // If no model explicitly selected, find first downloaded model (whisper only for auto-select)
         let model_name = if stored_model.is_empty() {
             manager
                 .get_first_downloaded_model()
@@ -65,18 +71,36 @@ pub async fn start_sharing(
             stored_model
         };
 
-        let path = manager
-            .get_model_path(&model_name)
-            .ok_or_else(|| format!("Model '{}' not found or not downloaded", model_name))?;
+        // Get model path - for whisper, get from manager; for others, use empty path
+        // (the actual path will be resolved during transcription for non-whisper engines)
+        let path = if stored_engine == "whisper" {
+            manager
+                .get_model_path(&model_name)
+                .ok_or_else(|| format!("Model '{}' not found or not downloaded", model_name))?
+        } else {
+            // For parakeet and other engines, model path isn't needed at server start
+            // The transcription context will handle engine-specific paths
+            std::path::PathBuf::new()
+        };
 
-        (model_name, path)
+        (model_name, path, stored_engine)
     };
 
     // Start the server
     let mut manager = server_manager.lock().await;
     manager
-        .start(port, password, server_name, model_path, current_model)
+        .start(port, password.clone(), server_name, model_path, current_model, engine)
         .await?;
+
+    // Persist the sharing enabled state so it auto-starts on next launch
+    {
+        let mut settings = remote_settings.lock().await;
+        settings.server_config.enabled = true;
+        settings.server_config.port = port;
+        settings.server_config.password = password;
+        save_remote_settings(&app, &settings)?;
+        log::info!("🌐 [SHARING] Saved sharing state: enabled=true, port={}", port);
+    }
 
     log::info!("Sharing started on port {}", port);
     Ok(())
@@ -85,10 +109,20 @@ pub async fn start_sharing(
 /// Stop sharing models with other VoiceTypr instances
 #[tauri::command]
 pub async fn stop_sharing(
+    app: AppHandle,
     server_manager: State<'_, AsyncMutex<RemoteServerManager>>,
+    remote_settings: State<'_, AsyncMutex<RemoteSettings>>,
 ) -> Result<(), String> {
     let mut manager = server_manager.lock().await;
     manager.stop();
+
+    // Persist the sharing disabled state
+    {
+        let mut settings = remote_settings.lock().await;
+        settings.server_config.enabled = false;
+        save_remote_settings(&app, &settings)?;
+        log::info!("🌐 [SHARING] Saved sharing state: enabled=false");
+    }
 
     log::info!("Sharing stopped");
     Ok(())

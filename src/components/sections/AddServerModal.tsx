@@ -227,28 +227,28 @@ export function AddServerModal({
             )}
           </Button>
 
-          {/* Test Result */}
+          {/* Test Result - compact */}
           {testStatus === "success" && testResult && (
-            <div className="rounded-lg border border-green-500/30 bg-green-500/10 p-3">
-              <div className="flex items-center gap-2 text-green-700 dark:text-green-400">
-                <CheckCircle2 className="h-4 w-4" />
-                <span className="font-medium">Connection successful!</span>
-              </div>
-              <div className="mt-2 space-y-1 text-sm text-muted-foreground">
-                <p>Server: {testResult.name}</p>
-                <p>Model: {testResult.model}</p>
-                <p>Version: {testResult.version}</p>
+            <div className="rounded-md border border-green-500/30 bg-green-500/10 px-3 py-2">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-1.5 text-green-700 dark:text-green-400">
+                  <CheckCircle2 className="h-3.5 w-3.5" />
+                  <span className="text-xs font-medium">Connected</span>
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  {testResult.name} • {testResult.model}
+                </span>
               </div>
             </div>
           )}
 
           {testStatus === "error" && testError && (
-            <div className="rounded-lg border border-red-500/30 bg-red-500/10 p-3">
-              <div className="flex items-center gap-2 text-red-700 dark:text-red-400">
-                <XCircle className="h-4 w-4" />
-                <span className="font-medium">Connection failed</span>
+            <div className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2">
+              <div className="flex items-center gap-1.5 text-red-700 dark:text-red-400">
+                <XCircle className="h-3.5 w-3.5" />
+                <span className="text-xs font-medium">Connection failed</span>
+                <span className="text-xs text-muted-foreground">– {testError}</span>
               </div>
-              <p className="mt-1 text-sm text-muted-foreground">{testError}</p>
             </div>
           )}
         </div>
