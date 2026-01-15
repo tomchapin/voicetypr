@@ -133,26 +133,24 @@ This project uses two essential tools for multi-agent coordination:
 | Tool | What It Does | Command | Source |
 |------|--------------|---------|--------|
 | **Beads CLI (`bd`)** | Issue tracking commands | `bd list`, `bd ready`, etc. | [steveyegge/beads](https://github.com/steveyegge/beads) |
-| **Beads Viewer (`bv`)** | Web dashboard at http://127.0.0.1:9001 | `bv --preview-pages bv-site` | [Dicklesworthstone/beads_viewer](https://github.com/Dicklesworthstone/beads_viewer) |
-| **Beads Daemon** | Syncs SQLite → JSONL every 30 seconds | `./beads-watch.sh` (or `.ps1`) | (local script in repo) |
+| **Beads Viewer (`bv`)** | Web dashboard (used by daemon) | (started by daemon) | [Dicklesworthstone/beads_viewer](https://github.com/Dicklesworthstone/beads_viewer) |
+| **Beads Daemon** | Syncs SQLite → JSONL + runs preview server | `./beads-watch.sh` (or `.ps1`) | (local script in repo) |
 
 **⚠️ WITHOUT THE DAEMON, THE DASHBOARD SHOWS STALE DATA!**
 
-The `bd` CLI stores data in SQLite. The `bv` viewer reads from `.beads/issues.jsonl`. The daemon bridges them by exporting changes every 30 seconds. If you update an issue with `bd update` but don't run the daemon, other agents won't see your changes in the dashboard.
+The `bd` CLI stores data in SQLite. The `bv` viewer reads from `.beads/issues.jsonl`. The daemon bridges them by exporting changes every 5 seconds. If you update an issue with `bd update` but don't run the daemon, other agents won't see your changes in the dashboard.
 
 ### Quick Start for New Agents
 
 **Every session, do these steps FIRST:**
 
-1. **Start the beads daemon AND viewer** (REQUIRED):
+1. **Start the beads daemon** (REQUIRED - includes preview server):
    ```bash
    # macOS/Linux
    ./beads-watch.sh &
-   bv --preview-pages bv-site &
 
    # Windows PowerShell
    powershell -ExecutionPolicy Bypass -File beads-watch.ps1
-   bv --preview-pages bv-site
    ```
 
 2. **Check current work status:**
@@ -283,10 +281,11 @@ This project includes custom watch scripts that keep the beads dashboard in sync
 - `beads-watch.sh` - macOS/Linux bash version
 
 **What the daemon does:**
-1. Every 30 seconds, exports the SQLite database content via `bd export`
-2. Compares MD5 hash of DB content vs `.beads/issues.jsonl` file
-3. If different, writes the new content to JSONL and regenerates `bv-site/`
-4. This ensures the web dashboard always reflects the current database state
+1. Starts the `bv` preview server at http://127.0.0.1:9001
+2. Every 5 seconds, exports the SQLite database content via `bd export`
+3. Compares MD5 hash of DB content vs `.beads/issues.jsonl` file
+4. If different, writes the new content to JSONL and regenerates `bv-site/`
+5. This ensures the web dashboard always reflects the current database state
 
 **Why this is necessary:**
 - `bd` (beads CLI) stores data in SQLite for fast queries
@@ -296,32 +295,26 @@ This project includes custom watch scripts that keep the beads dashboard in sync
 
 ### Starting the Daemon (REQUIRED AT SESSION START)
 
-**Detect your platform first**, then run the appropriate commands:
+The daemon handles everything: SQLite→JSONL sync AND the preview server.
 
-#### macOS / Linux
+**Detect your platform first**, then run the appropriate command:
+
+#### macOS / Linux / Git Bash / WSL
 ```bash
 ./beads-watch.sh &
-bv --preview-pages bv-site &
 ```
 
 #### Windows (PowerShell)
 ```powershell
 powershell -ExecutionPolicy Bypass -File beads-watch.ps1
-# In a separate terminal:
-bv --preview-pages bv-site
-```
-
-#### Windows (Git Bash / WSL)
-```bash
-./beads-watch.sh &
-bv --preview-pages bv-site &
 ```
 
 **Dashboard URL:** http://127.0.0.1:9001
 
 **Verify daemon is working:**
+- Check for output like `Preview server running at http://127.0.0.1:9001`
 - Check for periodic output like `[HH:MM:SS] DB changed, syncing N issues...`
-- Make a change with `bd` and confirm it appears in the dashboard within 30 seconds
+- Make a change with `bd` and confirm it appears in the dashboard within 5 seconds
 
 ### Manual Sync (If Daemon Not Running)
 

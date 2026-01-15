@@ -1,7 +1,7 @@
 # Beads Watch - Keeps bv pages in sync with bd database AND runs preview server
 # Compares DB content hash vs JSONL hash to detect ANY changes (not just count)
 
-$interval = 10  # seconds between checks (reduced from 30)
+$interval = 5  # seconds between checks
 
 Write-Host "Beads Watch starting..."
 Write-Host "  Interval: ${interval}s"

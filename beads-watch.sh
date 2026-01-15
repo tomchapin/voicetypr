@@ -19,7 +19,7 @@ compute_md5() {
 # Beads Watch - Keeps bv pages in sync with bd database AND runs preview server
 # Compares DB content hash vs JSONL hash to detect ANY changes
 
-INTERVAL=10  # seconds between checks
+INTERVAL=5  # seconds between checks
 
 echo "Beads Watch starting..."
 echo "  Interval: ${INTERVAL}s"
