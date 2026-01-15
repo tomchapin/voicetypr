@@ -124,6 +124,64 @@ IMPORTANT: Read `CLAUDE.local.md` for any local changes.
 
 This project uses **Beads** (git-backed issue tracker) and **Git Worktrees** for parallel async development by multiple Claude Code agents.
 
+<<<<<<< HEAD
+=======
+### 🔴 CRITICAL: Beads Viewer & Daemon
+
+This project uses two essential tools for multi-agent coordination:
+
+| Tool | What It Does | Command | Source |
+|------|--------------|---------|--------|
+| **Beads CLI (`bd`)** | Issue tracking commands | `bd list`, `bd ready`, etc. | [steveyegge/beads](https://github.com/steveyegge/beads) |
+| **Beads Viewer (`bv`)** | Web dashboard at http://127.0.0.1:9001 | `bv --preview-pages bv-site` | [Dicklesworthstone/beads_viewer](https://github.com/Dicklesworthstone/beads_viewer) |
+| **Beads Daemon** | Syncs SQLite → JSONL every 30 seconds | `./beads-watch.sh` (or `.ps1`) | (local script in repo) |
+
+**⚠️ WITHOUT THE DAEMON, THE DASHBOARD SHOWS STALE DATA!**
+
+The `bd` CLI stores data in SQLite. The `bv` viewer reads from `.beads/issues.jsonl`. The daemon bridges them by exporting changes every 30 seconds. If you update an issue with `bd update` but don't run the daemon, other agents won't see your changes in the dashboard.
+
+### Quick Start for New Agents
+
+**Every session, do these steps FIRST:**
+
+1. **Start the beads daemon AND viewer** (REQUIRED):
+   ```bash
+   # macOS/Linux
+   ./beads-watch.sh &
+   bv --preview-pages bv-site &
+
+   # Windows PowerShell
+   powershell -ExecutionPolicy Bypass -File beads-watch.ps1
+   bv --preview-pages bv-site
+   ```
+
+2. **Check current work status:**
+   ```bash
+   bd list --status=in_progress   # See what's being worked on
+   bd ready                        # Find available issues
+   ```
+
+3. **Read the bv-site/README.md** for prioritized issue list
+
+4. **Before starting any issue:**
+   ```bash
+   bd show <issue-id>              # Read full details and comments
+   bd update <id> --status=in_progress  # Claim the work
+   ```
+
+5. **While working, add progress comments:**
+   ```bash
+   bd comments add <id> "Started work on X..."
+   bd comments add <id> "Fixed Y, testing Z..."
+   ```
+
+6. **After completing work:**
+   ```bash
+   bd comments add <id> "STATUS: READY FOR VERIFICATION - <summary>"
+   # DO NOT close - wait for user to verify
+   ```
+
+>>>>>>> 535303e (docs: add source repository links to Beads tools table)
 ### First-Time Setup (Bootstrap)
 
 **Prerequisites:** Go 1.21+ (for building from source) or use package managers.

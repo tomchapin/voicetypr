@@ -1,6 +1,63 @@
 # VoiceTypr
 
+<<<<<<< HEAD
 macOS desktop app for offline voice transcription using Whisper AI. Built with Tauri v2 (Rust backend) and React 19 (TypeScript frontend). Features system-wide hotkey recording, automatic text insertion at cursor, and local model management.
+=======
+macOS desktop app for offline voice transcription using Whisper AI. Built with Tauri v2 (Rust backend) and React 19 (TypeScript frontend). Features system-wide hotkey recording, automatic text insertion at cursor, local model management, and **remote transcription via network sharing**.
+
+## 🔴 CRITICAL: Beads Viewer & Daemon
+
+This project uses **three essential tools** for issue tracking:
+
+| Tool | Purpose | Command | Source |
+|------|---------|---------|--------|
+| **Beads CLI (`bd`)** | Issue tracking commands | `bd list`, `bd ready`, etc. | [steveyegge/beads](https://github.com/steveyegge/beads) |
+| **Beads Viewer (`bv`)** | Web dashboard showing all issues | `bv --preview-pages bv-site` | [Dicklesworthstone/beads_viewer](https://github.com/Dicklesworthstone/beads_viewer) |
+| **Beads Daemon** | Syncs dashboard every 30 seconds | `./beads-watch.sh` (or `.ps1`) | (local script in repo) |
+
+**⚠️ The daemon MUST be running or the dashboard shows stale/wrong data!**
+
+The daemon watches the SQLite database and syncs changes to the JSONL file that the viewer reads. Without it, status updates (like `open → in_progress`) won't appear.
+
+**Dashboard URL:** http://127.0.0.1:9001
+
+## ⚡ Quick Start Checklist
+
+**Do these steps at the START of every session:**
+
+```bash
+# 1. Start beads daemon (REQUIRED - syncs dashboard every 30 seconds)
+./beads-watch.sh &              # macOS/Linux
+# OR: powershell -ExecutionPolicy Bypass -File beads-watch.ps1  # Windows
+
+# 2. Start Beads Viewer dashboard
+bv --preview-pages bv-site &    # Opens dashboard at http://127.0.0.1:9001
+
+# 3. Check what's being worked on
+bd list --status=in_progress    # See active work
+bd ready                        # Find available issues
+
+# 4. Read the prioritized issue list
+cat bv-site/README.md
+```
+
+**Before starting any issue:**
+```bash
+bd show <issue-id>                    # Read FULL details + comments
+bd update <id> --status=in_progress   # Claim it before working
+```
+
+**While working:**
+```bash
+bd comments add <id> "Progress: ..."  # Add regular updates
+```
+
+**After completing:**
+```bash
+bd comments add <id> "STATUS: READY FOR VERIFICATION - <summary>"
+# DO NOT use 'bd close' - wait for user to verify
+```
+>>>>>>> 535303e (docs: add source repository links to Beads tools table)
 
 ## Core Commands
 
