@@ -1,6 +1,7 @@
 {
   "version": "1.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:58.2463804Z",
   "issue_count": 76,
   "dependency_count": 29
@@ -9,4 +10,9 @@
   "issue_count": 67,
   "dependency_count": 27
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+  "generated_at": "2026-01-15T23:39:14.829575Z",
+  "issue_count": 73,
+  "dependency_count": 28
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
 }

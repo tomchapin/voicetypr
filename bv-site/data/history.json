@@ -1,9 +1,13 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:58Z",
   "commits": null
 =======
   "generated_at": "2026-01-15T21:59:26Z",
+=======
+  "generated_at": "2026-01-15T23:39:15Z",
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
   "commits": [
     {
       "sha": "e406997154b2fceac5cd3b2e5ea73989e2fd33a9",
@@ -18,8 +22,8 @@
       "date": "2026-01-14T15:19:47-08:00",
       "message": "fix(ui): Network Sharing model display and ordering fixes",
       "beads_added": [
-        "voicetypr-313",
-        "voicetypr-cre"
+        "voicetypr-cre",
+        "voicetypr-313"
       ]
     },
     {
@@ -27,8 +31,8 @@
       "date": "2026-01-14T15:27:17-08:00",
       "message": "feat(ui): improve Network Sharing visual grouping and update beads",
       "beads_added": [
-        "voicetypr-5cx",
-        "voicetypr-28w"
+        "voicetypr-28w",
+        "voicetypr-5cx"
       ]
     },
     {
@@ -36,13 +40,13 @@
       "date": "2026-01-14T16:10:08-08:00",
       "message": "fix(remote): Network Sharing model sync and UI improvements",
       "beads_added": [
-        "voicetypr-26t",
-        "voicetypr-rsc",
-        "voicetypr-5cx",
         "voicetypr-63v",
-        "voicetypr-7d9",
         "voicetypr-x0y",
-        "voicetypr-fet"
+        "voicetypr-7d9",
+        "voicetypr-rsc",
+        "voicetypr-fet",
+        "voicetypr-26t",
+        "voicetypr-5cx"
       ]
     },
     {
@@ -66,9 +70,9 @@
       "date": "2026-01-14T20:00:56-08:00",
       "message": "debug: add extensive logging for remote server selection",
       "beads_added": [
+        "voicetypr-5l4",
         "voicetypr-88a",
-        "voicetypr-ra2",
-        "voicetypr-5l4"
+        "voicetypr-ra2"
       ]
     },
     {
@@ -104,6 +108,14 @@
       "beads_added": [
         "voicetypr-88a",
         "voicetypr-9bs"
+      ]
+    },
+    {
+      "sha": "26c6aaae128f51c581613a6bdf0be705b647674d",
+      "date": "2026-01-15T14:00:02-08:00",
+      "message": "feat: auto-restore network sharing when returning to local model",
+      "beads_added": [
+        "voicetypr-gdt"
       ]
     }
   ]

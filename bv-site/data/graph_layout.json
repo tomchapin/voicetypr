@@ -6,10 +6,11 @@
     ],
     "voicetypr-0g6": [
       0,
-      480
+      1000
     ],
     "voicetypr-0k3": [
       200,
+<<<<<<< HEAD
 <<<<<<< HEAD
       -240
     ],
@@ -74,59 +75,70 @@
       0
 =======
       -160
+=======
+      -40
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-0sn": [
       0,
-      -400
+      -1480
     ],
     "voicetypr-164": [
       0,
-      720
+      1480
     ],
     "voicetypr-1db": [
       0,
-      -320
+      -1720
     ],
     "voicetypr-22k": [
       200,
-      160
+      120
     ],
     "voicetypr-230": [
       0,
-      1600
+      -600
     ],
     "voicetypr-26k": [
       0,
-      -560
+      -360
     ],
     "voicetypr-26t": [
       0,
-      -480
+      840
     ],
     "voicetypr-28w": [
       0,
-      160
+      1960
     ],
     "voicetypr-2jg": [
       0,
-      320
+      -1560
     ],
     "voicetypr-2xg": [
       0,
-      -1600
+      200
     ],
     "voicetypr-313": [
       0,
-      1280
+      1160
+    ],
+    "voicetypr-34x": [
+      0,
+      360
     ],
     "voicetypr-43e": [
       0,
-      -2080
+      -1160
     ],
     "voicetypr-4mj": [
       200,
+<<<<<<< HEAD
       -80
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      40
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-52u": [
       600,
@@ -134,6 +146,7 @@
     ],
     "voicetypr-55t": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       520
     ],
@@ -178,54 +191,62 @@
       -360
 =======
       -640
+=======
+      -40
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-5bp": [
       0,
-      -720
+      280
     ],
     "voicetypr-5cx": [
       0,
-      1920
+      2280
     ],
     "voicetypr-5l4": [
       200,
-      0
+      200
     ],
     "voicetypr-5p5": [
       0,
-      1200
+      2040
     ],
     "voicetypr-5qq": [
       0,
-      -960
+      -1080
     ],
     "voicetypr-5w3": [
       0,
-      800
+      -1000
     ],
     "voicetypr-61b": [
       0,
-      1680
+      600
     ],
     "voicetypr-63v": [
       0,
-      1360
+      1640
     ],
     "voicetypr-6zw": [
       0,
-      80
+      -2200
     ],
     "voicetypr-718": [
       0,
+<<<<<<< HEAD
       -1360
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      920
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-74y": [
       400,
-      120
+      -200
     ],
     "voicetypr-7d9": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       -40
     ],
@@ -238,22 +259,30 @@
       -1480
 =======
       -1280
+=======
+      -1800
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-7mc": [
       0,
-      1440
+      1800
     ],
     "voicetypr-7n2": [
       0,
+<<<<<<< HEAD
       400
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      1080
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-7o1": [
       400,
-      40
+      -40
     ],
     "voicetypr-7p3": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       2120
     ],
@@ -266,15 +295,22 @@
       2280
 =======
       1040
+=======
+      -1960
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-7t6": [
       0,
-      -80
+      -200
     ],
     "voicetypr-88a": [
       0,
+<<<<<<< HEAD
       1760
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      -680
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-8b6": [
       400,
@@ -282,6 +318,7 @@
     ],
     "voicetypr-9bs": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       -1240
     ],
@@ -303,13 +340,25 @@
     "voicetypr-9rt": [
       0,
       1240
+=======
+      -1640
+    ],
+    "voicetypr-9dx": [
+      0,
+      1560
+    ],
+    "voicetypr-9fj": [
+      200,
+      -120
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-9rt": [
       0,
-      -1040
+      2120
     ],
     "voicetypr-b1p": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       1960
     ],
@@ -362,59 +411,74 @@
       -2040
 =======
       -240
+=======
+      -520
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-ckm": [
       400,
-      -120
+      120
     ],
     "voicetypr-cpa": [
       0,
-      1840
+      2360
     ],
     "voicetypr-cre": [
       0,
-      -1920
+      -440
     ],
     "voicetypr-d0m": [
       0,
-      -1760
+      -2360
     ],
     "voicetypr-d1l": [
       0,
-      -1440
+      -2280
     ],
     "voicetypr-dh4": [
       0,
-      960
+      520
+    ],
+    "voicetypr-e29": [
+      0,
+      120
     ],
     "voicetypr-fet": [
       0,
-      -2160
+      -2040
     ],
     "voicetypr-g4i": [
       0,
-      640
+      -1880
     ],
     "voicetypr-gdt": [
       0,
-      560
+      680
     ],
     "voicetypr-gwb": [
       0,
-      -160
+      1400
     ],
     "voicetypr-hb3": [
       0,
+<<<<<<< HEAD
       -1520
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      1880
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-hca": [
       400,
-      -200
+      40
     ],
     "voicetypr-jw3": [
       0,
-      -1680
+      40
+    ],
+    "voicetypr-kl8": [
+      0,
+      -280
     ],
     "voicetypr-jw3": [
       0,
@@ -426,6 +490,7 @@
     ],
     "voicetypr-lcq": [
       0,
+<<<<<<< HEAD
 <<<<<<< HEAD
       -1160
     ],
@@ -494,55 +559,74 @@
       120
 =======
       880
+=======
+      440
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ],
     "voicetypr-mit": [
       0,
-      2000
+      1240
+    ],
+    "voicetypr-mla": [
+      0,
+      -840
     ],
     "voicetypr-mt4": [
       0,
-      -1120
+      -1240
     ],
     "voicetypr-ra2": [
       0,
-      -1200
+      -120
     ],
     "voicetypr-rsc": [
       0,
-      -2000
+      -760
+    ],
+    "voicetypr-rsk": [
+      0,
+      -1320
     ],
     "voicetypr-s2q": [
       0,
-      -1840
+      760
     ],
     "voicetypr-u6d": [
       0,
-      2160
+      1720
     ],
     "voicetypr-vop": [
       0,
-      1120
+      -1400
     ],
     "voicetypr-x0y": [
       0,
-      -880
+      -920
+    ],
+    "voicetypr-xf6": [
+      200,
+      -200
     ],
     "voicetypr-xis": [
       0,
-      0
+      1320
     ],
     "voicetypr-xj7": [
       0,
-      2080
+      2200
     ],
     "voicetypr-yul": [
       0,
-      240
+      -2120
     ],
     "voicetypr-yw1": [
       400,
+<<<<<<< HEAD
       -40
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      -120
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     ]
   },
   "metrics": {
@@ -555,10 +639,14 @@
     ],
     "voicetypr-0g6": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -566,16 +654,21 @@
     ],
     "voicetypr-0k3": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.013047396536285654,
 =======
       0.014745149204277249,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.013611295988369932,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       1,
       0
     ],
     "voicetypr-0sn": [
+<<<<<<< HEAD
 <<<<<<< HEAD
       0.010760741273034325,
       0,
@@ -588,6 +681,9 @@
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -595,10 +691,14 @@
     ],
     "voicetypr-164": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -606,10 +706,14 @@
     ],
     "voicetypr-1db": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -617,10 +721,14 @@
     ],
     "voicetypr-22k": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.05649384653806091,
 =======
       0.06384490526256897,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.05893546493923058,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       35,
       7,
       5,
@@ -628,10 +736,14 @@
     ],
     "voicetypr-230": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -639,10 +751,14 @@
     ],
     "voicetypr-26k": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -650,10 +766,14 @@
     ],
     "voicetypr-26t": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -661,10 +781,14 @@
     ],
     "voicetypr-28w": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -672,10 +796,14 @@
     ],
     "voicetypr-2jg": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -683,10 +811,14 @@
     ],
     "voicetypr-2xg": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -694,10 +826,21 @@
     ],
     "voicetypr-313": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+      0,
+      0,
+      0,
+      0
+    ],
+    "voicetypr-34x": [
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -712,10 +855,14 @@
     ],
     "voicetypr-43e": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -723,10 +870,14 @@
     ],
     "voicetypr-4mj": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.02185102292383604,
 =======
       0.02469432137934465,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.022795409954989236,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       2,
       1,
       1,
@@ -734,10 +885,14 @@
     ],
     "voicetypr-52u": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       4,
       0,
@@ -745,10 +900,14 @@
     ],
     "voicetypr-55t": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -756,10 +915,14 @@
     ],
     "voicetypr-5bp": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -767,10 +930,14 @@
     ],
     "voicetypr-5cx": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -778,10 +945,14 @@
     ],
     "voicetypr-5l4": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       7,
       0,
@@ -789,10 +960,14 @@
     ],
     "voicetypr-5p5": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -800,10 +975,14 @@
     ],
     "voicetypr-5qq": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.03522795983788909,
 =======
       0.03981188892896908,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.03675048907433072,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       3,
@@ -811,10 +990,14 @@
     ],
     "voicetypr-5w3": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -822,10 +1005,14 @@
     ],
     "voicetypr-61b": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.02933413708403925,
 =======
       0.03315118203349657,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.030601947206701598,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -833,10 +1020,14 @@
     ],
     "voicetypr-63v": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -844,10 +1035,14 @@
     ],
     "voicetypr-6zw": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -855,10 +1050,14 @@
     ],
     "voicetypr-718": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -866,10 +1065,14 @@
     ],
     "voicetypr-74y": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -877,10 +1080,14 @@
     ],
     "voicetypr-7d9": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -888,10 +1095,14 @@
     ],
     "voicetypr-7mc": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -899,10 +1110,14 @@
     ],
     "voicetypr-7n2": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -910,10 +1125,14 @@
     ],
     "voicetypr-7o1": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -921,10 +1140,14 @@
     ],
     "voicetypr-7p3": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -932,10 +1155,14 @@
     ],
     "voicetypr-7t6": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -943,10 +1170,14 @@
     ],
     "voicetypr-88a": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -954,10 +1185,14 @@
     ],
     "voicetypr-8b6": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -965,10 +1200,14 @@
     ],
     "voicetypr-9bs": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -976,10 +1215,14 @@
     ],
     "voicetypr-9dx": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -987,10 +1230,14 @@
     ],
     "voicetypr-9fj": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.013047396536285654,
 =======
       0.014745149204277249,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.013611295988369932,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       1,
@@ -998,10 +1245,14 @@
     ],
     "voicetypr-9rt": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1009,10 +1260,14 @@
     ],
     "voicetypr-b1p": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1020,10 +1275,14 @@
     ],
     "voicetypr-ckm": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -1031,10 +1290,14 @@
     ],
     "voicetypr-cpa": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1042,10 +1305,14 @@
     ],
     "voicetypr-cre": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1053,10 +1320,14 @@
     ],
     "voicetypr-d0m": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1064,10 +1335,14 @@
     ],
     "voicetypr-d1l": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1075,17 +1350,25 @@
     ],
     "voicetypr-dh4": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
       0
     ],
     "voicetypr-e29": [
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1093,10 +1376,14 @@
     ],
     "voicetypr-fet": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1104,10 +1391,14 @@
     ],
     "voicetypr-g4i": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1115,10 +1406,14 @@
     ],
     "voicetypr-gdt": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1126,10 +1421,14 @@
     ],
     "voicetypr-gwb": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1137,10 +1436,14 @@
     ],
     "voicetypr-hb3": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1148,10 +1451,14 @@
     ],
     "voicetypr-hca": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.013047396536285654,
 =======
       0.014745149204277249,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.013611295988369932,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       2,
       1,
       1,
@@ -1159,17 +1466,25 @@
     ],
     "voicetypr-jw3": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
       0
     ],
     "voicetypr-kl8": [
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1177,10 +1492,14 @@
     ],
     "voicetypr-lcq": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1188,23 +1507,32 @@
     ],
     "voicetypr-mit": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mla": [
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mt4": [
+<<<<<<< HEAD
 <<<<<<< HEAD
       0.017620717417167656,
       0,
@@ -1217,6 +1545,9 @@
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1224,10 +1555,14 @@
     ],
     "voicetypr-ra2": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1235,17 +1570,25 @@
     ],
     "voicetypr-rsc": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
       0
     ],
     "voicetypr-rsk": [
+<<<<<<< HEAD
       0.019907362326039645,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.020767743717453192,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1253,10 +1596,14 @@
     ],
     "voicetypr-s2q": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1264,10 +1611,14 @@
     ],
     "voicetypr-u6d": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1275,10 +1626,14 @@
     ],
     "voicetypr-vop": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1286,17 +1641,25 @@
     ],
     "voicetypr-x0y": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.012067401423463655,
 =======
       0.013637635909729315,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.01258894631278661,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
       0
     ],
     "voicetypr-xf6": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -1304,10 +1667,14 @@
     ],
     "voicetypr-xis": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.017620717417167656,
 =======
       0.019913576233248933,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.018382278420032455,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       1,
@@ -1315,10 +1682,14 @@
     ],
     "voicetypr-xj7": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1326,10 +1697,14 @@
     ],
     "voicetypr-yul": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       0,
       0,
@@ -1337,10 +1712,14 @@
     ],
     "voicetypr-yw1": [
 <<<<<<< HEAD
+<<<<<<< HEAD
       0.010760741273034325,
 =======
       0.012160951516998737,
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+      0.011225813412008845,
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       0,
       1,
       0,
@@ -1467,6 +1846,7 @@
   ],
   "version": "1.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:58Z",
   "node_count": 76,
   "edge_count": 29
@@ -1475,4 +1855,9 @@
   "node_count": 67,
   "edge_count": 27
 >>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
+=======
+  "generated_at": "2026-01-15T23:39:14Z",
+  "node_count": 73,
+  "edge_count": 28
+>>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
 }
