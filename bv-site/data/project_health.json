@@ -1,5 +1,6 @@
 {
   "counts": {
+<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -25,10 +26,39 @@
     "node_count": 76,
     "edge_count": 29,
     "density": 0.005087719298245614,
+=======
+    "total": 44,
+    "open": 12,
+    "closed": 32,
+    "blocked": 6,
+    "actionable": 6,
+    "by_status": {
+      "closed": 32,
+      "in_progress": 5,
+      "open": 7
+    },
+    "by_type": {
+      "bug": 10,
+      "feature": 2,
+      "task": 32
+    },
+    "by_priority": {
+      "0": 5,
+      "1": 16,
+      "2": 21,
+      "3": 2
+    }
+  },
+  "graph": {
+    "node_count": 44,
+    "edge_count": 27,
+    "density": 0.01427061310782241,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     "has_cycles": false,
     "phase2_ready": true
   },
   "velocity": {
+<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -36,6 +66,15 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
+=======
+    "closed_last_7_days": 32,
+    "closed_last_30_days": 32,
+    "avg_days_to_close": 0.0229587571370081,
+    "weekly": [
+      {
+        "week_start": "2026-01-12T00:00:00Z",
+        "closed": 32
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",

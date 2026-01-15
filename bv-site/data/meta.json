@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:57:59.5563065Z",
   "issue_count": 76,
   "dependency_count": 29
+=======
+  "generated_at": "2026-01-15T02:17:51.278929Z",
+  "issue_count": 44,
+  "dependency_count": 27
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
 }

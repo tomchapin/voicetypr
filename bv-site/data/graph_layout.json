@@ -1,5 +1,6 @@
 {
   "positions": {
+<<<<<<< HEAD
     "voicetypr-02g": [
       0,
       -1320
@@ -77,6 +78,25 @@
       0
     ],
     "voicetypr-55t": [
+=======
+    "voicetypr-0g6": [
+      0,
+      -120
+    ],
+    "voicetypr-0k3": [
+      200,
+      -160
+    ],
+    "voicetypr-1db": [
+      0,
+      -1000
+    ],
+    "voicetypr-22k": [
+      200,
+      80
+    ],
+    "voicetypr-230": [
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       -2280
     ],
@@ -88,6 +108,7 @@
       0,
       -600
     ],
+<<<<<<< HEAD
     "voicetypr-5l4": [
       200,
       160
@@ -107,9 +128,15 @@
     "voicetypr-61b": [
       0,
       520
-    ],
-    "voicetypr-63v": [
+=======
+    "voicetypr-26t": [
       0,
+      -680
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
+    ],
+    "voicetypr-28w": [
+      0,
+<<<<<<< HEAD
       -1080
     ],
     "voicetypr-6zw": [
@@ -125,11 +152,69 @@
       -200
     ],
     "voicetypr-7d9": [
+=======
+      -40
+    ],
+    "voicetypr-313": [
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1000
     ],
+    "voicetypr-43e": [
+      0,
+      -280
+    ],
+    "voicetypr-4mj": [
+      200,
+      -80
+    ],
+    "voicetypr-52u": [
+      600,
+      0
+    ],
+    "voicetypr-55t": [
+      0,
+      600
+    ],
+    "voicetypr-5cx": [
+      0,
+      -360
+    ],
+    "voicetypr-5l4": [
+      200,
+      160
+    ],
+    "voicetypr-5qq": [
+      0,
+      1080
+    ],
+    "voicetypr-61b": [
+      0,
+      -440
+    ],
+    "voicetypr-63v": [
+      0,
+      280
+    ],
+    "voicetypr-6zw": [
+      0,
+      -1240
+    ],
+    "voicetypr-718": [
+      0,
+      -200
+    ],
+    "voicetypr-74y": [
+      400,
+      -120
+    ],
+    "voicetypr-7d9": [
+      0,
+      120
+    ],
     "voicetypr-7mc": [
       0,
+<<<<<<< HEAD
       1640
     ],
     "voicetypr-7n2": [
@@ -151,6 +236,21 @@
     "voicetypr-88a": [
       0,
       40
+=======
+      1000
+    ],
+    "voicetypr-7o1": [
+      400,
+      -40
+    ],
+    "voicetypr-7t6": [
+      0,
+      440
+    ],
+    "voicetypr-88a": [
+      0,
+      1240
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     ],
     "voicetypr-8b6": [
       400,
@@ -162,6 +262,7 @@
     ],
     "voicetypr-9dx": [
       0,
+<<<<<<< HEAD
       -1800
     ],
     "voicetypr-9fj": [
@@ -175,6 +276,13 @@
     "voicetypr-b1p": [
       0,
       -120
+=======
+      920
+    ],
+    "voicetypr-9fj": [
+      200,
+      0
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     ],
     "voicetypr-ckm": [
       400,
@@ -186,6 +294,7 @@
     ],
     "voicetypr-cre": [
       0,
+<<<<<<< HEAD
       -1480
     ],
     "voicetypr-d0m": [
@@ -219,10 +328,29 @@
     "voicetypr-gwb": [
       0,
       -680
+=======
+      -600
+    ],
+    "voicetypr-fet": [
+      0,
+      1160
+    ],
+    "voicetypr-g4i": [
+      0,
+      40
     ],
     "voicetypr-hb3": [
       0,
+      -920
+    ],
+    "voicetypr-hca": [
+      400,
       120
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
+    ],
+    "voicetypr-hb3": [
+      0,
+      -760
     ],
     "voicetypr-hca": [
       400,
@@ -250,7 +378,11 @@
     ],
     "voicetypr-mt4": [
       0,
-      -520
+      -1080
+    ],
+    "voicetypr-ra2": [
+      0,
+      200
     ],
     "voicetypr-qk9": [
       0,
@@ -262,6 +394,7 @@
     ],
     "voicetypr-rsc": [
       0,
+<<<<<<< HEAD
       -2360
     ],
     "voicetypr-rsk": [
@@ -279,6 +412,21 @@
     "voicetypr-vop": [
       0,
       -2440
+=======
+      840
+    ],
+    "voicetypr-s2q": [
+      0,
+      680
+    ],
+    "voicetypr-u6d": [
+      0,
+      -520
+    ],
+    "voicetypr-vop": [
+      0,
+      520
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     ],
     "voicetypr-x0y": [
       0,
@@ -290,6 +438,7 @@
     ],
     "voicetypr-xis": [
       0,
+<<<<<<< HEAD
       -360
     ],
     "voicetypr-xj7": [
@@ -299,6 +448,9 @@
     "voicetypr-yul": [
       0,
       1480
+=======
+      -1160
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     ],
     "voicetypr-yw1": [
       400,
@@ -306,6 +458,7 @@
     ]
   },
   "metrics": {
+<<<<<<< HEAD
     "voicetypr-02g": [
       0.010760741273034325,
       0,
@@ -315,18 +468,27 @@
     ],
     "voicetypr-0g6": [
       0.010760741273034325,
+=======
+    "voicetypr-0g6": [
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-0k3": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.02047089740364328,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       1,
       0
     ],
+<<<<<<< HEAD
     "voicetypr-0sn": [
       0.010760741273034325,
       0,
@@ -350,19 +512,28 @@
     ],
     "voicetypr-1db": [
       0.010760741273034325,
+=======
+    "voicetypr-1db": [
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-22k": [
+<<<<<<< HEAD
       0.05649384653806091,
+=======
+      0.08863693014360623,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       35,
       7,
       5,
       0
     ],
     "voicetypr-230": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -371,19 +542,27 @@
     ],
     "voicetypr-26k": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-26t": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-28w": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -399,13 +578,20 @@
     ],
     "voicetypr-2xg": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-313": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
@@ -419,33 +605,50 @@
       0
     ],
     "voicetypr-43e": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-4mj": [
+<<<<<<< HEAD
       0.02185102292383604,
+=======
+      0.03428349966500186,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       2,
       1,
       1,
       0
     ],
     "voicetypr-52u": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       4,
       0,
       0
     ],
     "voicetypr-55t": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
+<<<<<<< HEAD
     "voicetypr-5bp": [
       0.010760741273034325,
       0,
@@ -455,13 +658,21 @@
     ],
     "voicetypr-5cx": [
       0.010760741273034325,
+=======
+    "voicetypr-5cx": [
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5l4": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       7,
       0,
@@ -475,12 +686,17 @@
       0
     ],
     "voicetypr-5qq": [
+<<<<<<< HEAD
       0.03522795983788909,
+=======
+      0.05527147379372496,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       3,
       0
     ],
+<<<<<<< HEAD
     "voicetypr-5w3": [
       0.010760741273034325,
       0,
@@ -490,47 +706,72 @@
     ],
     "voicetypr-61b": [
       0.02933413708403925,
+=======
+    "voicetypr-61b": [
+      0.04602420312248515,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-63v": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-6zw": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-718": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-74y": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       0,
       0
     ],
     "voicetypr-7d9": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-7mc": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -539,18 +780,26 @@
     ],
     "voicetypr-7n2": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-7o1": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       0,
       0
     ],
+<<<<<<< HEAD
     "voicetypr-7p3": [
       0.010760741273034325,
       0,
@@ -560,20 +809,32 @@
     ],
     "voicetypr-7t6": [
       0.010760741273034325,
+=======
+    "voicetypr-7t6": [
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-88a": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-8b6": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       0,
@@ -587,14 +848,22 @@
       0
     ],
     "voicetypr-9dx": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-9fj": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.02047089740364328,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       1,
@@ -615,7 +884,11 @@
       0
     ],
     "voicetypr-ckm": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       0,
@@ -629,6 +902,7 @@
       0
     ],
     "voicetypr-cre": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -658,19 +932,27 @@
     ],
     "voicetypr-e29": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-fet": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-g4i": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -686,20 +968,31 @@
     ],
     "voicetypr-gwb": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hb3": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hca": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.02047089740364328,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       2,
       1,
       1,
@@ -720,6 +1013,7 @@
       0
     ],
     "voicetypr-lcq": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -735,18 +1029,26 @@
     ],
     "voicetypr-mla": [
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mt4": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
+<<<<<<< HEAD
     "voicetypr-qk9": [
       0.019907362326039645,
       0,
@@ -756,12 +1058,17 @@
     ],
     "voicetypr-ra2": [
       0.010760741273034325,
+=======
+    "voicetypr-ra2": [
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       0,
       0
     ],
     "voicetypr-rsc": [
+<<<<<<< HEAD
       0.012067401423463655,
       0,
       0,
@@ -770,34 +1077,53 @@
     ],
     "voicetypr-rsk": [
       0.019907362326039645,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-s2q": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-u6d": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-vop": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
       0
     ],
     "voicetypr-x0y": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.018933317717779452,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
@@ -811,7 +1137,11 @@
       0
     ],
     "voicetypr-xis": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.027646301890098875,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       0,
       1,
@@ -832,7 +1162,11 @@
       0
     ],
     "voicetypr-yw1": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.016883211469961017,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       0,
       1,
       0,
@@ -873,10 +1207,13 @@
       "voicetypr-22k"
     ],
     [
+<<<<<<< HEAD
       "voicetypr-qk9",
       "voicetypr-34x"
     ],
     [
+=======
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       "voicetypr-61b",
       "voicetypr-4mj"
     ],
@@ -949,16 +1286,25 @@
       "voicetypr-hca"
     ],
     [
+<<<<<<< HEAD
       "voicetypr-rsk",
       "voicetypr-xf6"
     ],
     [
+=======
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       "voicetypr-22k",
       "voicetypr-yw1"
     ]
   ],
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:57:59Z",
   "node_count": 76,
   "edge_count": 29
+=======
+  "generated_at": "2026-01-15T02:17:51Z",
+  "node_count": 44,
+  "edge_count": 27
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
 }

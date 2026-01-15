@@ -2,5 +2,9 @@
   "chunked": false,
   "chunk_count": 0,
   "chunk_size": 0,
+<<<<<<< HEAD
   "total_size": 279552
+=======
+  "total_size": 160768
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
 }

@@ -1,6 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
+<<<<<<< HEAD
     "generated_at": "2026-01-15T17:57:59.3105269-08:00",
     "phase2_ready": true,
     "issue_count": 76,
@@ -16,6 +17,23 @@
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
         "score": 0.17861316893543774,
+=======
+    "generated_at": "2026-01-14T18:17:51.238824-08:00",
+    "phase2_ready": true,
+    "issue_count": 44,
+    "compute_time_ms": 0
+  },
+  "quick_ref": {
+    "open_count": 12,
+    "actionable_count": 6,
+    "blocked_count": 6,
+    "in_progress_count": 5,
+    "top_picks": [
+      {
+        "id": "voicetypr-5qq",
+        "title": "Setup: Install and configure VoiceTypr on MacBook",
+        "score": 0.34985476329877113,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -23,24 +41,44 @@
         "unblocks": 1
       },
       {
+<<<<<<< HEAD
         "id": "voicetypr-0k3",
         "title": "Test: Host local + remote client concurrent transcription",
         "score": 0.17312517624595192,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
+=======
+        "id": "voicetypr-61b",
+        "title": "Diagnostic: Test VoiceTypr server connectivity from Windows host",
+        "score": 0.28243096048670313,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): voicetypr-4mj",
+          "📊 High centrality in dependency graph (PageRank: 52%)",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P0) - prioritize this work"
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         ],
-        "unblocks": 0
+        "unblocks": 1
       },
       {
+<<<<<<< HEAD
         "id": "voicetypr-9fj",
         "title": "Test: Rapid sequential requests from single client",
         "score": 0.1731250709566701,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
+=======
+        "id": "voicetypr-43e",
+        "title": "Frontend: Re-transcribe button and popout in History",
+        "score": 0.1717118536861027,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): voicetypr-5l4",
+          "✅ Currently unclaimed - available for work"
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         ],
-        "unblocks": 0
+        "unblocks": 1
       }
     ]
   },
@@ -52,6 +90,7 @@
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17861316893543774,
       "breakdown": {
         "pagerank": 0.04699322980908016,
@@ -71,6 +110,27 @@
         "urgency_norm": 0.07615255856586395,
         "risk_norm": 0.020629061266161087,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+=======
+      "score": 0.34985476329877113,
+      "breakdown": {
+        "pagerank": 0.1371857555865119,
+        "betweenness": 0,
+        "blocker_ratio": 0.078,
+        "staleness": 0.00030010118728973764,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.00126974710710564,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.6235716163023267,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.006002023745794753,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.012697471071056399,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
@@ -91,12 +151,202 @@
       ]
     },
     {
+      "id": "voicetypr-61b",
+      "title": "Diagnostic: Test VoiceTypr server connectivity from Windows host",
+      "type": "task",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.28243096048670313,
+      "breakdown": {
+        "pagerank": 0.1142337022564078,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0000937447831404321,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.05425,
+        "urgency": 0.0004001535330436734,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.51924410116549,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.0018748956628086419,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.5425,
+        "urgency_norm": 0.004001535330436734,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 4), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-4mj",
+        "📊 High centrality in dependency graph (PageRank: 52%)",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
+      "id": "voicetypr-4mj",
+      "title": "Bug: Remote server connection test fails with 'Load failed'",
+      "type": "bug",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.24783130669449485,
+      "breakdown": {
+        "pagerank": 0.08509286043729791,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0000982782142939815,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.00041942328795528954,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.3867857292604451,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.00196556428587963,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.004194232879552895,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-61b first to unblock this",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-hca",
+        "📊 High centrality in dependency graph (PageRank: 39%)",
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-61b - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-hca"
+      ],
+      "blocked_by": [
+        "voicetypr-61b"
+      ]
+    },
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.1717118536861027,
+      "breakdown": {
+        "pagerank": 0.046993165164485824,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.00027395626203896605,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0012027064394783905,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.21360529620220828,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.005479125240779321,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.012027064394783904,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-5l4",
+        "✅ Currently unclaimed - available for work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ]
+    },
+    {
+      "id": "voicetypr-hca",
+      "title": "Test: Remote transcription end-to-end verification",
+      "type": "task",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.1623185700171606,
+      "breakdown": {
+        "pagerank": 0.05080949240350452,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.00026631941698881175,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0011292882040218166,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095223819774782,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.0053263883397762345,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.011292882040218166,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-4mj first to unblock this",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "⏳ Blocked by voicetypr-4mj - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
       "id": "voicetypr-0k3",
       "title": "Test: Host local + remote client concurrent transcription",
       "type": "task",
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17312517624595192,
       "breakdown": {
         "pagerank": 0.050809555622115164,
@@ -114,6 +364,25 @@
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07673377084256416,
+=======
+      "score": 0.15650334756799478,
+      "breakdown": {
+        "pagerank": 0.05080949240350452,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.00030007100737847224,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0012696210491104588,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095223819774782,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.006001420147569445,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.012696210491104587,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -139,6 +408,7 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.1731250709566701,
       "breakdown": {
         "pagerank": 0.050809555622115164,
@@ -156,6 +426,25 @@
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07673279979796627,
+=======
+      "score": 0.15650323671915717,
+      "breakdown": {
+        "pagerank": 0.05080949240350452,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0003000442420949074,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0012695092533470066,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095223819774782,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.006000884841898147,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.012695092533470065,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -222,12 +511,60 @@
       ]
     },
     {
+<<<<<<< HEAD
       "id": "voicetypr-yul",
       "title": "Feature: Support file upload transcription via remote server",
+=======
+      "id": "voicetypr-718",
+      "title": "Bug: Remote server selection not working - transcription uses local model, tray menu missing remotes",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.1241712168571887,
+      "breakdown": {
+        "pagerank": 0.04190472884579423,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.000033231496566358034,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.00019949231076613617,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904760402081556,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0006646299313271606,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.0019949231076613616,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-52u",
+      "title": "Concurrency Testing: Multiple clients to single server [EPIC]",
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       "type": "feature",
       "status": "open",
-      "priority": 2,
+      "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.11425275111425363,
       "breakdown": {
         "pagerank": 0.041904795391700174,
@@ -246,23 +583,52 @@
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.058182373942076815,
         "risk_norm": 0.020000000000000004,
+=======
+      "score": 0.11367014632930819,
+      "breakdown": {
+        "pagerank": 0.04190472884579423,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.000300312155626929,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0012706282883175935,
+        "risk": 0.010660254037844387,
+        "pagerank_norm": 0.1904760402081556,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.00600624311253858,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.012706282883175934,
+        "risk_norm": 0.10660254037844386,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
-          "fan_variance": 0,
+          "fan_variance": 0.28867513459481287,
           "activity_churn": 0,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
+          "composite_risk": 0.10660254037844386,
           "explanation": "Low risk - stable dependency structure"
         }
       },
-      "action": "Start work on this issue",
+      "action": "Work on voicetypr-5qq first to unblock this",
       "reasons": [
-        "✅ Currently unclaimed - available for work"
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by 4 items - need to clear dependencies",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-5qq",
+        "voicetypr-0k3",
+        "voicetypr-9fj",
+        "voicetypr-hca"
       ]
     },
     {
+<<<<<<< HEAD
       "id": "voicetypr-5w3",
       "title": "Bug: Transcription count stuck at 500",
       "type": "bug",
@@ -286,6 +652,31 @@
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.018377442481646522,
+=======
+      "id": "voicetypr-88a",
+      "title": "Network Sharing uses old model despite auto-restart",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 1,
+      "labels": null,
+      "score": 0.10714797623374388,
+      "breakdown": {
+        "pagerank": 0.04190472884579423,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00015997910872106482,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0007538295222616898,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904760402081556,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0031995821744212963,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.0075382952226168976,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -298,8 +689,9 @@
           "explanation": "Low risk - stable dependency structure"
         }
       },
-      "action": "Start work on this issue",
+      "action": "Continue work on this issue",
       "reasons": [
+<<<<<<< HEAD
         "✅ Currently unclaimed - available for work"
       ]
     },
@@ -469,6 +861,10 @@
       "action": "Start work on this issue",
       "reasons": [
         "✅ Currently unclaimed - available for work"
+=======
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P1) - prioritize this work"
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       ]
     }
   ],
@@ -483,10 +879,38 @@
       ]
     },
     {
+      "id": "voicetypr-4mj",
+      "title": "Bug: Remote server connection test fails with 'Load failed'",
+      "score": 0.7000000000000001,
+      "reason": "Unblocks 1 items, high priority",
+      "unblocks_ids": [
+        "voicetypr-hca"
+      ]
+    },
+    {
+      "id": "voicetypr-61b",
+      "title": "Diagnostic: Test VoiceTypr server connectivity from Windows host",
+      "score": 0.7000000000000001,
+      "reason": "Unblocks 1 items, high priority",
+      "unblocks_ids": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "score": 0.6000000000000001,
+      "reason": "Unblocks 1 items",
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ]
+    },
+    {
       "id": "voicetypr-52u",
       "title": "Concurrency Testing: Multiple clients to single server [EPIC]",
       "score": 0.5,
       "reason": "Low complexity, high priority"
+<<<<<<< HEAD
     },
     {
       "id": "voicetypr-5l4",
@@ -505,6 +929,8 @@
       "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
       "score": 0.4,
       "reason": "Low complexity"
+=======
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
     }
   ],
   "blockers_to_clear": [
@@ -516,10 +942,41 @@
         "voicetypr-5l4"
       ],
       "actionable": true
+    },
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ],
+      "actionable": true
+    },
+    {
+      "id": "voicetypr-4mj",
+      "title": "Bug: Remote server connection test fails with 'Load failed'",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "voicetypr-hca"
+      ],
+      "actionable": false,
+      "blocked_by": [
+        "voicetypr-61b"
+      ]
+    },
+    {
+      "id": "voicetypr-61b",
+      "title": "Diagnostic: Test VoiceTypr server connectivity from Windows host",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "voicetypr-4mj"
+      ],
+      "actionable": true
     }
   ],
   "project_health": {
     "counts": {
+<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -545,10 +1002,39 @@
       "node_count": 76,
       "edge_count": 29,
       "density": 0.005087719298245614,
+=======
+      "total": 44,
+      "open": 12,
+      "closed": 32,
+      "blocked": 6,
+      "actionable": 6,
+      "by_status": {
+        "closed": 32,
+        "in_progress": 5,
+        "open": 7
+      },
+      "by_type": {
+        "bug": 10,
+        "feature": 2,
+        "task": 32
+      },
+      "by_priority": {
+        "0": 5,
+        "1": 16,
+        "2": 21,
+        "3": 2
+      }
+    },
+    "graph": {
+      "node_count": 44,
+      "edge_count": 27,
+      "density": 0.01427061310782241,
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
       "has_cycles": false,
       "phase2_ready": true
     },
     "velocity": {
+<<<<<<< HEAD
       "closed_last_7_days": 66,
       "closed_last_30_days": 66,
       "avg_days_to_close": 0.2242851113066253,
@@ -556,6 +1042,15 @@
         {
           "week_start": "2026-01-12T00:00:00Z",
           "closed": 66
+=======
+      "closed_last_7_days": 32,
+      "closed_last_30_days": 32,
+      "avg_days_to_close": 0.0229587571370081,
+      "weekly": [
+        {
+          "week_start": "2026-01-12T00:00:00Z",
+          "closed": 32
+>>>>>>> 0ae6b65 (chore(beads): sync beads state for remote transcription testing)
         },
         {
           "week_start": "2026-01-05T00:00:00Z",
