@@ -58,7 +58,7 @@ export function ModelsSection({
   onSelect,
   refreshModels,
 }: ModelsSectionProps) {
-  const { settings, updateSettings } = useSettings();
+  const { settings, updateSettings, refreshSettings } = useSettings();
   const [cloudModal, setCloudModal] = useState<CloudModalState | null>(null);
   const [cloudModalLoading, setCloudModalLoading] = useState(false);
   const [remoteServers, setRemoteServers] = useState<SavedConnection[]>([]);
@@ -148,6 +148,45 @@ export function ModelsSection({
     fetchActiveRemoteServer();
   }, [fetchRemoteServers, fetchActiveRemoteServer]);
 
+<<<<<<< HEAD
+=======
+  // Refresh active remote server when window gains focus (handles tray menu changes)
+  useEffect(() => {
+    const handleFocus = () => {
+      fetchActiveRemoteServer();
+      fetchRemoteServers();
+    };
+
+    window.addEventListener("focus", handleFocus);
+
+    // Also listen for Tauri window focus events
+    const unlisten = listen("tauri://focus", handleFocus);
+
+    return () => {
+      window.removeEventListener("focus", handleFocus);
+      unlisten.then((fn) => fn());
+    };
+  }, [fetchActiveRemoteServer, fetchRemoteServers]);
+
+  // Listen for model-changed events (from tray menu selection)
+  useEffect(() => {
+    const unlistenModelChanged = listen<{ model: string; engine: string }>(
+      "model-changed",
+      (event) => {
+        console.log("[ModelsSection] model-changed event received:", event.payload);
+        // Refresh all model-related state
+        fetchActiveRemoteServer();
+        fetchRemoteServers();
+        refreshSettings();
+      }
+    );
+
+    return () => {
+      unlistenModelChanged.then((fn) => fn());
+    };
+  }, [fetchActiveRemoteServer, fetchRemoteServers, refreshSettings]);
+
+>>>>>>> 2779cbe (fix: live-update dashboard when model selected from tray menu)
   const handleSelectRemoteServer = useCallback(
     async (serverId: string) => {
       try {
