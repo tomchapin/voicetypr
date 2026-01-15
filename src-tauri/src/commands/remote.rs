@@ -5,7 +5,7 @@
 
 use std::path::PathBuf;
 
-use tauri::{async_runtime::{Mutex as AsyncMutex, RwLock as AsyncRwLock}, AppHandle, State};
+use tauri::{async_runtime::{Mutex as AsyncMutex, RwLock as AsyncRwLock}, AppHandle, Manager, State};
 use tauri_plugin_store::StoreExt;
 
 use crate::remote::client::RemoteServerConnection;
@@ -273,12 +273,126 @@ pub async fn set_active_remote_server(
 ) -> Result<(), String> {
     log::info!("🔧 [REMOTE] set_active_remote_server called with server_id={:?}", server_id);
 
+<<<<<<< HEAD
     let mut settings = remote_settings.lock().await;
     log::info!("🔧 [REMOTE] Before change: active_connection_id={:?}", settings.active_connection_id);
 
     if let Some(id) = &server_id {
         settings.set_active_connection(Some(id.clone()))?;
         log::info!("🔧 [REMOTE] Active remote server set to: {}", id);
+=======
+    // Track if we need to restore sharing after clearing remote server
+    let mut should_restore_sharing = false;
+    let mut restore_port: Option<u16> = None;
+    let mut restore_password: Option<String> = None;
+
+    // If selecting a remote server, stop sharing first and remember it was active
+    if server_id.is_some() {
+        let manager = server_manager.lock().await;
+        if manager.get_status().enabled {
+            // Get current sharing settings before stopping
+            let status = manager.get_status();
+            restore_port = status.port;
+            restore_password = status.password.clone();
+
+            drop(manager); // Release lock before calling stop
+            log::info!("🔧 [REMOTE] Stopping network sharing - using remote server (will remember for auto-restore)");
+            let mut manager = server_manager.lock().await;
+            manager.stop();
+
+            // Set flag in remote settings to remember sharing was active
+            let mut settings = remote_settings.lock().await;
+            settings.sharing_was_active = true;
+            save_remote_settings(&app, &settings)?;
+            log::info!("🔧 [REMOTE] Network sharing stopped, sharing_was_active flag set");
+        }
+    } else {
+        // Clearing remote server - check if we should restore sharing
+        let settings = remote_settings.lock().await;
+        if settings.sharing_was_active {
+            should_restore_sharing = true;
+            // Get stored sharing settings from app settings
+            if let Ok(store) = app.store("settings") {
+                restore_port = store.get("sharing_port").and_then(|v| v.as_u64()).map(|p| p as u16);
+                restore_password = store.get("sharing_password").and_then(|v| v.as_str().map(|s| s.to_string()));
+            }
+            log::info!("🔧 [REMOTE] Will restore sharing after clearing remote server");
+        }
+    }
+
+    // Update settings (scoped to release lock before tray update)
+    {
+        let mut settings = remote_settings.lock().await;
+        log::info!("🔧 [REMOTE] Before change: active_connection_id={:?}", settings.active_connection_id);
+
+        if let Some(id) = &server_id {
+            settings.set_active_connection(Some(id.clone()))?;
+            log::info!("🔧 [REMOTE] Active remote server set to: {}", id);
+        } else {
+            settings.set_active_connection(None)?;
+            // Clear the sharing_was_active flag since we're restoring now
+            if should_restore_sharing {
+                settings.sharing_was_active = false;
+            }
+            log::info!("🔧 [REMOTE] Active remote server cleared");
+        }
+
+        log::info!("🔧 [REMOTE] After change: active_connection_id={:?}", settings.active_connection_id);
+
+        // Save settings
+        save_remote_settings(&app, &settings)?;
+        log::info!("🔧 [REMOTE] Settings saved to store");
+    }
+
+    // Restore sharing if we were using it before switching to remote
+    if should_restore_sharing {
+        let port = restore_port.unwrap_or(DEFAULT_PORT);
+        log::info!("🔧 [REMOTE] Auto-restoring network sharing on port {}", port);
+
+        let mut manager = server_manager.lock().await;
+
+        // Get current model and engine from store
+        let (current_model, current_engine) = {
+            if let Ok(store) = app.store("settings") {
+                let model = store
+                    .get("current_model")
+                    .and_then(|v| v.as_str().map(|s| s.to_string()))
+                    .unwrap_or_else(|| "base.en".to_string());
+                let engine = store
+                    .get("current_model_engine")
+                    .and_then(|v| v.as_str().map(|s| s.to_string()))
+                    .unwrap_or_else(|| "whisper".to_string());
+                (model, engine)
+            } else {
+                ("base.en".to_string(), "whisper".to_string())
+            }
+        };
+
+        let server_name = hostname::get()
+            .ok()
+            .and_then(|h| h.into_string().ok())
+            .unwrap_or_else(|| "VoiceTypr Server".to_string());
+
+        // Get model path for whisper models
+        let model_path: PathBuf = if current_engine == "whisper" {
+            let whisper_state: &AsyncRwLock<WhisperManager> = app.state::<AsyncRwLock<WhisperManager>>().inner();
+            let guard = whisper_state.read().await;
+            guard.get_model_path(&current_model).unwrap_or_default()
+        } else {
+            PathBuf::new()
+        };
+
+        if let Err(e) = manager.start(port, restore_password, server_name, model_path, current_model, current_engine).await {
+            log::warn!("🔧 [REMOTE] Failed to auto-restore sharing: {}", e);
+        } else {
+            log::info!("🔧 [REMOTE] Network sharing auto-restored successfully");
+        }
+    }
+
+    // Update tray menu to reflect the change
+    if let Err(e) = crate::commands::settings::update_tray_menu(app.clone()).await {
+        log::warn!("🔧 [REMOTE] Failed to update tray menu: {}", e);
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
     } else {
         settings.set_active_connection(None)?;
         log::info!("🔧 [REMOTE] Active remote server cleared");

@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:58.2463804Z",
   "issue_count": 76,
   "dependency_count": 29
+=======
+  "generated_at": "2026-01-15T21:59:26.0015Z",
+  "issue_count": 67,
+  "dependency_count": 27
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
 }

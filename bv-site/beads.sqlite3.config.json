@@ -2,5 +2,9 @@
   "chunked": false,
   "chunk_count": 0,
   "chunk_size": 0,
+<<<<<<< HEAD
   "total_size": 279552
+=======
+  "total_size": 239616
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
 }

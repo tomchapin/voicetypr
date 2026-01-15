@@ -663,6 +663,28 @@ pub async fn set_model_from_tray(app: AppHandle, model_name: String) -> Result<(
     if let Some(connection_id) = model_name.strip_prefix("remote_") {
         log::info!("Setting active remote server from tray: {}", connection_id);
 
+<<<<<<< HEAD
+=======
+        // Stop network sharing if enabled (can't share while using remote)
+        // and remember that it was active for auto-restore later
+        if let Some(server_manager) = app.try_state::<AsyncMutex<RemoteServerManager>>() {
+            let manager = server_manager.lock().await;
+            if manager.get_status().enabled {
+                drop(manager); // Release lock before calling stop
+                log::info!("🔧 [TRAY] Stopping network sharing - selecting remote server (will remember for auto-restore)");
+                let mut manager = server_manager.lock().await;
+                manager.stop();
+
+                // Set flag to remember sharing was active
+                let remote_state = app.state::<AsyncMutex<RemoteSettings>>();
+                let mut settings = remote_state.lock().await;
+                settings.sharing_was_active = true;
+                save_remote_settings(&app, &settings)?;
+                log::info!("🔧 [TRAY] Network sharing stopped, sharing_was_active flag set");
+            }
+        }
+
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         // Set the remote server as active
         let remote_state = app.state::<AsyncMutex<RemoteSettings>>();
         {
@@ -689,13 +711,63 @@ pub async fn set_model_from_tray(app: AppHandle, model_name: String) -> Result<(
     }
 
     // Clear any active remote server when selecting a local model
+    // and restore sharing if it was previously active
+    let should_restore_sharing;
     {
         let remote_state = app.state::<AsyncMutex<RemoteSettings>>();
         let mut settings = remote_state.lock().await;
+        should_restore_sharing = settings.sharing_was_active;
+
         if settings.active_connection_id.is_some() {
             log::info!("Clearing active remote server - switching to local model");
             settings.set_active_connection(None)?;
-            save_remote_settings(&app, &settings)?;
+        }
+
+        // Clear the flag since we'll restore sharing now (if needed)
+        if should_restore_sharing {
+            settings.sharing_was_active = false;
+            log::info!("🔧 [TRAY] Will auto-restore network sharing");
+        }
+
+        save_remote_settings(&app, &settings)?;
+    }
+
+    // Restore sharing if it was previously active
+    if should_restore_sharing {
+        if let Some(server_manager) = app.try_state::<AsyncMutex<RemoteServerManager>>() {
+            // Get sharing settings from app store
+            let store = app.store("settings").map_err(|e| format!("Failed to access store: {}", e))?;
+            let port = store.get("sharing_port").and_then(|v| v.as_u64()).map(|p| p as u16).unwrap_or(47842);
+            let password = store.get("sharing_password").and_then(|v| v.as_str().map(|s| s.to_string()));
+
+            let server_name = hostname::get()
+                .ok()
+                .and_then(|h| h.into_string().ok())
+                .unwrap_or_else(|| "VoiceTypr Server".to_string());
+
+            log::info!("🔧 [TRAY] Auto-restoring network sharing on port {} with model {}", port, model_name);
+
+            // Determine the engine and model path for the model we're switching to
+            let whisper_state = app.state::<tauri::async_runtime::RwLock<WhisperManager>>();
+            let (engine, model_path) = if model_name == "soniox" {
+                ("soniox".to_string(), std::path::PathBuf::new())
+            } else {
+                let guard = whisper_state.read().await;
+                let is_whisper = guard.get_models_status().contains_key(&model_name);
+                if is_whisper {
+                    let path = guard.get_model_path(&model_name).unwrap_or_default();
+                    ("whisper".to_string(), path)
+                } else {
+                    ("parakeet".to_string(), std::path::PathBuf::new())
+                }
+            };
+
+            let mut manager = server_manager.lock().await;
+            if let Err(e) = manager.start(port, password, server_name, model_path, model_name.clone(), engine).await {
+                log::warn!("🔧 [TRAY] Failed to auto-restore sharing: {}", e);
+            } else {
+                log::info!("🔧 [TRAY] Network sharing auto-restored successfully");
+            }
         }
     }
 

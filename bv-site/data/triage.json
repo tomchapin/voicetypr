@@ -1,6 +1,7 @@
 {
   "meta": {
     "version": "1.0.0",
+<<<<<<< HEAD
     "generated_at": "2026-01-15T17:59:57.9906672-08:00",
     "phase2_ready": true,
     "issue_count": 76,
@@ -16,6 +17,48 @@
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
         "score": 0.17862212036668096,
+=======
+    "generated_at": "2026-01-15T13:59:25.955781-08:00",
+    "phase2_ready": true,
+    "issue_count": 67,
+    "compute_time_ms": 0
+  },
+  "quick_ref": {
+    "open_count": 23,
+    "actionable_count": 18,
+    "blocked_count": 5,
+    "in_progress_count": 13,
+    "top_picks": [
+      {
+        "id": "voicetypr-5qq",
+        "title": "Setup: Install and configure VoiceTypr on MacBook",
+        "score": 0.35559881861870835,
+        "reasons": [
+          "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+          "📊 High centrality in dependency graph (PageRank: 62%)",
+          "⚡ Low effort, high impact - good starting point",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 2
+      },
+      {
+        "id": "voicetypr-4mj",
+        "title": "Bug: Remote server connection test fails with 'Load failed'",
+        "score": 0.2672697798495052,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): voicetypr-hca",
+          "📊 High centrality in dependency graph (PageRank: 39%)",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P0) - prioritize this work"
+        ],
+        "unblocks": 1
+      },
+      {
+        "id": "voicetypr-43e",
+        "title": "Frontend: Re-transcribe button and popout in History",
+        "score": 0.17746223509005116,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -46,12 +89,112 @@
   },
   "recommendations": [
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-5qq",
+      "title": "Setup: Install and configure VoiceTypr on MacBook",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.35559881861870835,
+      "breakdown": {
+        "pagerank": 0.13718581816908423,
+        "betweenness": 0,
+        "blocker_ratio": 0.078,
+        "staleness": 0.00166766902982446,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.006659828823101094,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.6235719007685647,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.0333533805964892,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.06659828823101094,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Quick win - start here for fast progress",
+      "reasons": [
+        "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+        "📊 High centrality in dependency graph (PageRank: 62%)",
+        "⚡ Low effort, high impact - good starting point",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-0k3",
+        "voicetypr-9fj"
+      ]
+    },
+    {
+      "id": "voicetypr-4mj",
+      "title": "Bug: Remote server connection test fails with 'Load failed'",
+      "type": "bug",
+      "status": "open",
+      "priority": 0,
+      "labels": null,
+      "score": 0.2672697798495052,
+      "breakdown": {
+        "pagerank": 0.08509294016669079,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0014658460568287039,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.005903559817915111,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.3867860916667763,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.029316921136574074,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.059035598179151105,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-hca",
+        "📊 High centrality in dependency graph (PageRank: 39%)",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-hca"
+      ]
+    },
+    {
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17862212036668096,
       "breakdown": {
         "pagerank": 0.04699322980908016,
@@ -70,6 +213,26 @@
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07623572215501839,
         "risk_norm": 0.020628315087226252,
+=======
+      "score": 0.17746223509005116,
+      "breakdown": {
+        "pagerank": 0.04699325479145875,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0016415241045736884,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0066002035628512645,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.21360570359753978,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03283048209147377,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.06600203562851265,
+        "risk_norm": 0.020000000000000004,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
@@ -91,12 +254,62 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-hca",
+      "title": "Test: Remote transcription end-to-end verification",
+      "type": "task",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.16705986143194534,
+      "breakdown": {
+        "pagerank": 0.050809580053411865,
+        "betweenness": 0.011428571428571429,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0016338872595235343,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.04025,
+        "urgency": 0.006534906161272264,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095263660641757,
+        "betweenness_norm": 0.05714285714285714,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03267774519047068,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.06534906161272264,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-4mj first to unblock this",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "⏳ Blocked by voicetypr-4mj - complete that first",
+        "🚨 High priority (P0) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-4mj"
+      ]
+    },
+    {
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
       "id": "voicetypr-0k3",
       "title": "Test: Host local + remote client concurrent transcription",
       "type": "task",
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17313418140897713,
       "breakdown": {
         "pagerank": 0.050809555622115164,
@@ -114,6 +327,25 @@
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07681682039139587,
+=======
+      "score": 0.16190954848942352,
+      "breakdown": {
+        "pagerank": 0.050809580053411865,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0016676388499131944,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.006659716708454339,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095263660641757,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03335277699826389,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.06659716708454338,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -126,6 +358,101 @@
           "explanation": "Low risk - stable dependency structure"
         }
       },
+<<<<<<< HEAD
+=======
+      "action": "Work on voicetypr-5qq first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-5qq - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-5qq"
+      ]
+    },
+    {
+      "id": "voicetypr-9fj",
+      "title": "Test: Rapid sequential requests from single client",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.16190944753322165,
+      "breakdown": {
+        "pagerank": 0.050809580053411865,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0016676120846296294,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.006659617278485536,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095263660641757,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.033352241692592585,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.06659617278485536,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-5qq first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-5qq - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-5qq"
+      ]
+    },
+    {
+      "id": "voicetypr-ra2",
+      "title": "Copy address button needs interactive hover/click states",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.13568358652090623,
+      "breakdown": {
+        "pagerank": 0.041904821108854594,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0013269057775270063,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.006146021961743381,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904764595857027,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.026538115550540125,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.06146021961743381,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
       "action": "Start work on this issue",
       "reasons": [
         "✅ Currently unclaimed - available for work",
@@ -139,6 +466,7 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17313407613589032,
       "breakdown": {
         "pagerank": 0.050809555622115164,
@@ -156,6 +484,25 @@
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07681584953732778,
+=======
+      "score": 0.12898450318770852,
+      "breakdown": {
+        "pagerank": 0.041904821108854594,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0014007993391010804,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005707955534485044,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904764595857027,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.028015986782021607,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.05707955534485043,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -181,6 +528,7 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.13635510552461774,
       "breakdown": {
         "pagerank": 0.041904795391700174,
@@ -199,6 +547,26 @@
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.0768255674337846,
         "risk_norm": 0.10660254037844386,
+=======
+      "score": 0.12868585520151662,
+      "breakdown": {
+        "pagerank": 0.041904821108854594,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.001319136936709105,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005362977956602905,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904764595857027,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0263827387341821,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.053629779566029046,
+        "risk_norm": 0.020000000000000004,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
@@ -212,11 +580,68 @@
       },
       "action": "Work on voicetypr-0k3 first to unblock this",
       "reasons": [
+<<<<<<< HEAD
         "✅ Currently unclaimed - available for work",
         "⏳ Blocked by 2 items - need to clear dependencies",
         "🚨 High priority (P1) - prioritize this work"
       ],
       "blocked_by": [
+=======
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-0sn",
+      "title": "Bug: Dashboard Models page doesn't show active remote server selection",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.12866043188618195,
+      "breakdown": {
+        "pagerank": 0.041904821108854594,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0013151395532986112,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005330656318106719,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.1904764595857027,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.026302791065972223,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.05330656318106719,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    }
+  ],
+  "quick_wins": [
+    {
+      "id": "voicetypr-5qq",
+      "title": "Setup: Install and configure VoiceTypr on MacBook",
+      "score": 0.7339850002884626,
+      "reason": "Unblocks 2 items, high priority",
+      "unblocks_ids": [
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         "voicetypr-0k3",
         "voicetypr-9fj"
       ]
@@ -520,6 +945,7 @@
   ],
   "project_health": {
     "counts": {
+<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -545,10 +971,39 @@
       "node_count": 76,
       "edge_count": 29,
       "density": 0.005087719298245614,
+=======
+      "total": 67,
+      "open": 23,
+      "closed": 44,
+      "blocked": 5,
+      "actionable": 18,
+      "by_status": {
+        "closed": 44,
+        "in_progress": 13,
+        "open": 10
+      },
+      "by_type": {
+        "bug": 24,
+        "feature": 7,
+        "task": 36
+      },
+      "by_priority": {
+        "0": 9,
+        "1": 26,
+        "2": 30,
+        "3": 2
+      }
+    },
+    "graph": {
+      "node_count": 67,
+      "edge_count": 27,
+      "density": 0.006105834464043419,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
       "has_cycles": false,
       "phase2_ready": true
     },
     "velocity": {
+<<<<<<< HEAD
       "closed_last_7_days": 66,
       "closed_last_30_days": 66,
       "avg_days_to_close": 0.2242851113066253,
@@ -556,6 +1011,15 @@
         {
           "week_start": "2026-01-12T00:00:00Z",
           "closed": 66
+=======
+      "closed_last_7_days": 44,
+      "closed_last_30_days": 44,
+      "avg_days_to_close": 0.0723445573169718,
+      "weekly": [
+        {
+          "week_start": "2026-01-12T00:00:00Z",
+          "closed": 44
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
         },
         {
           "week_start": "2026-01-05T00:00:00Z",

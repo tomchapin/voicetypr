@@ -43,6 +43,10 @@ pub struct RemoteSettings {
     pub saved_connections: Vec<SavedConnection>,
     /// Currently active connection ID (if using remote transcription)
     pub active_connection_id: Option<String>,
+    /// Flag indicating sharing was auto-disabled when switching to remote model
+    /// Used to auto-restore sharing when returning to a local model
+    #[serde(default)]
+    pub sharing_was_active: bool,
 }
 
 impl Default for RemoteSettings {
@@ -51,6 +55,7 @@ impl Default for RemoteSettings {
             server_config: RemoteServerConfig::default(),
             saved_connections: Vec::new(),
             active_connection_id: None,
+            sharing_was_active: false,
         }
     }
 }

@@ -2,7 +2,11 @@
 
 ## 📊 Executive Summary
 
+<<<<<<< HEAD
 **76** total issues | **87%** complete | **8** ready to work | **2** blocked
+=======
+**67** total issues | **66%** complete | **18** ready to work | **5** blocked
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
 
 ## 🎯 Top Priorities
 
@@ -39,8 +43,13 @@ These issues are blocking the most downstream work. Clearing them has outsized i
 
 ## 📈 Graph Analysis
 
+<<<<<<< HEAD
 - **Dependency Density:** 0.005 (🟢 Healthy) — Issues are well-isolated and can be parallelized
 - **Graph Size:** 76 issues with 29 dependencies
+=======
+- **Dependency Density:** 0.006 (🟢 Healthy) — Issues are well-isolated and can be parallelized
+- **Graph Size:** 67 issues with 27 dependencies
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
 - **Cycles:** None detected ✓
 
 ## 🏃 Quick Wins
@@ -60,6 +69,7 @@ Low-effort items that clear the path forward:
 
 ## 📋 Status Summary
 
+<<<<<<< HEAD
 **By Priority:** P0: 11 | P1: 29 | P2: 33 | P3: 3
 
 **By Type:** bug: 27 | feature: 9 | task: 40
@@ -67,4 +77,13 @@ Low-effort items that clear the path forward:
 ---
 
 *Generated Jan 15, 2026 at 5:59 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+=======
+**By Priority:** P0: 9 | P1: 26 | P2: 30 | P3: 2
+
+**By Type:** bug: 24 | feature: 7 | task: 36
+
+---
+
+*Generated Jan 15, 2026 at 1:59 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
 

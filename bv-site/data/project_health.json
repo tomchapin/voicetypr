@@ -1,5 +1,6 @@
 {
   "counts": {
+<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -25,10 +26,39 @@
     "node_count": 76,
     "edge_count": 29,
     "density": 0.005087719298245614,
+=======
+    "total": 67,
+    "open": 23,
+    "closed": 44,
+    "blocked": 5,
+    "actionable": 18,
+    "by_status": {
+      "closed": 44,
+      "in_progress": 13,
+      "open": 10
+    },
+    "by_type": {
+      "bug": 24,
+      "feature": 7,
+      "task": 36
+    },
+    "by_priority": {
+      "0": 9,
+      "1": 26,
+      "2": 30,
+      "3": 2
+    }
+  },
+  "graph": {
+    "node_count": 67,
+    "edge_count": 27,
+    "density": 0.006105834464043419,
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
     "has_cycles": false,
     "phase2_ready": true
   },
   "velocity": {
+<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -36,6 +66,15 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
+=======
+    "closed_last_7_days": 44,
+    "closed_last_30_days": 44,
+    "avg_days_to_close": 0.0723445573169718,
+    "weekly": [
+      {
+        "week_start": "2026-01-12T00:00:00Z",
+        "closed": 44
+>>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",
