@@ -40,6 +40,9 @@ pub struct Settings {
     pub pill_indicator_mode: String,
     // Pill indicator screen position: "top", "center", or "bottom"
     pub pill_indicator_position: String,
+    // Network sharing settings
+    pub sharing_port: Option<u16>,
+    pub sharing_password: Option<String>,
 }
 
 impl Default for Settings {
@@ -65,6 +68,8 @@ impl Default for Settings {
             play_sound_on_recording_end: true,    // Default to playing sound on recording end
             pill_indicator_mode: "when_recording".to_string(), // Default to showing only when recording
             pill_indicator_position: "bottom".to_string(), // Default to bottom of screen
+            sharing_port: Some(47842), // Default network sharing port
+            sharing_password: None,    // No password by default
         }
     }
 }
@@ -189,6 +194,13 @@ pub async fn get_settings(app: AppHandle) -> Result<Settings, String> {
             .get("pill_indicator_position")
             .and_then(|v| v.as_str().map(|s| s.to_string()))
             .unwrap_or_else(|| Settings::default().pill_indicator_position),
+        sharing_port: store
+            .get("sharing_port")
+            .and_then(|v| v.as_u64().map(|n| n as u16))
+            .or(Settings::default().sharing_port),
+        sharing_password: store
+            .get("sharing_password")
+            .and_then(|v| v.as_str().map(|s| s.to_string())),
     };
 
     Ok(settings)
@@ -271,6 +283,15 @@ pub async fn save_settings(app: AppHandle, settings: Settings) -> Result<(), Str
         "pill_indicator_position",
         json!(settings.pill_indicator_position),
     );
+    // Network sharing settings
+    if let Some(port) = settings.sharing_port {
+        store.set("sharing_port", json!(port));
+    }
+    if let Some(ref pwd) = settings.sharing_password {
+        store.set("sharing_password", json!(pwd));
+    } else {
+        store.delete("sharing_password");
+    }
 
     // Save pill position if provided
     if let Some((x, y)) = settings.pill_position {
