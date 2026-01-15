@@ -93,15 +93,26 @@ This project uses **Beads** for issue tracking across multiple Claude Code agent
 
 ### Session Startup (REQUIRED - DO THIS FIRST)
 
-**You MUST start the beads watch daemon at the beginning of every session:**
+**You MUST start the beads watch daemon at the beginning of every session.**
 
+**Detect your platform**, then run the appropriate commands:
+
+#### macOS / Linux
 ```bash
-# macOS/Linux:
 ./beads-watch.sh &
 bv --preview-pages bv-site &
+```
 
-# Windows (PowerShell):
-powershell -ExecutionPolicy Bypass -File beads-watch.ps1 &
+#### Windows (PowerShell)
+```powershell
+powershell -ExecutionPolicy Bypass -File beads-watch.ps1
+# In a separate terminal:
+bv --preview-pages bv-site
+```
+
+#### Windows (Git Bash / WSL)
+```bash
+./beads-watch.sh &
 bv --preview-pages bv-site &
 ```
 
@@ -135,12 +146,15 @@ bd close <id> --reason="..."      # ONLY after user confirms completion
 
 ### Manual Sync (If Daemon Not Running)
 
+#### macOS / Linux / Git Bash / WSL
 ```bash
-# macOS/Linux:
 bd export > .beads/issues.jsonl
 bv --export-pages bv-site
+```
 
-# Windows (PowerShell - BOM-less UTF-8):
+#### Windows (PowerShell)
+```powershell
+# PowerShell requires special handling to avoid UTF-16 BOM corruption
 $content = bd export | Out-String
 [System.IO.File]::WriteAllText(".beads/issues.jsonl", $content.Trim(), [System.Text.UTF8Encoding]::new($false))
 bv --export-pages bv-site

@@ -177,13 +177,24 @@ This project includes custom watch scripts that keep the beads dashboard in sync
 
 ### Starting the Daemon (REQUIRED AT SESSION START)
 
+**Detect your platform first**, then run the appropriate commands:
+
+#### macOS / Linux
 ```bash
-# macOS/Linux:
 ./beads-watch.sh &
 bv --preview-pages bv-site &
+```
 
-# Windows (PowerShell):
-powershell -ExecutionPolicy Bypass -File beads-watch.ps1 &
+#### Windows (PowerShell)
+```powershell
+powershell -ExecutionPolicy Bypass -File beads-watch.ps1
+# In a separate terminal:
+bv --preview-pages bv-site
+```
+
+#### Windows (Git Bash / WSL)
+```bash
+./beads-watch.sh &
 bv --preview-pages bv-site &
 ```
 
@@ -197,12 +208,15 @@ bv --preview-pages bv-site &
 
 If the dashboard shows stale data and the daemon isn't running:
 
+#### macOS / Linux / Git Bash / WSL
 ```bash
-# macOS/Linux:
 bd export > .beads/issues.jsonl
 bv --export-pages bv-site
+```
 
-# Windows (PowerShell - use .NET for BOM-less UTF-8):
+#### Windows (PowerShell)
+```powershell
+# PowerShell requires special handling to avoid UTF-16 BOM corruption
 $content = bd export | Out-String
 [System.IO.File]::WriteAllText(".beads/issues.jsonl", $content.Trim(), [System.Text.UTF8Encoding]::new($false))
 bv --export-pages bv-site
@@ -212,8 +226,12 @@ bv --export-pages bv-site
 
 **Dashboard empty or showing wrong data:**
 1. Run `bd doctor` to check for sync issues
-2. Run the manual sync commands above
+2. Run the manual sync commands above (use correct platform commands!)
 3. Restart the watch daemon
+
+**Windows-specific: JSONL file shows garbage characters (ÿþ or ��):**
+- This is UTF-16 BOM corruption from using `>` redirect in PowerShell
+- Fix: Use the `.NET WriteAllText` method shown above, or use Git Bash instead
 
 **"Count mismatch" or "Status mismatch" warnings:**
 - Run `bd export > .beads/issues.jsonl` to force sync from DB (source of truth)
