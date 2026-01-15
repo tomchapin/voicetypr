@@ -1,12 +1,52 @@
 {
   "positions": {
+<<<<<<< HEAD
     "voicetypr-02g": [
+=======
+    "voicetypr-0g6": [
       0,
-      1400
+      280
+    ],
+    "voicetypr-0k3": [
+      200,
+      -80
+    ],
+    "voicetypr-0sn": [
+      0,
+      440
+    ],
+    "voicetypr-1db": [
+      0,
+      -1880
+    ],
+    "voicetypr-22k": [
+      200,
+      0
+    ],
+    "voicetypr-230": [
+      0,
+      -600
+    ],
+    "voicetypr-26k": [
+      0,
+      1640
+    ],
+    "voicetypr-26t": [
+      0,
+      1080
+    ],
+    "voicetypr-28w": [
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+      0,
+      -840
     ],
     "voicetypr-0g6": [
       0,
+<<<<<<< HEAD
       -200
+=======
+      -1480
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-0k3": [
       200,
@@ -14,7 +54,11 @@
     ],
     "voicetypr-0sn": [
       0,
+<<<<<<< HEAD
       -1480
+=======
+      -1800
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-142": [
       0,
@@ -26,7 +70,7 @@
     ],
     "voicetypr-1db": [
       0,
-      -360
+      760
     ],
     "voicetypr-22k": [
       200,
@@ -78,6 +122,7 @@
     ],
     "voicetypr-55t": [
       0,
+<<<<<<< HEAD
       280
     ],
     "voicetypr-5bp": [
@@ -87,6 +132,17 @@
     "voicetypr-5cx": [
       0,
       680
+=======
+      -680
+    ],
+    "voicetypr-5bp": [
+      0,
+      -760
+    ],
+    "voicetypr-5cx": [
+      0,
+      120
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-5l4": [
       200,
@@ -94,6 +150,7 @@
     ],
     "voicetypr-5p5": [
       0,
+<<<<<<< HEAD
       1240
     ],
     "voicetypr-5qq": [
@@ -163,54 +220,203 @@
     "voicetypr-9dx": [
       0,
       840
+=======
+      1160
+    ],
+    "voicetypr-5qq": [
+      0,
+      600
+    ],
+    "voicetypr-5w3": [
+      0,
+      920
+    ],
+    "voicetypr-61b": [
+      0,
+      -1160
+    ],
+    "voicetypr-63v": [
+      0,
+      -280
+    ],
+    "voicetypr-6zw": [
+      0,
+      -1640
+    ],
+    "voicetypr-718": [
+      0,
+      -1320
+    ],
+    "voicetypr-74y": [
+      400,
+      -40
+    ],
+    "voicetypr-7d9": [
+      0,
+      1320
+    ],
+    "voicetypr-7mc": [
+      0,
+      1800
+    ],
+    "voicetypr-7o1": [
+      400,
+      -200
+    ],
+    "voicetypr-7p3": [
+      0,
+      -440
+    ],
+    "voicetypr-7t6": [
+      0,
+      200
+    ],
+    "voicetypr-88a": [
+      0,
+      1880
+    ],
+    "voicetypr-8b6": [
+      400,
+      40
+    ],
+    "voicetypr-9bs": [
+      0,
+      -520
+    ],
+    "voicetypr-9dx": [
+      0,
+      1400
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-9fj": [
       200,
       -160
     ],
+<<<<<<< HEAD
     "voicetypr-9rt": [
-      0,
-      -520
-    ],
+=======
     "voicetypr-b1p": [
       0,
-      -600
+      -120
     ],
     "voicetypr-ckm": [
       400,
-      40
+      120
     ],
     "voicetypr-cpa": [
       0,
-      1160
+      1560
     ],
     "voicetypr-cre": [
       0,
-      -1640
+      1480
     ],
     "voicetypr-d0m": [
       0,
-      1080
+      -1080
     ],
     "voicetypr-d1l": [
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
-      -840
+      -1000
     ],
     "voicetypr-dh4": [
       0,
-      40
+      -1400
     ],
-    "voicetypr-e29": [
-      0,
-      -2200
-    ],
+<<<<<<< HEAD
+    "voicetypr-b1p": [
+=======
     "voicetypr-fet": [
       0,
-      -2280
+      40
     ],
     "voicetypr-g4i": [
       0,
+      520
+    ],
+    "voicetypr-hb3": [
+      0,
+      -920
+    ],
+    "voicetypr-hca": [
+      400,
+      -120
+    ],
+    "voicetypr-lcq": [
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+      0,
+      -1720
+    ],
+<<<<<<< HEAD
+    "voicetypr-ckm": [
+      400,
+      40
+=======
+    "voicetypr-mit": [
+      0,
+      360
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-cpa": [
+      0,
+      840
+    ],
+    "voicetypr-cre": [
+      0,
+<<<<<<< HEAD
+      -1640
+=======
+      1000
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-d0m": [
+      0,
+<<<<<<< HEAD
+      1080
+=======
+      1720
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-d1l": [
+      0,
+<<<<<<< HEAD
+      -840
+=======
+      -1560
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-dh4": [
+      0,
+<<<<<<< HEAD
+      40
+=======
+      -1240
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-e29": [
+      0,
+<<<<<<< HEAD
+      -2200
+=======
+      -40
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-fet": [
+      0,
+<<<<<<< HEAD
+      -2280
+=======
+      680
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
+    ],
+    "voicetypr-g4i": [
+      0,
+<<<<<<< HEAD
       1880
+=======
+      1240
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-gdt": [
       0,
@@ -218,7 +424,7 @@
     ],
     "voicetypr-gwb": [
       0,
-      120
+      -200
     ],
     "voicetypr-hb3": [
       0,
@@ -298,11 +504,15 @@
     ],
     "voicetypr-yul": [
       0,
+<<<<<<< HEAD
       2040
+=======
+      -360
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
     ],
     "voicetypr-yw1": [
       400,
-      120
+      200
     ]
   },
   "metrics": {
@@ -314,20 +524,29 @@
       0
     ],
     "voicetypr-0g6": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-0k3": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.016117146919389855,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       1,
       0
     ],
     "voicetypr-0sn": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -343,47 +562,71 @@
     ],
     "voicetypr-164": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-1db": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-22k": [
+<<<<<<< HEAD
       0.05649384653806091,
+=======
+      0.06978543488937072,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       35,
       7,
       5,
       0
     ],
     "voicetypr-230": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-26k": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-26t": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-28w": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -392,20 +635,31 @@
     ],
     "voicetypr-2jg": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-2xg": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-313": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
@@ -419,118 +673,183 @@
       0
     ],
     "voicetypr-43e": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-4mj": [
+<<<<<<< HEAD
       0.02185102292383604,
+=======
+      0.026992052260606345,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       2,
       1,
       1,
       0
     ],
     "voicetypr-52u": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       4,
       0,
       0
     ],
     "voicetypr-55t": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-5bp": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5cx": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5l4": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       7,
       0,
       0
     ],
     "voicetypr-5p5": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5qq": [
+<<<<<<< HEAD
       0.03522795983788909,
+=======
+      0.043516251072347134,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       3,
       0
     ],
     "voicetypr-5w3": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-61b": [
+<<<<<<< HEAD
       0.02933413708403925,
+=======
+      0.036235834670039956,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-63v": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-6zw": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-718": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-74y": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       0,
       0
     ],
     "voicetypr-7d9": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-7mc": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -539,62 +858,97 @@
     ],
     "voicetypr-7n2": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-7o1": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       0,
       0
     ],
     "voicetypr-7p3": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-7t6": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-88a": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-8b6": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       0,
       0
     ],
     "voicetypr-9bs": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-9dx": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-9fj": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.016117146919389855,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       1,
@@ -608,48 +962,73 @@
       0
     ],
     "voicetypr-b1p": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-ckm": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       0,
       0
     ],
     "voicetypr-cpa": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-cre": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-d0m": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-d1l": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-dh4": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -658,19 +1037,27 @@
     ],
     "voicetypr-e29": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-fet": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-g4i": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -686,20 +1073,31 @@
     ],
     "voicetypr-gwb": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hb3": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hca": [
+<<<<<<< HEAD
       0.013047396536285654,
+=======
+      0.016117146919389855,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       2,
       1,
       1,
@@ -720,13 +1118,18 @@
       0
     ],
     "voicetypr-lcq": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mit": [
+<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -735,12 +1138,16 @@
     ],
     "voicetypr-mla": [
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mt4": [
+<<<<<<< HEAD
       0.017620717417167656,
       0,
       0,
@@ -749,19 +1156,27 @@
     ],
     "voicetypr-qk9": [
       0.019907362326039645,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-ra2": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-rsc": [
+<<<<<<< HEAD
       0.012067401423463655,
       0,
       0,
@@ -770,34 +1185,53 @@
     ],
     "voicetypr-rsk": [
       0.019907362326039645,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-s2q": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-u6d": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-vop": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-x0y": [
+<<<<<<< HEAD
       0.012067401423463655,
+=======
+      0.01490658403284893,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
@@ -811,28 +1245,44 @@
       0
     ],
     "voicetypr-xis": [
+<<<<<<< HEAD
       0.017620717417167656,
+=======
+      0.021766484419791888,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       1,
       0
     ],
     "voicetypr-xj7": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-yul": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       0,
       0,
       0
     ],
     "voicetypr-yw1": [
+<<<<<<< HEAD
       0.010760741273034325,
+=======
+      0.013292500184127701,
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
       0,
       1,
       0,
@@ -958,7 +1408,13 @@
     ]
   ],
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:47Z",
   "node_count": 76,
   "edge_count": 29
+=======
+  "generated_at": "2026-01-15T20:14:29Z",
+  "node_count": 60,
+  "edge_count": 27
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
 }

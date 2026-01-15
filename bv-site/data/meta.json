@@ -1,6 +1,12 @@
 {
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T01:59:47.9418131Z",
   "issue_count": 76,
   "dependency_count": 29
+=======
+  "generated_at": "2026-01-15T20:14:29.3655873Z",
+  "issue_count": 60,
+  "dependency_count": 27
+>>>>>>> 8233422 (chore(beads): sync beads state for cross-platform development)
 }
