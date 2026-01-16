@@ -1,4 +1,119 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-01-16T02:00:15Z",
   "commits": null
+=======
+  "generated_at": "2026-01-16T00:55:03Z",
+  "commits": [
+    {
+      "sha": "e406997154b2fceac5cd3b2e5ea73989e2fd33a9",
+      "date": "2026-01-14T15:02:02-08:00",
+      "message": "feat(remote): improve Network Sharing UI messaging and error handling",
+      "beads_added": [
+        "voicetypr-7mc"
+      ]
+    },
+    {
+      "sha": "d23e431c8957e8cd97a42f04e058a5d13484c68b",
+      "date": "2026-01-14T15:19:47-08:00",
+      "message": "fix(ui): Network Sharing model display and ordering fixes",
+      "beads_added": [
+        "voicetypr-cre",
+        "voicetypr-313"
+      ]
+    },
+    {
+      "sha": "ec0ad1369204a4f067895bfdfd7db63b8cfcc813",
+      "date": "2026-01-14T15:27:17-08:00",
+      "message": "feat(ui): improve Network Sharing visual grouping and update beads",
+      "beads_added": [
+        "voicetypr-28w",
+        "voicetypr-5cx"
+      ]
+    },
+    {
+      "sha": "335be986cc3426c22e059e7e88077d799380aca0",
+      "date": "2026-01-14T16:10:08-08:00",
+      "message": "fix(remote): Network Sharing model sync and UI improvements",
+      "beads_added": [
+        "voicetypr-rsc",
+        "voicetypr-5cx",
+        "voicetypr-26t",
+        "voicetypr-7d9",
+        "voicetypr-x0y",
+        "voicetypr-fet",
+        "voicetypr-63v"
+      ]
+    },
+    {
+      "sha": "0ae6b6573920c057f344aef805753029f81ebdfe",
+      "date": "2026-01-14T18:18:03-08:00",
+      "message": "chore(beads): sync beads state for remote transcription testing",
+      "beads_added": [
+        "voicetypr-0g6"
+      ]
+    },
+    {
+      "sha": "7e69129dc98843a05407fb49e4e6ef6bf2cc73a7",
+      "date": "2026-01-14T19:46:52-08:00",
+      "message": "feat: improve remote server UI and fix startup loading",
+      "beads_added": [
+        "voicetypr-718"
+      ]
+    },
+    {
+      "sha": "7d683173fe18014be2d8dbcc6323437fc14f9c81",
+      "date": "2026-01-14T20:00:56-08:00",
+      "message": "debug: add extensive logging for remote server selection",
+      "beads_added": [
+        "voicetypr-88a",
+        "voicetypr-5l4",
+        "voicetypr-ra2"
+      ]
+    },
+    {
+      "sha": "21c98d79aea9f150885c1e17a7cdfcd0a47f4069",
+      "date": "2026-01-14T20:22:17-08:00",
+      "message": "feat: add transcription result logging on server side",
+      "beads_added": [
+        "voicetypr-718",
+        "voicetypr-61b"
+      ]
+    },
+    {
+      "sha": "f8f397ba5152a3e9e46ba341b64c56a440b42bac",
+      "date": "2026-01-15T09:50:03-08:00",
+      "message": "feat(remote): Network Sharing UI improvements and model sync fixes",
+      "beads_added": [
+        "voicetypr-7p3"
+      ]
+    },
+    {
+      "sha": "120d7268dcee7107579a691dc56f82204d8e90a2",
+      "date": "2026-01-15T10:42:03-08:00",
+      "message": "feat(remote): separate connection vs auth errors with distinct UI states",
+      "beads_added": [
+        "voicetypr-mit",
+        "voicetypr-2xg"
+      ]
+    },
+    {
+      "sha": "8233422d2025bb7763f5a9513821eaa7d6d9b71b",
+      "date": "2026-01-15T12:21:11-08:00",
+      "message": "chore(beads): sync beads state for cross-platform development",
+      "beads_added": [
+        "voicetypr-88a",
+        "voicetypr-9bs"
+      ]
+    },
+    {
+      "sha": "26c6aaae128f51c581613a6bdf0be705b647674d",
+      "date": "2026-01-15T14:00:02-08:00",
+      "message": "feat: auto-restore network sharing when returning to local model",
+      "beads_added": [
+        "voicetypr-gdt"
+      ]
+    }
+  ]
+>>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
 }

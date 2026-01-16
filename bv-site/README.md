@@ -2,7 +2,11 @@
 
 ## 📊 Executive Summary
 
+<<<<<<< HEAD
 **76** total issues | **87%** complete | **8** ready to work | **2** blocked
+=======
+**75** total issues | **79%** complete | **12** ready to work | **4** blocked
+>>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
 
 ## 🎯 Top Priorities
 
@@ -51,12 +55,19 @@ Low-effort items that clear the path forward:
   - *Unblocks 1 items*
 - **voicetypr-52u**: Concurrency Testing: Multiple clients to single server [EPIC]
   - *Low complexity, high priority*
+<<<<<<< HEAD
 - **voicetypr-5l4**: Add save recordings toggle for retry
   - *Low complexity*
 - **voicetypr-5w3**: Bug: Transcription count stuck at 500
   - *Low complexity*
 - **voicetypr-e29**: Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status
   - *Low complexity*
+=======
+- **voicetypr-cpa**: Feature: Notify user when remote transcription server unavailable
+  - *Low complexity, high priority*
+- **voicetypr-d1l**: Bug: Cannot add remote server if connection fails
+  - *Low complexity, high priority*
+>>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
 
 ## 📋 Status Summary
 
@@ -66,5 +77,9 @@ Low-effort items that clear the path forward:
 
 ---
 
+<<<<<<< HEAD
 *Generated Jan 15, 2026 at 6:00 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+=======
+*Generated Jan 15, 2026 at 4:55 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
+>>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
 

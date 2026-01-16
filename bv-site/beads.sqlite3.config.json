@@ -2,5 +2,9 @@
   "chunked": false,
   "chunk_count": 0,
   "chunk_size": 0,
+<<<<<<< HEAD
   "total_size": 279552
+=======
+  "total_size": 277504
+>>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
 }
