@@ -6,6 +6,7 @@
     ],
     "voicetypr-0g6": [
       0,
+<<<<<<< HEAD
       -1800
     ],
     "voicetypr-0k3": [
@@ -67,6 +68,69 @@
     "voicetypr-43e": [
       0,
       1160
+=======
+      -2400
+    ],
+    "voicetypr-0k3": [
+      200,
+      -40
+    ],
+    "voicetypr-0sn": [
+      0,
+      1120
+    ],
+    "voicetypr-142": [
+      0,
+      560
+    ],
+    "voicetypr-164": [
+      0,
+      -2160
+    ],
+    "voicetypr-1db": [
+      0,
+      2400
+    ],
+    "voicetypr-22k": [
+      200,
+      -120
+    ],
+    "voicetypr-230": [
+      0,
+      1680
+    ],
+    "voicetypr-26k": [
+      0,
+      -1920
+    ],
+    "voicetypr-26t": [
+      0,
+      -2080
+    ],
+    "voicetypr-28w": [
+      0,
+      -320
+    ],
+    "voicetypr-2jg": [
+      0,
+      480
+    ],
+    "voicetypr-2xg": [
+      0,
+      1520
+    ],
+    "voicetypr-313": [
+      0,
+      1200
+    ],
+    "voicetypr-34x": [
+      0,
+      1760
+    ],
+    "voicetypr-43e": [
+      0,
+      2240
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     ],
     "voicetypr-4mj": [
       200,
@@ -78,6 +142,7 @@
     ],
     "voicetypr-55t": [
       0,
+<<<<<<< HEAD
       -1080
     ],
     "voicetypr-5bp": [
@@ -119,13 +184,57 @@
     "voicetypr-718": [
       0,
       -1880
+=======
+      -1280
+    ],
+    "voicetypr-5bp": [
+      0,
+      -640
+    ],
+    "voicetypr-5cx": [
+      0,
+      -2320
+    ],
+    "voicetypr-5l4": [
+      200,
+      120
+    ],
+    "voicetypr-5p5": [
+      0,
+      -400
+    ],
+    "voicetypr-5qq": [
+      0,
+      -1840
+    ],
+    "voicetypr-5w3": [
+      0,
+      0
+    ],
+    "voicetypr-61b": [
+      0,
+      -1200
+    ],
+    "voicetypr-63v": [
+      0,
+      80
+    ],
+    "voicetypr-6zw": [
+      0,
+      240
+    ],
+    "voicetypr-718": [
+      0,
+      2080
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     ],
     "voicetypr-74y": [
       400,
-      120
+      40
     ],
     "voicetypr-7d9": [
       0,
+<<<<<<< HEAD
       40
     ],
     "voicetypr-7mc": [
@@ -135,13 +244,25 @@
     "voicetypr-7n2": [
       0,
       1240
+=======
+      -1120
+    ],
+    "voicetypr-7mc": [
+      0,
+      -1360
+    ],
+    "voicetypr-7n2": [
+      0,
+      1280
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     ],
     "voicetypr-7o1": [
       400,
-      -200
+      200
     ],
     "voicetypr-7p3": [
       0,
+<<<<<<< HEAD
       2200
     ],
     "voicetypr-7t6": [
@@ -175,6 +296,41 @@
     "voicetypr-b1p": [
       0,
       1880
+=======
+      2320
+    ],
+    "voicetypr-7t6": [
+      0,
+      1600
+    ],
+    "voicetypr-88a": [
+      0,
+      720
+    ],
+    "voicetypr-8b6": [
+      400,
+      120
+    ],
+    "voicetypr-9bs": [
+      0,
+      -80
+    ],
+    "voicetypr-9dx": [
+      0,
+      -880
+    ],
+    "voicetypr-9fj": [
+      200,
+      40
+    ],
+    "voicetypr-9rt": [
+      0,
+      2160
+    ],
+    "voicetypr-b1p": [
+      0,
+      -1520
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     ],
     "voicetypr-ckm": [
       400,
@@ -182,6 +338,7 @@
     ],
     "voicetypr-cpa": [
       0,
+<<<<<<< HEAD
       1960
     ],
     "voicetypr-cre": [
@@ -303,6 +460,125 @@
     "voicetypr-yw1": [
       400,
       -40
+=======
+      -2000
+    ],
+    "voicetypr-cre": [
+      0,
+      640
+    ],
+    "voicetypr-d0m": [
+      0,
+      1920
+    ],
+    "voicetypr-d1l": [
+      0,
+      1840
+    ],
+    "voicetypr-dh4": [
+      0,
+      -160
+    ],
+    "voicetypr-e29": [
+      0,
+      -800
+    ],
+    "voicetypr-fet": [
+      0,
+      -2240
+    ],
+    "voicetypr-g4i": [
+      0,
+      -720
+    ],
+    "voicetypr-gdt": [
+      0,
+      800
+    ],
+    "voicetypr-gwb": [
+      0,
+      -1680
+    ],
+    "voicetypr-hb3": [
+      0,
+      1040
+    ],
+    "voicetypr-hca": [
+      400,
+      -40
+    ],
+    "voicetypr-jw3": [
+      0,
+      -240
+    ],
+    "voicetypr-kl8": [
+      0,
+      880
+    ],
+    "voicetypr-lcq": [
+      0,
+      -1440
+    ],
+    "voicetypr-mit": [
+      0,
+      1440
+    ],
+    "voicetypr-mla": [
+      0,
+      2000
+    ],
+    "voicetypr-mt4": [
+      0,
+      -1600
+    ],
+    "voicetypr-ra2": [
+      0,
+      -560
+    ],
+    "voicetypr-rsc": [
+      0,
+      -1760
+    ],
+    "voicetypr-rsk": [
+      0,
+      960
+    ],
+    "voicetypr-s2q": [
+      0,
+      320
+    ],
+    "voicetypr-u6d": [
+      0,
+      400
+    ],
+    "voicetypr-vop": [
+      0,
+      -960
+    ],
+    "voicetypr-x0y": [
+      0,
+      -480
+    ],
+    "voicetypr-xf6": [
+      200,
+      -200
+    ],
+    "voicetypr-xis": [
+      0,
+      1360
+    ],
+    "voicetypr-xj7": [
+      0,
+      -1040
+    ],
+    "voicetypr-yul": [
+      0,
+      160
+    ],
+    "voicetypr-yw1": [
+      400,
+      -200
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     ]
   },
   "metrics": {
@@ -958,7 +1234,13 @@
     ]
   ],
   "version": "1.0.0",
+<<<<<<< HEAD
   "generated_at": "2026-01-16T02:00:10Z",
   "node_count": 76,
   "edge_count": 29
+=======
+  "generated_at": "2026-01-16T00:28:12Z",
+  "node_count": 74,
+  "edge_count": 28
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
 }

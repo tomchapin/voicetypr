@@ -1,12 +1,17 @@
 {
   "meta": {
     "version": "1.0.0",
+<<<<<<< HEAD
     "generated_at": "2026-01-15T18:00:09.9373595-08:00",
+=======
+    "generated_at": "2026-01-15T16:28:12.094851-08:00",
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     "phase2_ready": true,
     "issue_count": 76,
     "compute_time_ms": 0
   },
   "quick_ref": {
+<<<<<<< HEAD
     "open_count": 10,
     "actionable_count": 8,
     "blocked_count": 2,
@@ -16,6 +21,30 @@
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
         "score": 0.17862302137559477,
+=======
+    "open_count": 17,
+    "actionable_count": 13,
+    "blocked_count": 4,
+    "in_progress_count": 5,
+    "top_picks": [
+      {
+        "id": "voicetypr-5qq",
+        "title": "Setup: Install and configure VoiceTypr on MacBook",
+        "score": 0.3562848503492969,
+        "reasons": [
+          "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+          "📊 High centrality in dependency graph (PageRank: 62%)",
+          "⚡ Low effort, high impact - good starting point",
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 2
+      },
+      {
+        "id": "voicetypr-43e",
+        "title": "Frontend: Re-transcribe button and popout in History",
+        "score": 0.17820554406540678,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -23,6 +52,7 @@
         "unblocks": 1
       },
       {
+<<<<<<< HEAD
         "id": "voicetypr-0k3",
         "title": "Test: Host local + remote client concurrent transcription",
         "score": 0.17313508781846115,
@@ -36,6 +66,11 @@
         "id": "voicetypr-9fj",
         "title": "Test: Rapid sequential requests from single client",
         "score": 0.17313498254700438,
+=======
+        "id": "voicetypr-ra2",
+        "title": "Copy address button needs interactive hover/click states",
+        "score": 0.13759393993745028,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
@@ -46,17 +81,74 @@
   },
   "recommendations": [
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-5qq",
+      "title": "Setup: Install and configure VoiceTypr on MacBook",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.3562848503492969,
+      "breakdown": {
+        "pagerank": 0.13718577498036172,
+        "betweenness": 0,
+        "blocker_ratio": 0.078,
+        "staleness": 0.0018398553544772375,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04725000000000001,
+        "urgency": 0.007294781840804426,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.6235717044561896,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.6,
+        "staleness_norm": 0.03679710708954475,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.47250000000000003,
+        "urgency_norm": 0.07294781840804426,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Quick win - start here for fast progress",
+      "reasons": [
+        "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
+        "📊 High centrality in dependency graph (PageRank: 62%)",
+        "⚡ Low effort, high impact - good starting point",
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-0k3",
+        "voicetypr-9fj"
+      ]
+    },
+    {
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17862302137559477,
+=======
+      "score": 0.17820554406540678,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "breakdown": {
         "pagerank": 0.04699322980908016,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
         "staleness": 0.0019201502924305555,
         "priority_boost": 0.05,
         "time_to_impact": 0.04025,
@@ -70,14 +162,36 @@
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07624409274270783,
         "risk_norm": 0.02062824007271199,
+=======
+        "staleness": 0.0018137104292264663,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.007236030117458093,
+        "risk": 0.002066490483974605,
+        "pagerank_norm": 0.21360560261682607,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03627420858452932,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07236030117458092,
+        "risk_norm": 0.02066490483974605,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
+<<<<<<< HEAD
           "activity_churn": 0.0020941335757066115,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
           "composite_risk": 0.02062824007271199,
+=======
+          "activity_churn": 0.002216349465820154,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.02066490483974605,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -97,23 +211,41 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17313508781846115,
+=======
+      "score": 0.16255524389676962,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
+<<<<<<< HEAD
         "staleness": 0.001946265037770062,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
         "urgency": 0.007682517950069041,
+=======
+        "staleness": 0.0018398251745659724,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.007294671368687711,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
+<<<<<<< HEAD
         "staleness_norm": 0.03892530075540124,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.0768251795006904,
+=======
+        "staleness_norm": 0.036796503491319445,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07294671368687711,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -126,10 +258,21 @@
           "explanation": "Low risk - stable dependency structure"
         }
       },
+<<<<<<< HEAD
       "action": "Start work on this issue",
       "reasons": [
         "✅ Currently unclaimed - available for work",
         "🚨 High priority (P1) - prioritize this work"
+=======
+      "action": "Work on voicetypr-5qq first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-5qq - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-5qq"
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       ]
     },
     {
@@ -139,6 +282,7 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.17313498254700438,
       "breakdown": {
         "pagerank": 0.050809555622115164,
@@ -156,6 +300,25 @@
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
         "urgency_norm": 0.07682420866579948,
+=======
+      "score": 0.16255514410592276,
+      "breakdown": {
+        "pagerank": 0.05080955832770832,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0018397984092824076,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.0072945733954127125,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095253785321962,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03679596818564815,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07294573395412712,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -165,6 +328,55 @@
           "cross_repo_risk": 0,
           "status_risk": 0.1,
           "composite_risk": 0.020000000000000004,
+<<<<<<< HEAD
+=======
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-5qq first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-5qq - complete that first",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-5qq"
+      ]
+    },
+    {
+      "id": "voicetypr-ra2",
+      "title": "Copy address button needs interactive hover/click states",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.13759393993745028,
+      "breakdown": {
+        "pagerank": 0.04190479823969296,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0014990921021797842,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.006788502481260311,
+        "risk": 0.003432830632690785,
+        "pagerank_norm": 0.190476355634968,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.02998184204359568,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.06788502481260311,
+        "risk_norm": 0.03432830632690785,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0.04776102108969283,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.03432830632690785,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -181,23 +393,41 @@
       "status": "open",
       "priority": 1,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.13635595860207442,
+=======
+      "score": 0.1274630045044861,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
         "staleness": 0.0019465061860185187,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.03325,
         "urgency": 0.007683392637029935,
+=======
+        "staleness": 0.001840066322814429,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.007295554072296368,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk": 0.010660254037844387,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
         "staleness_norm": 0.03893012372037037,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.07683392637029934,
+=======
+        "staleness_norm": 0.03680132645628858,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.07295554072296367,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk_norm": 0.10660254037844386,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -222,29 +452,92 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-34x",
+      "title": "Bug: PC cannot connect to Mac network sharing - possible firewall issue",
+      "type": "bug",
+      "status": "in_progress",
+      "priority": 0,
+      "labels": null,
+      "score": 0.12457641737761771,
+      "breakdown": {
+        "pagerank": 0.04190479823969296,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00015419336975308644,
+        "priority_boost": 0.1,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0006573189300078442,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.190476355634968,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0030838673950617287,
+        "priority_boost_norm": 1,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.006573189300078441,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Continue work on this issue",
+      "reasons": [
+        "🚧 In progress - already being worked",
+        "🚨 High priority (P0) - prioritize this work"
+      ]
+    },
+    {
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "id": "voicetypr-yul",
       "title": "Feature: Support file upload transcription via remote server",
       "type": "feature",
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.11426300322764543,
+=======
+      "score": 0.11382841303412058,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
         "staleness": 0.0014444883327064042,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
         "urgency": 0.005827778896352759,
+=======
+        "staleness": 0.001338048469502315,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005422933330946594,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
         "staleness_norm": 0.028889766654128082,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.05827778896352759,
+=======
+        "staleness_norm": 0.026760969390046296,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.054229333309465944,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -269,23 +562,41 @@
       "status": "open",
       "priority": 2,
       "labels": null,
+<<<<<<< HEAD
       "score": 0.11002599454548125,
+=======
+      "score": 0.11126439289619577,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
+<<<<<<< HEAD
         "staleness": 0.0004394057540027007,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
         "urgency": 0.0018481453783927128,
+=======
+        "staleness": 0.001345921058449074,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005448413410709058,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
+<<<<<<< HEAD
         "staleness_norm": 0.008788115080054013,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
         "urgency_norm": 0.018481453783927126,
+=======
+        "staleness_norm": 0.02691842116898148,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.054484134107090576,
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -470,6 +781,47 @@
       "reasons": [
         "✅ Currently unclaimed - available for work"
       ]
+    },
+    {
+      "id": "voicetypr-5w3",
+      "title": "Bug: Transcription count stuck at 500",
+      "type": "bug",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.10956040146371082,
+      "breakdown": {
+        "pagerank": 0.04190479823969296,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0003329658907986111,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0014068258268152946,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.190476355634968,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.006659317815972222,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.014068258268152944,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
     }
   ],
   "quick_wins": [
@@ -483,12 +835,22 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "voicetypr-34x",
+      "title": "Bug: PC cannot connect to Mac network sharing - possible firewall issue",
+      "score": 0.5,
+      "reason": "Low complexity, high priority"
+    },
+    {
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       "id": "voicetypr-52u",
       "title": "Concurrency Testing: Multiple clients to single server [EPIC]",
       "score": 0.5,
       "reason": "Low complexity, high priority"
     },
     {
+<<<<<<< HEAD
       "id": "voicetypr-5l4",
       "title": "Add save recordings toggle for retry",
       "score": 0.4,
@@ -505,6 +867,12 @@
       "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
       "score": 0.4,
       "reason": "Low complexity"
+=======
+      "id": "voicetypr-cpa",
+      "title": "Feature: Notify user when remote transcription server unavailable",
+      "score": 0.5,
+      "reason": "Low complexity, high priority"
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     }
   ],
   "blockers_to_clear": [
@@ -520,6 +888,7 @@
   ],
   "project_health": {
     "counts": {
+<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -528,6 +897,17 @@
       "by_status": {
         "closed": 66,
         "open": 10
+=======
+      "total": 74,
+      "open": 17,
+      "closed": 57,
+      "blocked": 4,
+      "actionable": 13,
+      "by_status": {
+        "closed": 57,
+        "in_progress": 5,
+        "open": 12
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       },
       "by_type": {
         "bug": 27,
@@ -549,6 +929,7 @@
       "phase2_ready": true
     },
     "velocity": {
+<<<<<<< HEAD
       "closed_last_7_days": 66,
       "closed_last_30_days": 66,
       "avg_days_to_close": 0.2242851113066253,
@@ -556,6 +937,15 @@
         {
           "week_start": "2026-01-12T00:00:00Z",
           "closed": 66
+=======
+      "closed_last_7_days": 57,
+      "closed_last_30_days": 57,
+      "avg_days_to_close": 0.18516974208871426,
+      "weekly": [
+        {
+          "week_start": "2026-01-12T00:00:00Z",
+          "closed": 57
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
         },
         {
           "week_start": "2026-01-05T00:00:00Z",

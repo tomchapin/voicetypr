@@ -1,5 +1,6 @@
 {
   "counts": {
+<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -8,6 +9,17 @@
     "by_status": {
       "closed": 66,
       "open": 10
+=======
+    "total": 74,
+    "open": 17,
+    "closed": 57,
+    "blocked": 4,
+    "actionable": 13,
+    "by_status": {
+      "closed": 57,
+      "in_progress": 5,
+      "open": 12
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
     },
     "by_type": {
       "bug": 27,
@@ -29,6 +41,7 @@
     "phase2_ready": true
   },
   "velocity": {
+<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -36,6 +49,15 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
+=======
+    "closed_last_7_days": 57,
+    "closed_last_30_days": 57,
+    "avg_days_to_close": 0.18516974208871426,
+    "weekly": [
+      {
+        "week_start": "2026-01-12T00:00:00Z",
+        "closed": 57
+>>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",
