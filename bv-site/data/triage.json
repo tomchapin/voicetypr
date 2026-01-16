@@ -1,0 +1,598 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-01-15T17:57:59.3105269-08:00",
+    "phase2_ready": true,
+    "issue_count": 76,
+    "compute_time_ms": 0
+  },
+  "quick_ref": {
+    "open_count": 10,
+    "actionable_count": 8,
+    "blocked_count": 2,
+    "in_progress_count": 0,
+    "top_picks": [
+      {
+        "id": "voicetypr-43e",
+        "title": "Frontend: Re-transcribe button and popout in History",
+        "score": 0.17861316893543774,
+        "reasons": [
+          "🔓 Unblocks 1 item(s): voicetypr-5l4",
+          "✅ Currently unclaimed - available for work"
+        ],
+        "unblocks": 1
+      },
+      {
+        "id": "voicetypr-0k3",
+        "title": "Test: Host local + remote client concurrent transcription",
+        "score": 0.17312517624595192,
+        "reasons": [
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 0
+      },
+      {
+        "id": "voicetypr-9fj",
+        "title": "Test: Rapid sequential requests from single client",
+        "score": 0.1731250709566701,
+        "reasons": [
+          "✅ Currently unclaimed - available for work",
+          "🚨 High priority (P1) - prioritize this work"
+        ],
+        "unblocks": 0
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.17861316893543774,
+      "breakdown": {
+        "pagerank": 0.04699322980908016,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0019176304847029321,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.04025,
+        "urgency": 0.007615255856586395,
+        "risk": 0.002062906126616109,
+        "pagerank_norm": 0.21360559004127347,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03835260969405864,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07615255856586395,
+        "risk_norm": 0.020629061266161087,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0.0020968708872036146,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020629061266161087,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "🔓 Unblocks 1 item(s): voicetypr-5l4",
+        "✅ Currently unclaimed - available for work"
+      ],
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ]
+    },
+    {
+      "id": "voicetypr-0k3",
+      "title": "Test: Host local + remote client concurrent transcription",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.17312517624595192,
+      "breakdown": {
+        "pagerank": 0.050809555622115164,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0019437452300424384,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.007673377084256416,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095252555506893,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03887490460084877,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07673377084256416,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-9fj",
+      "title": "Test: Rapid sequential requests from single client",
+      "type": "task",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.1731250709566701,
+      "breakdown": {
+        "pagerank": 0.050809555622115164,
+        "betweenness": 0,
+        "blocker_ratio": 0.026000000000000002,
+        "staleness": 0.0019437184647588736,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.04025,
+        "urgency": 0.007673279979796627,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.23095252555506893,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0.2,
+        "staleness_norm": 0.03887436929517747,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.40249999999999997,
+        "urgency_norm": 0.07673279979796627,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "🚨 High priority (P1) - prioritize this work"
+      ]
+    },
+    {
+      "id": "voicetypr-52u",
+      "title": "Concurrency Testing: Multiple clients to single server [EPIC]",
+      "type": "feature",
+      "status": "open",
+      "priority": 1,
+      "labels": null,
+      "score": 0.13634663021439292,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0019439863782908951,
+        "priority_boost": 0.07500000000000001,
+        "time_to_impact": 0.03325,
+        "urgency": 0.007674251960155688,
+        "risk": 0.010660254037844387,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0388797275658179,
+        "priority_boost_norm": 0.75,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.07674251960155687,
+        "risk_norm": 0.10660254037844386,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0.28867513459481287,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.10660254037844386,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-0k3 first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by 2 items - need to clear dependencies",
+        "🚨 High priority (P1) - prioritize this work"
+      ],
+      "blocked_by": [
+        "voicetypr-0k3",
+        "voicetypr-9fj"
+      ]
+    },
+    {
+      "id": "voicetypr-yul",
+      "title": "Feature: Support file upload transcription via remote server",
+      "type": "feature",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.11425275111425363,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.001441968524978781,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.005818237394207682,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.028839370499575617,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.058182373942076815,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
+    },
+    {
+      "id": "voicetypr-5w3",
+      "title": "Bug: Transcription count stuck at 500",
+      "type": "bug",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.11001501174821893,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0004368859462750771,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0018377442481646523,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.008737718925501542,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.018377442481646522,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
+    },
+    {
+      "id": "voicetypr-e29",
+      "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
+      "type": "bug",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.109279325674024,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00026908659498263893,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0011400305709924952,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.005381731899652778,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.011400305709924952,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
+    },
+    {
+      "id": "voicetypr-kl8",
+      "title": "Implement Windows firewall detection",
+      "type": "task",
+      "status": "open",
+      "priority": 2,
+      "labels": null,
+      "score": 0.10888723958265839,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00018044662156442904,
+        "priority_boost": 0.05,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0007673927898629419,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.0036089324312885804,
+        "priority_boost_norm": 0.5,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.007673927898629418,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
+    },
+    {
+      "id": "voicetypr-5l4",
+      "title": "Add save recordings toggle for retry",
+      "type": "feature",
+      "status": "open",
+      "priority": 3,
+      "labels": null,
+      "score": 0.0912136523437782,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.0015377513488522379,
+        "priority_boost": 0.025,
+        "time_to_impact": 0.03325,
+        "urgency": 0.007735324867962557,
+        "risk": 0.004589193821207798,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.030755026977044755,
+        "priority_boost_norm": 0.25,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.07735324867962556,
+        "risk_norm": 0.04589193821207798,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0.08630646070692659,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.04589193821207798,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Work on voicetypr-43e first to unblock this",
+      "reasons": [
+        "✅ Currently unclaimed - available for work",
+        "⏳ Blocked by voicetypr-43e - complete that first"
+      ],
+      "blocked_by": [
+        "voicetypr-43e"
+      ]
+    },
+    {
+      "id": "voicetypr-mla",
+      "title": "UI: Hide 'When enabled...' text when remote server is active",
+      "type": "task",
+      "status": "open",
+      "priority": 3,
+      "labels": null,
+      "score": 0.0879988219675625,
+      "breakdown": {
+        "pagerank": 0.041904795391700174,
+        "betweenness": 0,
+        "blocker_ratio": 0,
+        "staleness": 0.00026217099245563275,
+        "priority_boost": 0.025,
+        "time_to_impact": 0.03325,
+        "urgency": 0.0011110594600353574,
+        "risk": 0.0020000000000000005,
+        "pagerank_norm": 0.19047634268954625,
+        "betweenness_norm": 0,
+        "blocker_ratio_norm": 0,
+        "staleness_norm": 0.005243419849112654,
+        "priority_boost_norm": 0.25,
+        "time_to_impact_norm": 0.3325,
+        "urgency_norm": 0.011110594600353574,
+        "risk_norm": 0.020000000000000004,
+        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
+        "risk_explanation": "Low risk - stable dependency structure",
+        "risk_signals": {
+          "fan_variance": 0,
+          "activity_churn": 0,
+          "cross_repo_risk": 0,
+          "status_risk": 0.1,
+          "composite_risk": 0.020000000000000004,
+          "explanation": "Low risk - stable dependency structure"
+        }
+      },
+      "action": "Start work on this issue",
+      "reasons": [
+        "✅ Currently unclaimed - available for work"
+      ]
+    }
+  ],
+  "quick_wins": [
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "score": 0.6000000000000001,
+      "reason": "Unblocks 1 items",
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ]
+    },
+    {
+      "id": "voicetypr-52u",
+      "title": "Concurrency Testing: Multiple clients to single server [EPIC]",
+      "score": 0.5,
+      "reason": "Low complexity, high priority"
+    },
+    {
+      "id": "voicetypr-5l4",
+      "title": "Add save recordings toggle for retry",
+      "score": 0.4,
+      "reason": "Low complexity"
+    },
+    {
+      "id": "voicetypr-5w3",
+      "title": "Bug: Transcription count stuck at 500",
+      "score": 0.4,
+      "reason": "Low complexity"
+    },
+    {
+      "id": "voicetypr-e29",
+      "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
+      "score": 0.4,
+      "reason": "Low complexity"
+    }
+  ],
+  "blockers_to_clear": [
+    {
+      "id": "voicetypr-43e",
+      "title": "Frontend: Re-transcribe button and popout in History",
+      "unblocks_count": 1,
+      "unblocks_ids": [
+        "voicetypr-5l4"
+      ],
+      "actionable": true
+    }
+  ],
+  "project_health": {
+    "counts": {
+      "total": 76,
+      "open": 10,
+      "closed": 66,
+      "blocked": 2,
+      "actionable": 8,
+      "by_status": {
+        "closed": 66,
+        "open": 10
+      },
+      "by_type": {
+        "bug": 27,
+        "feature": 9,
+        "task": 40
+      },
+      "by_priority": {
+        "0": 11,
+        "1": 29,
+        "2": 33,
+        "3": 3
+      }
+    },
+    "graph": {
+      "node_count": 76,
+      "edge_count": 29,
+      "density": 0.005087719298245614,
+      "has_cycles": false,
+      "phase2_ready": true
+    },
+    "velocity": {
+      "closed_last_7_days": 66,
+      "closed_last_30_days": 66,
+      "avg_days_to_close": 0.2242851113066253,
+      "weekly": [
+        {
+          "week_start": "2026-01-12T00:00:00Z",
+          "closed": 66
+        },
+        {
+          "week_start": "2026-01-05T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-12-29T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-12-22T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-12-15T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-12-08T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-12-01T00:00:00Z",
+          "closed": 0
+        },
+        {
+          "week_start": "2025-11-24T00:00:00Z",
+          "closed": 0
+        }
+      ]
+    }
+  },
+  "commands": {
+    "claim_top": "CI=1 bd update voicetypr-43e --status in_progress --json",
+    "show_top": "CI=1 bd show voicetypr-43e --json",
+    "list_ready": "CI=1 bd ready --json",
+    "list_blocked": "CI=1 bd blocked --json",
+    "refresh_triage": "bv --robot-triage"
+  }
+}
