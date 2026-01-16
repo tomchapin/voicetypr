@@ -64,3 +64,4 @@ opencodetmp
 
 # Git worktrees for parallel development
 .worktrees/
+.beads/daemon.lock
