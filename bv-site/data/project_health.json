@@ -1,7 +1,5 @@
 {
   "counts": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -27,53 +25,10 @@
     "node_count": 76,
     "edge_count": 29,
     "density": 0.005087719298245614,
-=======
-    "total": 67,
-    "open": 23,
-    "closed": 44,
-    "blocked": 5,
-    "actionable": 18,
-=======
-    "total": 73,
-    "open": 17,
-    "closed": 56,
-    "blocked": 4,
-    "actionable": 13,
->>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
-    "by_status": {
-      "closed": 56,
-      "in_progress": 5,
-      "open": 12
-    },
-    "by_type": {
-      "bug": 26,
-      "feature": 8,
-      "task": 39
-    },
-    "by_priority": {
-      "0": 10,
-      "1": 27,
-      "2": 33,
-      "3": 3
-    }
-  },
-  "graph": {
-<<<<<<< HEAD
-    "node_count": 67,
-    "edge_count": 27,
-    "density": 0.006105834464043419,
->>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
-=======
-    "node_count": 73,
-    "edge_count": 28,
-    "density": 0.00532724505327245,
->>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
     "has_cycles": false,
     "phase2_ready": true
   },
   "velocity": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -81,24 +36,6 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
-=======
-    "closed_last_7_days": 44,
-    "closed_last_30_days": 44,
-    "avg_days_to_close": 0.0723445573169718,
-    "weekly": [
-      {
-        "week_start": "2026-01-12T00:00:00Z",
-        "closed": 44
->>>>>>> 26c6aaa (feat: auto-restore network sharing when returning to local model)
-=======
-    "closed_last_7_days": 56,
-    "closed_last_30_days": 56,
-    "avg_days_to_close": 0.18829021854425015,
-    "weekly": [
-      {
-        "week_start": "2026-01-12T00:00:00Z",
-        "closed": 56
->>>>>>> a3720bc (chore(beads): close firewall detection beads, add Windows firewall tracking)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",
