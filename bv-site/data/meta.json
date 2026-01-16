@@ -1,26 +1,6 @@
 {
   "version": "1.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "generated_at": "2026-01-16T01:59:25.8171009Z",
+  "generated_at": "2026-01-16T01:59:42.627707Z",
   "issue_count": 76,
   "dependency_count": 29
-=======
-  "generated_at": "2026-01-15T04:24:08.825237Z",
-=======
-  "generated_at": "2026-01-15T05:15:40.946617Z",
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-  "issue_count": 48,
-=======
-  "generated_at": "2026-01-15T04:50:51.507417Z",
-  "issue_count": 49,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-  "generated_at": "2026-01-15T04:57:13.144922Z",
-  "issue_count": 48,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-  "dependency_count": 27
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 }

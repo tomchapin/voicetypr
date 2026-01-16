@@ -2,203 +2,75 @@
   "positions": {
     "voicetypr-02g": [
       0,
-      1480
+      -440
     ],
     "voicetypr-0g6": [
       0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      -2280
-=======
-      440
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-=======
-      -1400
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
+      2200
     ],
     "voicetypr-0k3": [
       200,
-      80
+      -80
     ],
     "voicetypr-0sn": [
       0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-      -760
+      440
     ],
     "voicetypr-142": [
       0,
-      2120
+      200
     ],
     "voicetypr-164": [
       0,
-      1640
-=======
-      -840
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-    ],
-    "voicetypr-1db": [
-      0,
-      2040
-    ],
-    "voicetypr-22k": [
-      200,
-      -240
-=======
       -120
     ],
     "voicetypr-1db": [
       0,
-      520
+      -600
     ],
     "voicetypr-22k": [
       200,
-<<<<<<< HEAD
       0
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
     ],
     "voicetypr-230": [
       0,
-      -200
+      -920
     ],
     "voicetypr-26k": [
       0,
-<<<<<<< HEAD
-      -2200
+      2360
     ],
     "voicetypr-26t": [
       0,
-      -280
+      120
     ],
     "voicetypr-28w": [
       0,
-      2280
+      -1960
     ],
     "voicetypr-2jg": [
       0,
-      2200
+      -520
     ],
     "voicetypr-2xg": [
       0,
-      -1480
+      -1320
     ],
     "voicetypr-313": [
       0,
-      840
+      -2280
     ],
     "voicetypr-34x": [
       200,
-      0
+      240
     ],
     "voicetypr-43e": [
       0,
-      -2440
-=======
-      -840
-    ],
-    "voicetypr-26t": [
-      0,
-      -760
-    ],
-    "voicetypr-28w": [
-      0,
-      -1160
-    ],
-    "voicetypr-313": [
-      0,
-      760
-    ],
-    "voicetypr-43e": [
-      0,
-      1240
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-=======
-      480
-=======
-      -120
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-0k3": [
-      200,
-      -160
-    ],
-    "voicetypr-0sn": [
-      0,
-      -760
-    ],
-    "voicetypr-1db": [
-      0,
-      280
-    ],
-    "voicetypr-22k": [
-      200,
-      160
-    ],
-    "voicetypr-230": [
-      0,
-      -1000
-    ],
-    "voicetypr-26k": [
-      0,
-      -1320
-    ],
-    "voicetypr-26t": [
-      0,
-      -840
-    ],
-    "voicetypr-28w": [
-      0,
-      1320
-    ],
-    "voicetypr-313": [
-      0,
-      680
-    ],
-    "voicetypr-43e": [
-      0,
-<<<<<<< HEAD
-      1200
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      -1240
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
+      -2360
     ],
     "voicetypr-4mj": [
       200,
-      0
-=======
-      -160
-    ],
-    "voicetypr-230": [
-      0,
-      1160
-    ],
-    "voicetypr-26k": [
-      0,
-      -1240
-    ],
-    "voicetypr-26t": [
-      0,
-      -440
-    ],
-    "voicetypr-28w": [
-      0,
-      920
-    ],
-    "voicetypr-313": [
-      0,
-      1240
-    ],
-    "voicetypr-43e": [
-      0,
-      -1080
-    ],
-    "voicetypr-4mj": [
-      200,
-      -80
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
+      80
     ],
     "voicetypr-52u": [
       600,
@@ -206,279 +78,91 @@
     ],
     "voicetypr-55t": [
       0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      1000
+      1640
     ],
     "voicetypr-5bp": [
       0,
-      440
+      2440
     ],
     "voicetypr-5cx": [
-      0,
-      -600
-    ],
-    "voicetypr-5l4": [
-      200,
-      240
-    ],
-    "voicetypr-5p5": [
-=======
-      0
-=======
-      440
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-5bp": [
-      0,
-      920
-    ],
-    "voicetypr-5cx": [
-      0,
-      1400
-    ],
-    "voicetypr-5l4": [
-      200,
-      80
-    ],
-    "voicetypr-5qq": [
-      0,
-      -1400
-    ],
-    "voicetypr-61b": [
-      0,
-      -680
-    ],
-    "voicetypr-63v": [
-      0,
-      600
-    ],
-    "voicetypr-6zw": [
-      0,
-      200
-    ],
-    "voicetypr-718": [
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-      0,
-      -600
-    ],
-    "voicetypr-5qq": [
-      0,
-      -920
-    ],
-    "voicetypr-5w3": [
-      0,
-      -2120
-    ],
-    "voicetypr-61b": [
-      0,
-      200
-=======
-      -1000
-    ],
-    "voicetypr-5bp": [
-      0,
-      -1240
-    ],
-    "voicetypr-5cx": [
-      0,
-      200
-    ],
-    "voicetypr-5l4": [
-      200,
-      -160
-    ],
-    "voicetypr-5qq": [
-      0,
-      -600
-    ],
-    "voicetypr-61b": [
-      0,
-      -280
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-    ],
-    "voicetypr-63v": [
-      0,
-      -1320
-    ],
-    "voicetypr-6zw": [
-      0,
-<<<<<<< HEAD
-      -1640
-    ],
-    "voicetypr-718": [
-      0,
-      -1160
-=======
-      -1160
-    ],
-    "voicetypr-5bp": [
-      0,
-      1320
-    ],
-    "voicetypr-5cx": [
-      0,
-      -360
-    ],
-    "voicetypr-5l4": [
-      200,
-      0
-    ],
-    "voicetypr-5qq": [
-      0,
-      840
-    ],
-    "voicetypr-61b": [
-      0,
-      200
-    ],
-    "voicetypr-63v": [
-      0,
-      -520
-    ],
-    "voicetypr-6zw": [
-      0,
-      760
-    ],
-    "voicetypr-718": [
-      0,
-      -680
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-    ],
-    "voicetypr-74y": [
-      400,
-      -200
-    ],
-    "voicetypr-7d9": [
-      0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      -1560
-    ],
-    "voicetypr-7mc": [
-      0,
-      -360
-    ],
-    "voicetypr-7n2": [
-      0,
-      1800
-    ],
-    "voicetypr-7o1": [
-      400,
-      120
-    ],
-    "voicetypr-7p3": [
-      0,
-      -440
-=======
-      40
-=======
-      -1040
-=======
-      -360
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-7mc": [
-      0,
-      -280
-    ],
-    "voicetypr-7o1": [
-      400,
-<<<<<<< HEAD
-      -120
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-    ],
-    "voicetypr-718": [
-      0,
-      -520
-    ],
-    "voicetypr-74y": [
-      400,
-      120
-    ],
-    "voicetypr-7d9": [
-      0,
-      -1080
-    ],
-    "voicetypr-7mc": [
-      0,
-      1000
-    ],
-    "voicetypr-7o1": [
-      400,
-      -200
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-    ],
-    "voicetypr-7t6": [
-      0,
-<<<<<<< HEAD
-      920
-    ],
-    "voicetypr-88a": [
-      0,
-<<<<<<< HEAD
-      -2040
-=======
-      -160
-    ],
-    "voicetypr-88a": [
-      0,
-      -80
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      -40
-    ],
-    "voicetypr-7t6": [
-      0,
-      40
-    ],
-    "voicetypr-88a": [
-      0,
-      840
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-8b6": [
-      400,
-      -120
-<<<<<<< HEAD
-    ],
-    "voicetypr-9bs": [
-      0,
-      680
-    ],
-    "voicetypr-9dx": [
-      0,
-      -840
-=======
-      600
-    ],
-    "voicetypr-7mc": [
       0,
       1080
     ],
-    "voicetypr-7o1": [
-      400,
-      120
+    "voicetypr-5l4": [
+      200,
+      -240
     ],
-    "voicetypr-7t6": [
+    "voicetypr-5p5": [
       0,
-      -280
+      -2200
     ],
-    "voicetypr-88a": [
+    "voicetypr-5qq": [
       0,
-      40
+      -40
     ],
-    "voicetypr-8b6": [
+    "voicetypr-5w3": [
+      0,
+      1560
+    ],
+    "voicetypr-61b": [
+      0,
+      600
+    ],
+    "voicetypr-63v": [
+      0,
+      -2440
+    ],
+    "voicetypr-6zw": [
+      0,
+      -1720
+    ],
+    "voicetypr-718": [
+      0,
+      -1080
+    ],
+    "voicetypr-74y": [
       400,
       200
     ],
+    "voicetypr-7d9": [
+      0,
+      -840
+    ],
+    "voicetypr-7mc": [
+      0,
+      1000
+    ],
+    "voicetypr-7n2": [
+      0,
+      1400
+    ],
+    "voicetypr-7o1": [
+      400,
+      40
+    ],
+    "voicetypr-7p3": [
+      0,
+      2120
+    ],
+    "voicetypr-7t6": [
+      0,
+      40
+    ],
+    "voicetypr-88a": [
+      0,
+      840
+    ],
+    "voicetypr-8b6": [
+      400,
+      -200
+    ],
+    "voicetypr-9bs": [
+      0,
+      -1480
+    ],
     "voicetypr-9dx": [
       0,
-      -760
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
+      -1560
     ],
     "voicetypr-9fj": [
       200,
@@ -486,183 +170,59 @@
     ],
     "voicetypr-9rt": [
       0,
-      -1720
+      360
     ],
     "voicetypr-b1p": [
       0,
-      -1080
-=======
-      1320
-    ],
-    "voicetypr-8b6": [
-      400,
-      200
-    ],
-    "voicetypr-9bs": [
-      0,
-      560
-=======
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-9dx": [
-      0,
-      760
-    ],
-    "voicetypr-9fj": [
-      200,
-<<<<<<< HEAD
-      160
-<<<<<<< HEAD
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-=======
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+      -1240
     ],
     "voicetypr-ckm": [
       400,
-      -200
+      120
     ],
     "voicetypr-cpa": [
       0,
-      -40
+      1720
     ],
     "voicetypr-cre": [
       0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-      2440
+      2280
     ],
     "voicetypr-d0m": [
       0,
-      -1960
+      920
     ],
     "voicetypr-d1l": [
       0,
-      1880
+      1800
     ],
     "voicetypr-dh4": [
       0,
-      280
+      1880
     ],
     "voicetypr-e29": [
       0,
-      -120
+      -2120
     ],
     "voicetypr-fet": [
-      0,
-      120
-    ],
-    "voicetypr-g4i": [
-      0,
-      1960
-    ],
-    "voicetypr-gdt": [
-      0,
-      360
-    ],
-    "voicetypr-gwb": [
-      0,
-      2360
-    ],
-    "voicetypr-hb3": [
-      0,
-      -1000
-=======
-      120
-    ],
-    "voicetypr-d0m": [
-=======
-      -960
-=======
-      -80
-    ],
-    "voicetypr-ckm": [
-      400,
-      -120
-    ],
-    "voicetypr-cre": [
-      0,
-<<<<<<< HEAD
-      -40
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-=======
-      120
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-    ],
-    "voicetypr-d0m": [
-      0,
-      -1160
-    ],
-    "voicetypr-fet": [
-      0,
-<<<<<<< HEAD
-      1000
-    ],
-    "voicetypr-g4i": [
-      0,
-      1080
-=======
-      -40
-    ],
-    "voicetypr-g4i": [
-      0,
-      -1320
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-    ],
-    "voicetypr-hb3": [
-      0,
-      -520
-    ],
-    "voicetypr-hca": [
-      400,
-      40
-    ],
-    "voicetypr-lcq": [
-      0,
-<<<<<<< HEAD
-      -920
-=======
-      440
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-    ],
-    "voicetypr-mt4": [
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-      0,
-<<<<<<< HEAD
-      -200
-    ],
-    "voicetypr-fet": [
-=======
-      280
-    ],
-    "voicetypr-ra2": [
-      0,
-      1000
-    ],
-    "voicetypr-rsc": [
       0,
       680
     ],
-    "voicetypr-s2q": [
-      0,
-      1400
-    ],
-    "voicetypr-u6d": [
-      0,
-      360
-    ],
-    "voicetypr-vop": [
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-      0,
-      520
-    ],
     "voicetypr-g4i": [
       0,
-      840
+      760
+    ],
+    "voicetypr-gdt": [
+      0,
+      -680
+    ],
+    "voicetypr-gwb": [
+      0,
+      1240
     ],
     "voicetypr-hb3": [
       0,
-      -920
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
+      1960
     ],
     "voicetypr-hca": [
       400,
@@ -670,161 +230,79 @@
     ],
     "voicetypr-jw3": [
       0,
-      -1400
+      280
     ],
     "voicetypr-kl8": [
       0,
-      -520
+      -360
     ],
     "voicetypr-lcq": [
       0,
-<<<<<<< HEAD
-      -1320
+      -1400
     ],
     "voicetypr-mit": [
-=======
-      -680
-    ],
-    "voicetypr-mt4": [
       0,
-      1080
-    ],
-    "voicetypr-ra2": [
-      0,
-<<<<<<< HEAD
-<<<<<<< HEAD
-      600
-    ],
-    "voicetypr-rsc": [
-      0,
-      280
-    ],
-    "voicetypr-s2q": [
-      0,
-      360
-    ],
-    "voicetypr-u6d": [
-      0,
-      -440
-    ],
-    "voicetypr-vop": [
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-      0,
-      -360
+      1480
     ],
     "voicetypr-mla": [
       0,
-      -1880
+      1160
     ],
     "voicetypr-mt4": [
       0,
-      -2360
+      520
     ],
     "voicetypr-qk9": [
       0,
-      920
+      -200
     ],
     "voicetypr-ra2": [
       0,
-      1160
+      -1160
     ],
     "voicetypr-rsc": [
       0,
-      1240
+      -760
     ],
     "voicetypr-rsk": [
       0,
-      1560
+      1320
     ],
     "voicetypr-s2q": [
       0,
-      1160
+      -1880
     ],
     "voicetypr-u6d": [
       0,
-      40
+      2040
     ],
     "voicetypr-vop": [
       0,
-      -1240
+      -1800
     ],
     "voicetypr-x0y": [
       0,
-<<<<<<< HEAD
-      -1800
+      -280
     ],
     "voicetypr-xf6": [
       200,
-      160
+      -160
     ],
     "voicetypr-xis": [
       0,
-<<<<<<< HEAD
-      1720
+      -1000
     ],
     "voicetypr-xj7": [
       0,
-      760
+      -2040
     ],
     "voicetypr-yul": [
       0,
-      1320
-=======
-      -40
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
-=======
-      -800
-=======
-      520
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-    ],
-    "voicetypr-rsc": [
-      0,
-      -440
-    ],
-    "voicetypr-s2q": [
-      0,
-      -1080
-    ],
-    "voicetypr-u6d": [
-      0,
-      1160
-    ],
-    "voicetypr-vop": [
-      0,
-      360
-    ],
-    "voicetypr-x0y": [
-      0,
-      120
-    ],
-    "voicetypr-xis": [
-      0,
-<<<<<<< HEAD
-      160
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
+      -1640
     ],
     "voicetypr-yw1": [
       400,
-      40
-=======
-      1240
-    ],
-    "voicetypr-yw1": [
-      400,
-      120
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-=======
-      -1000
-    ],
-    "voicetypr-xis": [
-      0,
       -120
-    ],
-    "voicetypr-yw1": [
-      400,
-      -40
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
     ]
   },
   "metrics": {
@@ -836,38 +314,20 @@
       0
     ],
     "voicetypr-0g6": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-0k3": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.013047396536285654,
-=======
-      0.018877365248383623,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01917591549445595,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       1,
       0
     ],
     "voicetypr-0sn": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -883,95 +343,47 @@
     ],
     "voicetypr-164": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-1db": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-22k": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.05649384653806091,
-=======
-      0.08173711377001898,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.08302982363620659,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       35,
       7,
       5,
       0
     ],
     "voicetypr-230": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-26k": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-26t": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-28w": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -987,27 +399,13 @@
     ],
     "voicetypr-2xg": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-313": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
@@ -1021,105 +419,49 @@
       0
     ],
     "voicetypr-43e": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-4mj": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.02185102292383604,
-=======
-      0.03161470717829782,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.032114702095234475,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       2,
       1,
       1,
       0
     ],
     "voicetypr-52u": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       4,
       0,
       0
     ],
     "voicetypr-55t": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-5bp": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5cx": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-5l4": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       7,
       0,
@@ -1133,15 +475,7 @@
       0
     ],
     "voicetypr-5qq": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.03522795983788909,
-=======
-      0.05096886474206837,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.05177495271093412,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       3,
@@ -1155,98 +489,48 @@
       0
     ],
     "voicetypr-61b": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.02933413708403925,
-=======
-      0.04244137432531681,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.043112584479824426,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-63v": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-6zw": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-718": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-74y": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       0,
       0
     ],
     "voicetypr-7d9": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-7mc": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -1255,27 +539,13 @@
     ],
     "voicetypr-7n2": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-7o1": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       0,
@@ -1289,87 +559,42 @@
       0
     ],
     "voicetypr-7t6": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-88a": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-8b6": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       0,
       0
     ],
-<<<<<<< HEAD
     "voicetypr-9bs": [
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
       0,
       0,
       0,
       0
     ],
     "voicetypr-9dx": [
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-    "voicetypr-9dx": [
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-9fj": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.013047396536285654,
-=======
-      0.018877365248383623,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01917591549445595,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       1,
@@ -1390,15 +615,7 @@
       0
     ],
     "voicetypr-ckm": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       0,
@@ -1412,23 +629,13 @@
       0
     ],
     "voicetypr-cre": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-d0m": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -1451,35 +658,19 @@
     ],
     "voicetypr-e29": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-fet": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-g4i": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -1495,42 +686,20 @@
     ],
     "voicetypr-gwb": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hb3": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-hca": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.013047396536285654,
-=======
-      0.018877365248383623,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01917591549445595,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       2,
       1,
       1,
@@ -1551,8 +720,6 @@
       0
     ],
     "voicetypr-lcq": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
       0,
       0,
@@ -1568,20 +735,12 @@
     ],
     "voicetypr-mla": [
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-mt4": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
       0,
       0,
@@ -1590,35 +749,19 @@
     ],
     "voicetypr-qk9": [
       0.019907362326039645,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-ra2": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       0,
       0
     ],
     "voicetypr-rsc": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
       0,
       0,
@@ -1627,72 +770,34 @@
     ],
     "voicetypr-rsk": [
       0.019907362326039645,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-s2q": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-u6d": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-vop": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
       0
     ],
     "voicetypr-x0y": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.012067401423463655,
-=======
-      0.01745947618398583,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01773560177697285,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
@@ -1706,15 +811,7 @@
       0
     ],
     "voicetypr-xis": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.017620717417167656,
-=======
-      0.02549410041007058,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.025897289143820987,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       0,
       1,
@@ -1735,15 +832,7 @@
       0
     ],
     "voicetypr-yw1": [
-<<<<<<< HEAD
-<<<<<<< HEAD
       0.010760741273034325,
-=======
-      0.015568957431455446,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-      0.01581518348699539,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
       0,
       1,
       0,
@@ -1869,27 +958,7 @@
     ]
   ],
   "version": "1.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "generated_at": "2026-01-16T01:59:25Z",
+  "generated_at": "2026-01-16T01:59:42Z",
   "node_count": 76,
   "edge_count": 29
-=======
-  "generated_at": "2026-01-15T04:24:08Z",
-=======
-  "generated_at": "2026-01-15T05:15:40Z",
->>>>>>> 19ef14a (chore(beads): sync beads status after remote transcription fixes)
-  "node_count": 48,
-=======
-  "generated_at": "2026-01-15T04:50:51Z",
-  "node_count": 49,
->>>>>>> 6d809d7 (chore(beads): update beads with fix status)
-=======
-  "generated_at": "2026-01-15T04:57:13Z",
-  "node_count": 48,
->>>>>>> fafd436 (fix(ui): soften selection styling for better visual balance)
-  "edge_count": 27
->>>>>>> 156f9b1 (chore(beads): sync beads with server logging instructions)
 }
