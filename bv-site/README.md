@@ -2,11 +2,7 @@
 
 ## 📊 Executive Summary
 
-<<<<<<< HEAD
 **76** total issues | **87%** complete | **8** ready to work | **2** blocked
-=======
-**74** total issues | **77%** complete | **13** ready to work | **4** blocked
->>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
 
 ## 🎯 Top Priorities
 
@@ -53,7 +49,6 @@ Low-effort items that clear the path forward:
 
 - **voicetypr-43e**: Frontend: Re-transcribe button and popout in History (unblocks 1)
   - *Unblocks 1 items*
-<<<<<<< HEAD
 - **voicetypr-52u**: Concurrency Testing: Multiple clients to single server [EPIC]
   - *Low complexity, high priority*
 - **voicetypr-5l4**: Add save recordings toggle for retry
@@ -62,14 +57,6 @@ Low-effort items that clear the path forward:
   - *Low complexity*
 - **voicetypr-e29**: Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status
   - *Low complexity*
-=======
-- **voicetypr-34x**: Bug: PC cannot connect to Mac network sharing - possible firewall issue
-  - *Low complexity, high priority*
-- **voicetypr-52u**: Concurrency Testing: Multiple clients to single server [EPIC]
-  - *Low complexity, high priority*
-- **voicetypr-cpa**: Feature: Notify user when remote transcription server unavailable
-  - *Low complexity, high priority*
->>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
 
 ## 📋 Status Summary
 
@@ -79,9 +66,5 @@ Low-effort items that clear the path forward:
 
 ---
 
-<<<<<<< HEAD
 *Generated Jan 15, 2026 at 6:00 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
-=======
-*Generated Jan 15, 2026 at 4:28 PM PST by [bv](https://github.com/Dicklesworthstone/beads_viewer)*
->>>>>>> 6154cf7 (chore(beads): sync all beads and dashboard)
 
