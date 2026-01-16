@@ -2,19 +2,19 @@
   "positions": {
     "voicetypr-02g": [
       0,
-      1720
+      120
     ],
     "voicetypr-0g6": [
       0,
-      1400
+      2440
     ],
     "voicetypr-0k3": [
       200,
-      160
+      80
     ],
     "voicetypr-0sn": [
       0,
-      -200
+      360
     ],
     "voicetypr-142": [
       0,
@@ -22,55 +22,55 @@
     ],
     "voicetypr-164": [
       0,
-      760
+      -120
     ],
     "voicetypr-1db": [
       0,
-      1480
+      -1000
     ],
     "voicetypr-22k": [
       200,
-      80
+      -80
     ],
     "voicetypr-230": [
       0,
-      360
+      -1880
     ],
     "voicetypr-26k": [
       0,
-      1160
+      -920
     ],
     "voicetypr-26t": [
       0,
-      -760
+      1160
     ],
     "voicetypr-28w": [
       0,
-      440
+      600
     ],
     "voicetypr-2jg": [
       0,
-      1320
+      1880
     ],
     "voicetypr-2xg": [
       0,
-      -440
+      -1720
     ],
     "voicetypr-313": [
       0,
-      1880
+      -1320
     ],
     "voicetypr-34x": [
       200,
-      240
+      -240
     ],
     "voicetypr-43e": [
       0,
-      -1000
+      440
     ],
     "voicetypr-4mj": [
       200,
-      0
+      -160
     ],
     "voicetypr-52u": [
       600,
@@ -78,23 +78,23 @@
     ],
     "voicetypr-55t": [
       0,
-      -1320
+      920
     ],
     "voicetypr-5bp": [
       0,
-      2440
+      -1800
     ],
     "voicetypr-5cx": [
       0,
-      520
+      2040
     ],
     "voicetypr-5l4": [
       200,
-      -80
+      0
     ],
     "voicetypr-5p5": [
       0,
-      2280
+      1560
     ],
     "voicetypr-5qq": [
       0,
@@ -102,23 +102,23 @@
     ],
     "voicetypr-5w3": [
       0,
-      -2360
+      2120
     ],
     "voicetypr-61b": [
       0,
-      280
+      -200
     ],
     "voicetypr-63v": [
       0,
-      -2040
+      -600
     ],
     "voicetypr-6zw": [
       0,
-      2120
+      1640
     ],
     "voicetypr-718": [
       0,
-      -280
+      280
     ],
     "voicetypr-74y": [
       400,
@@ -126,15 +126,15 @@
     ],
     "voicetypr-7d9": [
       0,
-      -1800
+      840
     ],
     "voicetypr-7mc": [
       0,
-      -2120
+      1800
     ],
     "voicetypr-7n2": [
       0,
-      -520
+      -1160
     ],
     "voicetypr-7o1": [
       400,
@@ -142,15 +142,15 @@
     ],
     "voicetypr-7p3": [
       0,
-      -1160
+      -440
     ],
     "voicetypr-7t6": [
       0,
-      2040
+      1960
     ],
     "voicetypr-88a": [
       0,
-      -1880
+      1320
     ],
     "voicetypr-8b6": [
       400,
@@ -158,39 +158,39 @@
     ],
     "voicetypr-9bs": [
       0,
-      -2280
+      2280
     ],
     "voicetypr-9dx": [
       0,
-      1240
+      200
     ],
     "voicetypr-9fj": [
       200,
-      -160
+      160
     ],
     "voicetypr-9rt": [
       0,
-      -840
+      680
     ],
     "voicetypr-b1p": [
       0,
-      120
+      -840
     ],
     "voicetypr-ckm": [
       400,
-      40
+      -200
     ],
     "voicetypr-cpa": [
       0,
-      -1560
+      -280
     ],
     "voicetypr-cre": [
       0,
-      -2200
+      1080
     ],
     "voicetypr-d0m": [
       0,
-      -1640
+      1480
     ],
     "voicetypr-d1l": [
       0,
@@ -198,67 +198,67 @@
     ],
     "voicetypr-dh4": [
       0,
-      840
+      -2360
     ],
     "voicetypr-e29": [
       0,
-      1080
+      -1640
     ],
     "voicetypr-fet": [
       0,
-      40
+      2200
     ],
     "voicetypr-g4i": [
       0,
-      200
+      40
     ],
     "voicetypr-gdt": [
       0,
-      -1960
+      -2200
     ],
     "voicetypr-gwb": [
       0,
-      1000
+      520
     ],
     "voicetypr-hb3": [
       0,
-      -920
+      1400
     ],
     "voicetypr-hca": [
       400,
-      120
+      40
     ],
     "voicetypr-jw3": [
       0,
-      -1480
+      -2040
     ],
     "voicetypr-kl8": [
       0,
-      2200
+      -2120
     ],
     "voicetypr-lcq": [
       0,
-      1640
+      -360
     ],
     "voicetypr-mit": [
       0,
-      920
+      -1240
     ],
     "voicetypr-mla": [
       0,
-      600
+      -1560
     ],
     "voicetypr-mt4": [
       0,
-      -1720
+      -520
     ],
     "voicetypr-qk9": [
       0,
-      1560
+      -40
     ],
     "voicetypr-ra2": [
       0,
-      1960
+      760
     ],
     "voicetypr-rsc": [
       0,
@@ -266,43 +266,43 @@
     ],
     "voicetypr-rsk": [
       0,
-      -1240
+      -1400
     ],
     "voicetypr-s2q": [
       0,
-      1800
+      1720
     ],
     "voicetypr-u6d": [
       0,
-      680
+      1000
     ],
     "voicetypr-vop": [
       0,
-      -1400
+      -1480
     ],
     "voicetypr-x0y": [
       0,
-      -360
+      1240
     ],
     "voicetypr-xf6": [
       200,
-      -240
+      240
     ],
     "voicetypr-xis": [
       0,
-      -600
+      -760
     ],
     "voicetypr-xj7": [
       0,
-      -40
+      -2280
     ],
     "voicetypr-yul": [
       0,
-      -120
+      -1960
     ],
     "voicetypr-yw1": [
       400,
-      -200
+      120
     ]
   },
   "metrics": {
@@ -958,7 +958,7 @@
     ]
   ],
   "version": "1.0.0",
-  "generated_at": "2026-01-16T02:01:41Z",
+  "generated_at": "2026-01-16T02:01:53Z",
   "node_count": 76,
   "edge_count": 29
 }
