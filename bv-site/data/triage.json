@@ -1,17 +1,12 @@
 {
   "meta": {
     "version": "1.0.0",
-<<<<<<< HEAD
-    "generated_at": "2026-01-15T18:00:15.189634-08:00",
-=======
-    "generated_at": "2026-01-15T16:55:03.173826-08:00",
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+    "generated_at": "2026-01-15T18:00:33.5305944-08:00",
     "phase2_ready": true,
     "issue_count": 76,
     "compute_time_ms": 0
   },
   "quick_ref": {
-<<<<<<< HEAD
     "open_count": 10,
     "actionable_count": 8,
     "blocked_count": 2,
@@ -20,31 +15,7 @@
       {
         "id": "voicetypr-43e",
         "title": "Frontend: Re-transcribe button and popout in History",
-        "score": 0.17862341749350294,
-=======
-    "open_count": 16,
-    "actionable_count": 12,
-    "blocked_count": 4,
-    "in_progress_count": 4,
-    "top_picks": [
-      {
-        "id": "voicetypr-5qq",
-        "title": "Setup: Install and configure VoiceTypr on MacBook",
-        "score": 0.35640781997473936,
-        "reasons": [
-          "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
-          "📊 High centrality in dependency graph (PageRank: 62%)",
-          "⚡ Low effort, high impact - good starting point",
-          "✅ Currently unclaimed - available for work",
-          "🚨 High priority (P1) - prioritize this work"
-        ],
-        "unblocks": 2
-      },
-      {
-        "id": "voicetypr-43e",
-        "title": "Frontend: Re-transcribe button and popout in History",
-        "score": 0.17832771252851395,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "score": 0.1786248007195862,
         "reasons": [
           "🔓 Unblocks 1 item(s): voicetypr-5l4",
           "✅ Currently unclaimed - available for work"
@@ -52,10 +23,9 @@
         "unblocks": 1
       },
       {
-<<<<<<< HEAD
         "id": "voicetypr-0k3",
         "title": "Test: Host local + remote client concurrent transcription",
-        "score": 0.17313548631021417,
+        "score": 0.1731368778234937,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
@@ -65,12 +35,7 @@
       {
         "id": "voicetypr-9fj",
         "title": "Test: Rapid sequential requests from single client",
-        "score": 0.173135381039474,
-=======
-        "id": "voicetypr-ra2",
-        "title": "Copy address button needs interactive hover/click states",
-        "score": 0.1376962320413465,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "score": 0.17313677255525603,
         "reasons": [
           "✅ Currently unclaimed - available for work",
           "🚨 High priority (P1) - prioritize this work"
@@ -81,117 +46,38 @@
   },
   "recommendations": [
     {
-<<<<<<< HEAD
-=======
-      "id": "voicetypr-5qq",
-      "title": "Setup: Install and configure VoiceTypr on MacBook",
-      "type": "task",
-      "status": "open",
-      "priority": 1,
-      "labels": null,
-      "score": 0.35640781997473936,
-      "breakdown": {
-        "pagerank": 0.1371857595386982,
-        "betweenness": 0,
-        "blocker_ratio": 0.078,
-        "staleness": 0.001870933266803627,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04725000000000001,
-        "urgency": 0.007408389517720915,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.62357163426681,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.6,
-        "staleness_norm": 0.037418665336072535,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.47250000000000003,
-        "urgency_norm": 0.07408389517720915,
-        "risk_norm": 0.020000000000000004,
-        "time_to_impact_explanation": "Deep in critical path (depth 3), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.020000000000000004,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
-      "action": "Quick win - start here for fast progress",
-      "reasons": [
-        "🔓 Unblocks 2 item(s): voicetypr-0k3, voicetypr-9fj",
-        "📊 High centrality in dependency graph (PageRank: 62%)",
-        "⚡ Low effort, high impact - good starting point",
-        "✅ Currently unclaimed - available for work",
-        "🚨 High priority (P1) - prioritize this work"
-      ],
-      "unblocks_ids": [
-        "voicetypr-0k3",
-        "voicetypr-9fj"
-      ]
-    },
-    {
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
       "id": "voicetypr-43e",
       "title": "Frontend: Re-transcribe button and popout in History",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.17862341749350294,
-=======
-      "score": 0.17832771252851395,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.1786248007195862,
       "breakdown": {
         "pagerank": 0.04699322980908016,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-<<<<<<< HEAD
-        "staleness": 0.0019202516094540892,
+        "staleness": 0.0019206054088445217,
         "priority_boost": 0.05,
         "time_to_impact": 0.04025,
-        "urgency": 0.007624777275706246,
-        "risk": 0.002062820709880638,
+        "urgency": 0.007626062312904425,
+        "risk": 0.002062809198095849,
         "pagerank_norm": 0.21360559004127347,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.038405032189081784,
+        "staleness_norm": 0.03841210817689043,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07624777275706246,
-        "risk_norm": 0.02062820709880638,
-=======
-        "staleness": 0.0018447883415528552,
-        "priority_boost": 0.05,
-        "time_to_impact": 0.04025,
-        "urgency": 0.007349794090187884,
-        "risk": 0.002065376465831079,
-        "pagerank_norm": 0.21360560142020293,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0.2,
-        "staleness_norm": 0.0368957668310571,
-        "priority_boost_norm": 0.5,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07349794090187883,
-        "risk_norm": 0.02065376465831079,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.07626062312904425,
+        "risk_norm": 0.02062809198095849,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
-<<<<<<< HEAD
-          "activity_churn": 0.002094023662687919,
+          "activity_churn": 0.0020936399365282794,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.02062820709880638,
-=======
-          "activity_churn": 0.002179215527702613,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.02065376465831079,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+          "composite_risk": 0.02062809198095849,
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -211,41 +97,23 @@
       "status": "open",
       "priority": 1,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.17313548631021417,
-=======
-      "score": 0.16267099239731306,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.1731368778234937,
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-<<<<<<< HEAD
-        "staleness": 0.0019463663547935957,
+        "staleness": 0.0019467201541840278,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.007682885446872573,
-=======
-        "staleness": 0.0018709030868923613,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04025,
-        "urgency": 0.007408279339490554,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.0076841687219287086,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-<<<<<<< HEAD
-        "staleness_norm": 0.03892732709587191,
+        "staleness_norm": 0.038934403083680555,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07682885446872573,
-=======
-        "staleness_norm": 0.03741806173784722,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07408279339490553,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.07684168721928708,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -271,41 +139,23 @@
       "status": "open",
       "priority": 1,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.173135381039474,
-=======
-      "score": 0.16267089281497496,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.17313677255525603,
       "breakdown": {
         "pagerank": 0.050809555622115164,
         "betweenness": 0,
         "blocker_ratio": 0.026000000000000002,
-<<<<<<< HEAD
-        "staleness": 0.001946339589510031,
+        "staleness": 0.001946693388900463,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.04025,
-        "urgency": 0.007682788364226579,
-=======
-        "staleness": 0.001870876321608796,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.04025,
-        "urgency": 0.007408181626851524,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.00768407164222677,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.23095252555506893,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0.2,
-<<<<<<< HEAD
-        "staleness_norm": 0.038926791790200616,
+        "staleness_norm": 0.03893386777800926,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07682788364226578,
-=======
-        "staleness_norm": 0.03741752643217592,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.40249999999999997,
-        "urgency_norm": 0.07408181626851523,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.0768407164222677,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 2), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -318,55 +168,6 @@
           "explanation": "Low risk - stable dependency structure"
         }
       },
-<<<<<<< HEAD
-=======
-      "action": "Work on voicetypr-5qq first to unblock this",
-      "reasons": [
-        "✅ Currently unclaimed - available for work",
-        "⏳ Blocked by voicetypr-5qq - complete that first",
-        "🚨 High priority (P1) - prioritize this work"
-      ],
-      "blocked_by": [
-        "voicetypr-5qq"
-      ]
-    },
-    {
-      "id": "voicetypr-ra2",
-      "title": "Copy address button needs interactive hover/click states",
-      "type": "task",
-      "status": "open",
-      "priority": 1,
-      "labels": null,
-      "score": 0.1376962320413465,
-      "breakdown": {
-        "pagerank": 0.041904797968693015,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.0015301700145061731,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.03325,
-        "urgency": 0.006903457001124519,
-        "risk": 0.0034071421231427835,
-        "pagerank_norm": 0.19047635440315008,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.03060340029012346,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.06903457001124519,
-        "risk_norm": 0.03407142123142783,
-        "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
-        "risk_explanation": "Low risk - stable dependency structure",
-        "risk_signals": {
-          "fan_variance": 0,
-          "activity_churn": 0.04690473743809276,
-          "cross_repo_risk": 0,
-          "status_risk": 0.1,
-          "composite_risk": 0.03407142123142783,
-          "explanation": "Low risk - stable dependency structure"
-        }
-      },
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
       "action": "Start work on this issue",
       "reasons": [
         "✅ Currently unclaimed - available for work",
@@ -380,41 +181,23 @@
       "status": "open",
       "priority": 1,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.13635633364705926,
-=======
-      "score": 0.12757151695240648,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.13635764328539662,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-<<<<<<< HEAD
-        "staleness": 0.0019466075030420524,
+        "staleness": 0.001946961302432485,
         "priority_boost": 0.07500000000000001,
         "time_to_impact": 0.03325,
-        "urgency": 0.0076837601262374385,
-=======
-        "staleness": 0.001871144235140818,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.03325,
-        "urgency": 0.007409159694863771,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.007685043374768752,
         "risk": 0.010660254037844387,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-<<<<<<< HEAD
-        "staleness_norm": 0.038932150060841046,
+        "staleness_norm": 0.038939226048649696,
         "priority_boost_norm": 0.75,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.07683760126237438,
-=======
-        "staleness_norm": 0.03742288470281636,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.0740915969486377,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.07685043374768752,
         "risk_norm": 0.10660254037844386,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -445,41 +228,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.11426341541040852,
-=======
-      "score": 0.11395562824361508,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.11426485473180925,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-<<<<<<< HEAD
-        "staleness": 0.0014445896497299385,
+        "staleness": 0.0014449434491203704,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.005828162500226958,
-=======
-        "staleness": 0.0013691263818287039,
-        "priority_boost": 0.05,
-        "time_to_impact": 0.03325,
-        "urgency": 0.005541520641966624,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.005829502020131511,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-<<<<<<< HEAD
-        "staleness_norm": 0.028891792994598767,
+        "staleness_norm": 0.028898868982407407,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.05828162500226958,
-=======
-        "staleness_norm": 0.027382527636574075,
-        "priority_boost_norm": 0.5,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.05541520641966624,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.058295020201315106,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -504,41 +269,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.11002643610445356,
-=======
-      "score": 0.11136911091400287,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.11002797800567599,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-<<<<<<< HEAD
-        "staleness": 0.0004395070710262346,
+        "staleness": 0.00043986087041666673,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0018485635425130765,
-=======
-        "staleness": 0.0013769989707754628,
-        "priority_boost": 0.07500000000000001,
-        "time_to_impact": 0.03325,
-        "urgency": 0.005566932937678471,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.001850023744560775,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-<<<<<<< HEAD
-        "staleness_norm": 0.008790141420524691,
+        "staleness_norm": 0.008797217408333334,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.018485635425130764,
-=======
-        "staleness_norm": 0.027539979415509255,
-        "priority_boost_norm": 0.75,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.055669329376784704,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.018500237445607748,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -563,41 +310,23 @@
       "status": "open",
       "priority": 2,
       "labels": null,
-<<<<<<< HEAD
-      "score": 0.10929088325604092,
-=======
-      "score": 0.10969669803524817,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+      "score": 0.10929244313778531,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-<<<<<<< HEAD
-        "staleness": 0.0002717077197337963,
+        "staleness": 0.0002720615191242284,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0011510066015553379,
-=======
-        "staleness": 0.00036404380312500003,
-        "priority_boost": 0.05,
-        "time_to_impact": 0.03325,
-        "urgency": 0.0015360970931798503,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency": 0.0011524879571583324,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-<<<<<<< HEAD
-        "staleness_norm": 0.0054341543946759266,
+        "staleness_norm": 0.0054412303824845675,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.011510066015553377,
-=======
-        "staleness_norm": 0.0072808760625,
-        "priority_boost_norm": 0.5,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.015360970931798501,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.011524879571583324,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -616,30 +345,29 @@
       ]
     },
     {
-<<<<<<< HEAD
       "id": "voicetypr-kl8",
       "title": "Implement Windows firewall detection",
       "type": "task",
       "status": "open",
       "priority": 2,
       "labels": null,
-      "score": 0.10889886831844728,
+      "score": 0.10890043780330261,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.00018306774631558645,
+        "staleness": 0.00018342154570601853,
         "priority_boost": 0.05,
         "time_to_impact": 0.03325,
-        "urgency": 0.0007784525307457546,
+        "urgency": 0.0007799451841262795,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.0036613549263117286,
+        "staleness_norm": 0.0036684309141203704,
         "priority_boost_norm": 0.5,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.007784525307457546,
+        "urgency_norm": 0.0077994518412627944,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -664,32 +392,32 @@
       "status": "open",
       "priority": 3,
       "labels": null,
-      "score": 0.09122057963257356,
+      "score": 0.09122151511264603,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.0015403724736033951,
+        "staleness": 0.0015407262729938273,
         "priority_boost": 0.025,
         "time_to_impact": 0.03325,
-        "urgency": 0.0077448193144675215,
-        "risk": 0.004585737360945851,
+        "urgency": 0.0077461007113666,
+        "risk": 0.004585271514746943,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.030807449472067903,
+        "staleness_norm": 0.030814525459876545,
         "priority_boost_norm": 0.25,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.07744819314467521,
-        "risk_norm": 0.045857373609458504,
+        "urgency_norm": 0.07746100711366599,
+        "risk_norm": 0.04585271514746943,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
         "risk_signals": {
           "fan_variance": 0,
-          "activity_churn": 0.08619124536486168,
+          "activity_churn": 0.0861757171582314,
           "cross_repo_risk": 0,
           "status_risk": 0.1,
-          "composite_risk": 0.045857373609458504,
+          "composite_risk": 0.04585271514746943,
           "explanation": "Low risk - stable dependency structure"
         }
       },
@@ -709,48 +437,23 @@
       "status": "open",
       "priority": 3,
       "labels": null,
-      "score": 0.08801038508150323,
+      "score": 0.08801194570985145,
       "breakdown": {
         "pagerank": 0.041904795391700174,
         "betweenness": 0,
         "blocker_ratio": 0,
-        "staleness": 0.00026479211720679014,
+        "staleness": 0.0002651459165972222,
         "priority_boost": 0.025,
         "time_to_impact": 0.03325,
-        "urgency": 0.001122041998743889,
+        "urgency": 0.0011235242327043205,
         "risk": 0.0020000000000000005,
         "pagerank_norm": 0.19047634268954625,
         "betweenness_norm": 0,
         "blocker_ratio_norm": 0,
-        "staleness_norm": 0.005295842344135803,
+        "staleness_norm": 0.005302918331944444,
         "priority_boost_norm": 0.25,
         "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.01122041998743889,
-=======
-      "id": "voicetypr-e29",
-      "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
-      "type": "bug",
-      "status": "open",
-      "priority": 2,
-      "labels": null,
-      "score": 0.10895729756186115,
-      "breakdown": {
-        "pagerank": 0.041904797968693015,
-        "betweenness": 0,
-        "blocker_ratio": 0,
-        "staleness": 0.00019624445183256172,
-        "priority_boost": 0.05,
-        "time_to_impact": 0.03325,
-        "urgency": 0.0008340135346051825,
-        "risk": 0.0020000000000000005,
-        "pagerank_norm": 0.19047635440315008,
-        "betweenness_norm": 0,
-        "blocker_ratio_norm": 0,
-        "staleness_norm": 0.003924889036651234,
-        "priority_boost_norm": 0.5,
-        "time_to_impact_norm": 0.3325,
-        "urgency_norm": 0.008340135346051825,
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
+        "urgency_norm": 0.011235242327043204,
         "risk_norm": 0.020000000000000004,
         "time_to_impact_explanation": "On dependency chain (depth 1), median estimate 60m",
         "risk_explanation": "Low risk - stable dependency structure",
@@ -786,7 +489,6 @@
       "reason": "Low complexity, high priority"
     },
     {
-<<<<<<< HEAD
       "id": "voicetypr-5l4",
       "title": "Add save recordings toggle for retry",
       "score": 0.4,
@@ -803,18 +505,6 @@
       "title": "Bug: Dashboard Settings doesn't live-update when tray menu changes sharing status",
       "score": 0.4,
       "reason": "Low complexity"
-=======
-      "id": "voicetypr-cpa",
-      "title": "Feature: Notify user when remote transcription server unavailable",
-      "score": 0.5,
-      "reason": "Low complexity, high priority"
-    },
-    {
-      "id": "voicetypr-d1l",
-      "title": "Bug: Cannot add remote server if connection fails",
-      "score": 0.5,
-      "reason": "Low complexity, high priority"
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
     }
   ],
   "blockers_to_clear": [
@@ -830,7 +520,6 @@
   ],
   "project_health": {
     "counts": {
-<<<<<<< HEAD
       "total": 76,
       "open": 10,
       "closed": 66,
@@ -839,17 +528,6 @@
       "by_status": {
         "closed": 66,
         "open": 10
-=======
-      "total": 75,
-      "open": 16,
-      "closed": 59,
-      "blocked": 4,
-      "actionable": 12,
-      "by_status": {
-        "closed": 59,
-        "in_progress": 4,
-        "open": 12
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
       },
       "by_type": {
         "bug": 27,
@@ -871,7 +549,6 @@
       "phase2_ready": true
     },
     "velocity": {
-<<<<<<< HEAD
       "closed_last_7_days": 66,
       "closed_last_30_days": 66,
       "avg_days_to_close": 0.2242851113066253,
@@ -879,15 +556,6 @@
         {
           "week_start": "2026-01-12T00:00:00Z",
           "closed": 66
-=======
-      "closed_last_7_days": 59,
-      "closed_last_30_days": 59,
-      "avg_days_to_close": 0.18078806148371782,
-      "weekly": [
-        {
-          "week_start": "2026-01-12T00:00:00Z",
-          "closed": 59
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
         },
         {
           "week_start": "2026-01-05T00:00:00Z",

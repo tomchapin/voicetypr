@@ -1,6 +1,5 @@
 {
   "counts": {
-<<<<<<< HEAD
     "total": 76,
     "open": 10,
     "closed": 66,
@@ -9,17 +8,6 @@
     "by_status": {
       "closed": 66,
       "open": 10
-=======
-    "total": 75,
-    "open": 16,
-    "closed": 59,
-    "blocked": 4,
-    "actionable": 12,
-    "by_status": {
-      "closed": 59,
-      "in_progress": 4,
-      "open": 12
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
     },
     "by_type": {
       "bug": 27,
@@ -41,7 +29,6 @@
     "phase2_ready": true
   },
   "velocity": {
-<<<<<<< HEAD
     "closed_last_7_days": 66,
     "closed_last_30_days": 66,
     "avg_days_to_close": 0.2242851113066253,
@@ -49,15 +36,6 @@
       {
         "week_start": "2026-01-12T00:00:00Z",
         "closed": 66
-=======
-    "closed_last_7_days": 59,
-    "closed_last_30_days": 59,
-    "avg_days_to_close": 0.18078806148371782,
-    "weekly": [
-      {
-        "week_start": "2026-01-12T00:00:00Z",
-        "closed": 59
->>>>>>> e1758aa (chore(beads): close voicetypr-34x - PC->Mac connection fixed)
       },
       {
         "week_start": "2026-01-05T00:00:00Z",
