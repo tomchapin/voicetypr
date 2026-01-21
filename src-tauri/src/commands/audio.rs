@@ -298,26 +298,46 @@ impl RecordingConfig {
 impl UnwindSafe for RecordingConfig {}
 impl RefUnwindSafe for RecordingConfig {}
 
+/// Always save a recording file to persistent storage
+/// This is used for the "preserve recordings on failure" feature
+/// Returns the saved filename (not full path) if saved, None otherwise
+pub async fn save_recording(app: &AppHandle, audio_path: &Path) -> Option<String> {
+    save_recording_internal(app, audio_path, false).await
+}
+
 /// Save a recording file to persistent storage if save_recordings is enabled
 /// Returns the saved filename (not full path) if saved, None otherwise
 pub async fn maybe_save_recording(app: &AppHandle, audio_path: &Path) -> Option<String> {
-    // Check if save_recordings is enabled
+    save_recording_internal(app, audio_path, true).await
+}
+
+/// Internal function to save recording with optional settings check
+async fn save_recording_internal(app: &AppHandle, audio_path: &Path, check_settings: bool) -> Option<String> {
+    // Get settings store for retention count (always needed) and save_recordings check
     let store = match app.store("settings") {
         Ok(s) => s,
         Err(e) => {
-            log::warn!("Failed to get settings store for save_recordings check: {}", e);
-            return None;
+            log::warn!("Failed to get settings store: {}", e);
+            // If we can't get settings, still save for preservation purposes
+            if check_settings {
+                return None;
+            }
+            // For forced saves (preserve on failure), continue without store
+            // We'll skip retention cleanup in this case
+            return save_recording_without_cleanup(app, audio_path).await;
         }
     };
 
-    let save_recordings = store
-        .get("save_recordings")
-        .and_then(|v| v.as_bool())
-        .unwrap_or(false);
+    if check_settings {
+        let save_recordings = store
+            .get("save_recordings")
+            .and_then(|v| v.as_bool())
+            .unwrap_or(false);
 
-    if !save_recordings {
-        log::debug!("save_recordings is disabled, skipping recording persistence");
-        return None;
+        if !save_recordings {
+            log::debug!("save_recordings is disabled, skipping recording persistence");
+            return None;
+        }
     }
 
     // Get recordings directory
@@ -356,6 +376,38 @@ pub async fn maybe_save_recording(app: &AppHandle, audio_path: &Path) -> Option<
                 cleanup_old_recordings(&recordings_dir, max_count);
             }
 
+            Some(filename)
+        }
+        Err(e) => {
+            log::error!("Failed to save recording: {}", e);
+            None
+        }
+    }
+}
+
+/// Save recording without cleanup (fallback when store is unavailable)
+async fn save_recording_without_cleanup(app: &AppHandle, audio_path: &Path) -> Option<String> {
+    let recordings_dir = match app.path().app_data_dir() {
+        Ok(dir) => dir.join("recordings"),
+        Err(e) => {
+            log::error!("Failed to get app data directory: {}", e);
+            return None;
+        }
+    };
+
+    if let Err(e) = std::fs::create_dir_all(&recordings_dir) {
+        log::error!("Failed to create recordings directory: {}", e);
+        return None;
+    }
+
+    let timestamp = chrono::Local::now().format("%Y-%m-%d_%H-%M-%S");
+    let uuid_part = uuid::Uuid::new_v4().to_string()[..8].to_string();
+    let filename = format!("{}_{}.wav", timestamp, uuid_part);
+    let dest_path = recordings_dir.join(&filename);
+
+    match std::fs::copy(audio_path, &dest_path) {
+        Ok(_) => {
+            log::info!("Saved recording (no cleanup) to: {:?}", dest_path);
             Some(filename)
         }
         Err(e) => {
@@ -725,7 +777,10 @@ fn select_best_fallback_model(
 
 /// Pre-recording validation using the readiness state
 async fn validate_recording_requirements(app: &AppHandle) -> Result<(), String> {
+    let validate_start = std::time::Instant::now();
+    log::info!("⏱️ [VALIDATE] starting recognition_availability_snapshot");
     let availability = crate::recognition_availability_snapshot(app).await;
+    log::info!("⏱️ [VALIDATE] recognition_availability_snapshot complete (+{}ms)", validate_start.elapsed().as_millis());
 
     if !availability.any_available() {
         log::error!("No speech recognition engines are ready");
@@ -753,74 +808,38 @@ async fn validate_recording_requirements(app: &AppHandle) -> Result<(), String> 
         );
     }
 
-    // Check license status (with caching to improve performance)
-    let license_status = {
-        let app_state = app.state::<AppState>();
-        let cache = app_state.license_cache.read().await;
+    // Check cached license status (populated at startup - no network call)
+    // This is fast because it only reads from memory
+    let app_state = app.state::<AppState>();
+    let cache = app_state.license_cache.read().await;
 
-        if let Some(cached) = cache.as_ref() {
-            if cached.is_valid() {
-                log::debug!("Using cached license status (age: {:?})", cached.age());
-                Some(cached.status.clone())
-            } else {
-                log::debug!(
-                    "License cache is stale (age: {:?}), will refresh",
-                    cached.age()
-                );
-                None
+    if let Some(cached) = cache.as_ref() {
+        if matches!(cached.status.status, LicenseState::Expired | LicenseState::None) {
+            log::warn!("Recording blocked: license is {:?}", cached.status.status);
+
+            // Show and focus the main window
+            if let Some(window) = app.get_webview_window("main") {
+                let _ = window.show();
+                let _ = window.set_focus();
             }
-        } else {
-            log::debug!("No license cache found, will perform fresh check");
-            None
+
+            // Emit error event with guidance
+            let _ = emit_to_window(
+                app,
+                "main",
+                "license-required",
+                serde_json::json!({
+                    "title": "License Required",
+                    "message": "Your trial has expired. Please purchase a license to continue",
+                    "action": "purchase"
+                }),
+            );
+            return Err("License required to record".to_string());
         }
-    };
-
-    let status = if let Some(cached_status) = license_status {
-        cached_status
-    } else {
-        // Cache miss or stale - perform fresh license check
-        match check_license_status_internal(app).await {
-            Ok(fresh_status) => {
-                // Update cache
-                let app_state = app.state::<AppState>();
-                let mut cache = app_state.license_cache.write().await;
-                *cache = Some(crate::commands::license::CachedLicense::new(
-                    fresh_status.clone(),
-                ));
-                log::debug!("License status cached for 6 hours");
-                fresh_status
-            }
-            Err(e) => {
-                log::error!("Failed to check license status: {}", e);
-                // Allow recording if license check fails (graceful degradation)
-                return Ok(());
-            }
-        }
-    };
-
-    if matches!(status.status, LicenseState::Expired | LicenseState::None) {
-        log::error!("Invalid license: {:?}", status.status);
-
-        // Show and focus the main window
-        if let Some(window) = app.get_webview_window("main") {
-            let _ = window.show();
-            let _ = window.set_focus();
-        }
-
-        // Emit error event with guidance
-        let _ = emit_to_window(
-            app,
-            "main",
-            "license-required",
-            serde_json::json!({
-                "title": "License Required",
-                "message": "Your trial has expired. Please purchase a license to continue",
-                "action": "purchase"
-            }),
-        );
-        return Err("License required to record".to_string());
     }
+    // If no cache exists yet, allow recording (startup check hasn't completed)
 
+    log::info!("⏱️ [VALIDATE] validation complete (+{}ms)", validate_start.elapsed().as_millis());
     Ok(())
 }
 
@@ -832,6 +851,7 @@ pub async fn start_recording(
     let recording_start = Instant::now();
 
     log_start("RECORDING_START");
+    log::info!("⏱️ [REC TIMING] start_recording called (+0ms)");
     log_with_context(
         log::Level::Debug,
         "Recording command started",
@@ -850,9 +870,11 @@ pub async fn start_recording(
             Some("recover".to_string()),
         );
     }
+    log::info!("⏱️ [REC TIMING] state check complete (+{}ms)", recording_start.elapsed().as_millis());
 
     // Validate all requirements upfront
     let validation_start = Instant::now();
+    log::info!("⏱️ [REC TIMING] starting validation (+{}ms)", recording_start.elapsed().as_millis());
     match validate_recording_requirements(&app).await {
         Ok(_) => {
             log_performance(
@@ -879,6 +901,7 @@ pub async fn start_recording(
     }
 
     // All validation passed, update state to starting
+    log::info!("⏱️ [REC TIMING] validation complete (+{}ms)", recording_start.elapsed().as_millis());
     log_state_transition("RECORDING", "idle", "starting", true, None);
     update_recording_state(&app, RecordingState::Starting, None);
     // Ensure transition actually happened; if blocked, abort early
@@ -890,6 +913,7 @@ pub async fn start_recording(
     }
 
     // Play sound on recording start if enabled
+    log::info!("⏱️ [REC TIMING] about to play sound (+{}ms)", recording_start.elapsed().as_millis());
     if let Ok(store) = app.store("settings") {
         let play_sound = store
             .get("play_sound_on_recording")
@@ -900,10 +924,12 @@ pub async fn start_recording(
             // Delay to let sound complete before microphone initialization
             // This helps with Bluetooth headsets (e.g., AirPods) that switch audio modes
             tokio::time::sleep(std::time::Duration::from_millis(300)).await;
+            log::info!("⏱️ [REC TIMING] sound played + 300ms delay (+{}ms)", recording_start.elapsed().as_millis());
         }
     }
 
     // Load recording config once to avoid repeated store access
+    log::info!("⏱️ [REC TIMING] loading recording config (+{}ms)", recording_start.elapsed().as_millis());
     let config = get_recording_config(&app).await.map_err(|e| {
         log::error!("Failed to load recording config: {}", e);
         format!("Configuration error: {}", e)
@@ -946,6 +972,7 @@ pub async fn start_recording(
         .replace(audio_path.clone());
 
     // Get selected microphone from settings (before acquiring recorder lock)
+    log::info!("⏱️ [REC TIMING] getting microphone settings (+{}ms)", recording_start.elapsed().as_millis());
     let selected_microphone = match get_settings(app.clone()).await {
         Ok(settings) => {
             if let Some(mic) = settings.selected_microphone {
@@ -966,12 +993,14 @@ pub async fn start_recording(
     };
 
     // Start recording (scoped to release mutex before async operations)
+    log::info!("⏱️ [REC TIMING] acquiring recorder lock (+{}ms)", recording_start.elapsed().as_millis());
     {
         let mut recorder = state
             .inner()
             .0
             .lock()
             .map_err(|e| format!("Failed to acquire recorder lock: {}", e))?;
+        log::info!("⏱️ [REC TIMING] recorder lock acquired (+{}ms)", recording_start.elapsed().as_millis());
 
         // Check if already recording
         if recorder.is_recording() {
@@ -980,6 +1009,7 @@ pub async fn start_recording(
         }
 
         // Log the current audio device before starting
+        log::info!("⏱️ [REC TIMING] checking audio device (+{}ms)", recording_start.elapsed().as_millis());
         log_start("AUDIO_DEVICE_CHECK");
         log_with_context(
             log::Level::Debug,
@@ -1015,6 +1045,7 @@ pub async fn start_recording(
         }
 
         // Try to start recording with graceful error handling
+        log::info!("⏱️ [REC TIMING] about to call recorder.start_recording (+{}ms)", recording_start.elapsed().as_millis());
         let recorder_init_start = Instant::now();
         let audio_path_str = audio_path
             .to_str()
@@ -1027,6 +1058,7 @@ pub async fn start_recording(
             .start_recording(audio_path_str, selected_microphone.clone())
         {
             Ok(_) => {
+                log::info!("⏱️ [REC TIMING] recorder.start_recording returned Ok (+{}ms)", recording_start.elapsed().as_millis());
                 // Verify recording actually started
                 let is_recording = recorder.is_recording();
 
@@ -1918,6 +1950,7 @@ pub async fn stop_recording(
             } => {
                 // Perform remote transcription in an async block that returns Result
                 let remote_result: Result<String, String> = async {
+                    let remote_start = std::time::Instant::now();
                     log::info!(
                         "🌐 [Remote] Starting transcription to '{}' ({}:{})",
                         server_name,
@@ -1931,9 +1964,10 @@ pub async fn stop_recording(
 
                     let audio_size_kb = audio_data.len() as f64 / 1024.0;
                     log::info!(
-                        "🌐 [Remote] Sending {:.1} KB audio to '{}'",
+                        "🌐 [Remote] Sending {:.1} KB audio to '{}' (+{}ms)",
                         audio_size_kb,
-                        server_name
+                        server_name,
+                        remote_start.elapsed().as_millis()
                     );
 
                     // Create HTTP client connection
@@ -1943,8 +1977,14 @@ pub async fn stop_recording(
                         password.clone(),
                     );
 
-                    // Send transcription request
-                    let client = reqwest::Client::new();
+                    // Send transcription request with short connection timeout
+                    // Use 5 second connect timeout to fail fast on unreachable servers
+                    let client = reqwest::Client::builder()
+                        .connect_timeout(std::time::Duration::from_secs(5))
+                        .timeout(std::time::Duration::from_secs(120)) // Overall timeout for large files
+                        .build()
+                        .map_err(|e| format!("Failed to create HTTP client: {}", e))?;
+
                     let mut request = client
                         .post(&server_conn.transcribe_url())
                         .header("Content-Type", "audio/wav")
@@ -1955,10 +1995,17 @@ pub async fn stop_recording(
                         request = request.header("X-VoiceTypr-Key", pwd);
                     }
 
+                    log::info!(
+                        "🌐 [Remote] Sending HTTP request to '{}' (+{}ms)",
+                        server_name,
+                        remote_start.elapsed().as_millis()
+                    );
+
                     let response = request.send().await.map_err(|e| {
                         log::warn!(
-                            "🌐 [Remote] Connection FAILED to '{}': {}",
+                            "🌐 [Remote] Connection FAILED to '{}' after {}ms: {}",
                             server_name,
+                            remote_start.elapsed().as_millis(),
                             e
                         );
                         format!("Failed to connect to remote server: {}", e)
@@ -2010,10 +2057,19 @@ pub async fn stop_recording(
         };
 
         // Try to save recording to persistent storage BEFORE cleanup
-        let recording_file = if transcription_result.is_ok() {
-            maybe_save_recording(&app_for_task, &audio_path_clone).await
-        } else {
-            None
+        // On success: use maybe_save_recording (respects save_recordings setting)
+        // On recoverable failure (remote server errors): always save to preserve for re-transcription
+        let recording_file = match &transcription_result {
+            Ok(_) => maybe_save_recording(&app_for_task, &audio_path_clone).await,
+            Err(e) => {
+                // For remote server errors, always preserve the recording for re-transcription
+                if e.contains("remote server") || e.contains("Remote server") || e.contains("Connection refused") {
+                    log::info!("Preserving recording for failed remote transcription");
+                    save_recording(&app_for_task, &audio_path_clone).await
+                } else {
+                    None
+                }
+            }
         };
 
         // Clean up temp file regardless of outcome
@@ -2278,18 +2334,45 @@ pub async fn stop_recording(
 
                         update_recording_state(&app_for_reset, RecordingState::Idle, None);
                     });
-                } else if e.contains("remote server") || e.contains("Remote server") {
+                } else if e.contains("remote server") || e.contains("Remote server") || e.contains("Connection refused") {
                     // Remote server error - emit specific event for system notification
                     log::warn!("Remote server error: {}", e);
 
-                    // Emit event for frontend to show system notification
-                    let _ = app_for_task.emit("remote-server-error", serde_json::json!({
-                        "message": e.clone(),
-                        "title": "Remote Server Unavailable"
-                    }));
+                    // Save failed transcription to history if we preserved the recording
+                    if let Some(ref saved_recording) = recording_file {
+                        let app_for_history = app_for_task.clone();
+                        let error_msg = e.clone();
+                        let model_name = selected_model_name_for_task.clone();
+                        let recording_filename = saved_recording.clone();
+                        tokio::spawn(async move {
+                            if let Err(save_err) = save_failed_transcription(
+                                &app_for_history,
+                                error_msg,
+                                model_name,
+                                recording_filename,
+                            ).await {
+                                log::error!("Failed to save failed transcription: {}", save_err);
+                            }
+                        });
+
+                        // Emit event for frontend to show system notification with guidance
+                        let _ = app_for_task.emit("remote-server-error", serde_json::json!({
+                            "message": e.clone(),
+                            "title": "Remote Server Unreachable"
+                        }));
+
+                        // Update pill message to guide user to History
+                        pill_toast(&app_for_task, "Remote server unreachable. Go to History to re-transcribe, or select a different model.", 6000);
+                    } else {
+                        // Emit event for frontend - no recording saved
+                        let _ = app_for_task.emit("remote-server-error", serde_json::json!({
+                            "message": e.clone(),
+                            "title": "Remote Server Unavailable"
+                        }));
+                        pill_toast(&app_for_task, "Remote server unavailable", 2000);
+                    }
 
                     update_recording_state(&app_for_task, RecordingState::Error, Some(e.clone()));
-                    pill_toast(&app_for_task, "Remote server unavailable", 2000);
 
                     // Transition back to Idle after showing the error
                     let app_for_reset = app_for_task.clone();
@@ -2518,6 +2601,45 @@ pub async fn save_transcription_with_recording(
     }
 
     log::info!("Saved transcription with {} characters", text.len());
+    Ok(())
+}
+
+/// Save a failed transcription to history with recording file preserved for re-transcription
+pub async fn save_failed_transcription(
+    app: &AppHandle,
+    error_message: String,
+    model: String,
+    recording_file: String,
+) -> Result<(), String> {
+    let store = app
+        .store("transcriptions")
+        .map_err(|e| format!("Failed to get transcriptions store: {}", e))?;
+
+    let timestamp = chrono::Utc::now().to_rfc3339();
+    let transcription_data = serde_json::json!({
+        "text": "Remote server unreachable - re-transcribe to get text",
+        "model": model,
+        "timestamp": timestamp.clone(),
+        "recording_file": recording_file,
+        "status": "failed",
+        "error_detail": error_message
+    });
+
+    store.set(&timestamp, transcription_data.clone());
+
+    store
+        .save()
+        .map_err(|e| format!("Failed to save failed transcription: {}", e))?;
+
+    // Emit the new transcription data to frontend
+    let _ = emit_to_window(app, "main", "transcription-added", transcription_data);
+
+    // Refresh tray menu
+    if let Err(e) = crate::commands::settings::update_tray_menu(app.clone()).await {
+        log::warn!("Failed to update tray menu after saving failed transcription: {}", e);
+    }
+
+    log::info!("Saved failed transcription with recording file: {}", recording_file);
     Ok(())
 }
 
@@ -3479,11 +3601,12 @@ pub async fn update_transcription(
         .get(&timestamp)
         .ok_or_else(|| format!("Transcription not found: {}", timestamp))?;
 
-    // Preserve original fields, update text and model
+    // Preserve original fields, update text, model, and status
     let mut updated = existing.clone();
     if let serde_json::Value::Object(ref mut map) = updated {
         map.insert("text".to_string(), serde_json::Value::String(text.clone()));
         map.insert("model".to_string(), serde_json::Value::String(model.clone()));
+        map.insert("status".to_string(), serde_json::Value::String("completed".to_string()));
     }
 
     store.set(&timestamp, updated.clone());
