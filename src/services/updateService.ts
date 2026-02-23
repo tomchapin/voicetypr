@@ -83,8 +83,8 @@ export class UpdateService {
     // Check if app was just updated and show toast
     await this.showJustUpdatedToast();
 
-    // Check if automatic updates are enabled (default to true if not set)
-    const autoUpdateEnabled = settings.check_updates_automatically ?? true;
+    // Check if automatic updates are enabled (default to false if not set)
+    const autoUpdateEnabled = settings.check_updates_automatically ?? false;
     
     if (!autoUpdateEnabled) {
       console.log('Automatic updates are disabled');

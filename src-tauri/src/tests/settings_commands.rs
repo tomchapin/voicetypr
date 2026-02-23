@@ -14,7 +14,7 @@ mod tests {
         assert_eq!(settings.transcription_cleanup_days, None);
         assert_eq!(settings.launch_at_startup, false);
         assert_eq!(settings.onboarding_completed, false);
-        assert_eq!(settings.check_updates_automatically, true); // Default to true
+        assert_eq!(settings.check_updates_automatically, false); // Default to manual updates only
     }
 
     #[test]

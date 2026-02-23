@@ -1,9 +1,12 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Switch } from "@/components/ui/switch";
+import { useSettings } from "@/contexts/SettingsContext";
 import { open } from '@tauri-apps/plugin-shell';
 import { getVersion } from '@tauri-apps/api/app';
-import { 
+import {
   ExternalLink,
   Globe,
   Info,
@@ -15,6 +18,7 @@ import { toast } from 'sonner';
 import { updateService } from '@/services/updateService';
 
 export function AboutSection() {
+  const { settings, updateSettings } = useSettings();
   const [appVersion, setAppVersion] = useState<string>('');
   const [isCheckingUpdate, setIsCheckingUpdate] = useState(false);
 
@@ -76,6 +80,29 @@ export function AboutSection() {
                 <Badge variant="secondary" className="font-mono">
                   v{appVersion || 'Loading...'}
                 </Badge>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div className="space-y-0.5">
+                  <Label htmlFor="auto-update" className="text-sm font-medium">
+                    Auto Update
+                  </Label>
+                  <p className="text-xs text-muted-foreground">
+                    Automatically download and install updates
+                  </p>
+                </div>
+                <Switch
+                  id="auto-update"
+                  checked={settings?.check_updates_automatically ?? false}
+                  onCheckedChange={async (checked) => {
+                    await updateSettings({ check_updates_automatically: checked });
+                    if (checked) {
+                      updateService.initialize({ ...settings!, check_updates_automatically: true });
+                    } else {
+                      updateService.dispose();
+                    }
+                  }}
+                />
               </div>
 
               <div className="flex justify-center">

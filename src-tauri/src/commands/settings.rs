@@ -66,7 +66,7 @@ impl Default for Settings {
             pill_position: None,              // No saved position initially
             launch_at_startup: false,         // Default to not launching at startup
             onboarding_completed: false,      // Default to not completed
-            check_updates_automatically: true, // Default to automatic updates enabled
+            check_updates_automatically: false, // Default to manual updates only
             selected_microphone: None,        // Default to system default microphone
             recording_mode: "toggle".to_string(), // Default to toggle mode for backward compatibility
             use_different_ptt_key: false,         // Default to using same key
